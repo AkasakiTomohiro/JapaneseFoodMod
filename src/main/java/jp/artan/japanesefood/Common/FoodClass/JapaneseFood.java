@@ -1,17 +1,15 @@
 package jp.artan.japanesefood.Common.FoodClass;
 
-import jp.artan.japanesefood.RawMaterials.JapaneseFoodRawMaterialsMod;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 
 /**
  * 食べ物の共通クラス
  */
-public abstract class JapaneseFood extends ItemFood {
+public abstract class JapaneseFood extends ItemFood implements IItemRegisterEvent {
 
     protected final String Name;
 
