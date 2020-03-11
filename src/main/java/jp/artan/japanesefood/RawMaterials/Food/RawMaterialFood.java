@@ -1,6 +1,6 @@
-package jp.artan.japanesefood.Core.Food;
+package jp.artan.japanesefood.RawMaterials.Food;
 
-import jp.artan.japanesefood.Core.JapaneseFoodCoreMod;
+import jp.artan.japanesefood.RawMaterials.JapaneseFoodRawMaterialsMod;
 import jp.artan.japanesefood.Common.FoodClass.JapaneseFood;
 
 public class RawMaterialFood extends JapaneseFood {
@@ -13,7 +13,7 @@ public class RawMaterialFood extends JapaneseFood {
      */
     public RawMaterialFood(String name, int amount, float saturation) {
         super(name, amount, saturation);
-        this.setCreativeTab(JapaneseFoodCoreMod.creativeTab);
-        this.setRegistryName(JapaneseFoodCoreMod.MODID, name);
+        this.setCreativeTab(JapaneseFoodRawMaterialsMod.creativeTab);
+        this.setRegistryName(JapaneseFoodRawMaterialsMod.MODID, name);
     }
 }

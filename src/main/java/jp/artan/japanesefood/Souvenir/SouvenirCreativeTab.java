@@ -4,9 +4,9 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
-public class JapaneseFoodSouvenirCreativeTab extends CreativeTabs {
+public class SouvenirCreativeTab extends CreativeTabs {
 
-    public JapaneseFoodSouvenirCreativeTab(String label){
+    public SouvenirCreativeTab(String label){
         super(label);
     }
 

@@ -1,4 +1,4 @@
-package jp.artan.japanesefood.Core;
+package jp.artan.japanesefood.RawMaterials;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -12,17 +12,17 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = JapaneseFoodCoreMod.MODID, name = JapaneseFoodCoreMod.NAME, version = JapaneseFoodCoreMod.VERSION, dependencies = JapaneseFoodCoreMod.DEPENDENCIES)
-public class JapaneseFoodCoreMod
+@Mod(modid = JapaneseFoodRawMaterialsMod.MODID, name = JapaneseFoodRawMaterialsMod.NAME, version = JapaneseFoodRawMaterialsMod.VERSION, dependencies = JapaneseFoodRawMaterialsMod.DEPENDENCIES)
+public class JapaneseFoodRawMaterialsMod
 {
-    public static final String MODID = "japanesefoodcore";
-    public static final String NAME = "Japanese Food Core Mod";
+    public static final String MODID = "japanesefoodrawmaterials";
+    public static final String NAME = "Japanese Food Raw Materials Mod";
     public static final String VERSION = "1.0";
     public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);";
 
     private static Logger logger;
 
-    public static CreativeTabs creativeTab = new JapaneseFoodCoreCreativeTab("Japanese Food Raw Materials");
+    public static CreativeTabs creativeTab = new RawMaterialsCreativeTab("JapaneseFoodRawMaterials");
 
 
     @Mod.EventHandler
@@ -32,12 +32,12 @@ public class JapaneseFoodCoreMod
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
-        JapaneseFoodRawMaterials.registerItem(event);
+        RawMaterials.registerItem(event);
     }
 
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void registerModels(ModelRegistryEvent event) {
-        JapaneseFoodRawMaterials.registerModel(event);
+        RawMaterials.registerModel(event);
     }
 }

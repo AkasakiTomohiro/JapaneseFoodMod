@@ -1,9 +1,7 @@
 package jp.artan.japanesefood.Souvenir;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -23,7 +21,7 @@ public class JapaneseFoodSouvenirMod {
 
     private static Logger logger;
 
-    public static CreativeTabs creativeTab = new JapaneseFoodSouvenirCreativeTab("JapaneseFoodSouvenir");
+    public static CreativeTabs creativeTab = new SouvenirCreativeTab("JapaneseFoodSouvenir");
 
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
