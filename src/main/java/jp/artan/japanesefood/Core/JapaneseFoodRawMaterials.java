@@ -1,6 +1,5 @@
-package jp.artan.japanesefood.Souvenir.Item;
+package jp.artan.japanesefood.Core;
 
-import jp.artan.japanesefood.Souvenir.JapaneseFoodSouvenirMod;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
@@ -9,21 +8,21 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 
-public class JapaneseFoodItemCore {
+public class JapaneseFoodRawMaterials {
 
-    public static final Item Banana = new ItemFood(1, 0.5F, false)
-            .setCreativeTab(JapaneseFoodSouvenirMod.creativeTab)
+    public static final Item Banana = new ItemFood(2, 0.5F, false)
+            .setCreativeTab(JapaneseFoodCoreMod.creativeTab)
             .setUnlocalizedName("banana")
-            .setRegistryName(JapaneseFoodSouvenirMod.MODID, "banana");
+            .setRegistryName(JapaneseFoodCoreMod.MODID, "banana");
 
     public static void registerItem(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(JapaneseFoodItemCore.Banana);
+        event.getRegistry().register(JapaneseFoodRawMaterials.Banana);
     }
 
     public static void registerModel(ModelRegistryEvent event) {
         ModelLoader.setCustomModelResourceLocation(
-                JapaneseFoodItemCore.Banana,
+                JapaneseFoodRawMaterials.Banana,
                 0,
-                new ModelResourceLocation(new ResourceLocation(JapaneseFoodSouvenirMod.MODID, "banana"), "inventory"));
+                new ModelResourceLocation(new ResourceLocation(JapaneseFoodCoreMod.MODID, "banana"), "inventory"));
     }
 }

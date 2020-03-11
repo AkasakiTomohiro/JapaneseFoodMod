@@ -1,7 +1,5 @@
 package jp.artan.japanesefood.Souvenir;
 
-import jp.artan.japanesefood.Core.JapaneseFoodCreativeTab;
-import jp.artan.japanesefood.Souvenir.Item.JapaneseFoodItemCore;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -25,7 +23,7 @@ public class JapaneseFoodSouvenirMod {
 
     private static Logger logger;
 
-    public static CreativeTabs creativeTab = new JapaneseFoodCreativeTab("Japanese Food Souvenir", new ItemStack(Items.APPLE));
+    public static CreativeTabs creativeTab = new JapaneseFoodSouvenirCreativeTab("JapaneseFoodSouvenir");
 
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
@@ -34,12 +32,10 @@ public class JapaneseFoodSouvenirMod {
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
-        JapaneseFoodItemCore.registerItem(event);
     }
 
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void registerModels(ModelRegistryEvent event) {
-        JapaneseFoodItemCore.registerModel(event);
     }
 }
