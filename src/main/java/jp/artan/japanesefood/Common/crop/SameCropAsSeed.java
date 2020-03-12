@@ -1,4 +1,4 @@
-package jp.artan.japanesefood.Common.Crop;
+package jp.artan.japanesefood.Common.crop;
 
 import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
 import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
