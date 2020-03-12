@@ -5,5 +5,5 @@ itemGroup.japanesefoodrawmaterials=Japanese Food[Raw Materials]
 
 # Items
 item.banana.name=Banana
-item.banana_seed.name=Banana Seed
-item.soy_seed.name=Soy
+item.banana_seeds.name=Banana Seeds
+item.soy_seeds.name=Soy

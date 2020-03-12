@@ -5,6 +5,6 @@ itemGroup.japanesefoodrawmaterials=日本料理MOD[材料]
 
 # Items
 item.banana.name=バナナ
-item.banana_seed.name=バナナの種
-item.soy_seed.name=大豆
+item.banana_seeds.name=バナナの種
+item.soy_seeds.name=大豆
 
