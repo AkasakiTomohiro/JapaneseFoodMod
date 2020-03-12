@@ -15,20 +15,20 @@ public class RawMaterials {
 
     public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
 
-    public static final CropsWithSeeds Banana = new RawMaterialSameCropsWithSeeds("banana", 1, 0.5F);
+//    public static final CropsWithSeeds Banana = new RawMaterialSameCropsWithSeeds("banana", 1, 0.5F);
 
     public static void registerItem(RegistryEvent.Register<Item> event) {
-        Banana.registerItem(event);
+//        Banana.registerItem(event);
         Soy.registerItem(event);
     }
 
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        Banana.registerBlock(event);
+//        Banana.registerBlock(event);
         Soy.registerBlock(event);
     }
 
     public static void registerModel(ModelRegistryEvent event) {
-        Banana.registerModel(event);
+//        Banana.registerModel(event);
         Soy.registerModel(event);
     }
 }
