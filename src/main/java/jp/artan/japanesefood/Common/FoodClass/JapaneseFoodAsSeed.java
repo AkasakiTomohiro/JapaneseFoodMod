@@ -33,7 +33,7 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
      */
     public JapaneseFoodAsSeed(String name, int amount, float saturation, JapaneseFoodPlant plant) {
         super(amount, saturation, false);
-        this.Name = name + "_seed";
+        this.Name = name + "_seeds";
 
         this.setUnlocalizedName(this.Name);
         this.Plant = plant;

@@ -22,7 +22,7 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
 
     public JapaneseFoodSeed(String name, JapaneseFoodPlant plant) {
         super(plant, Blocks.FARMLAND);
-        this.Name = name + "_seed";
+        this.Name = name + "_seeds";
 
         this.setUnlocalizedName(this.Name);
         this.Plant = plant;
