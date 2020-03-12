@@ -11,7 +11,7 @@ public class RawMaterialsCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(RawMaterials.Banana);
+        return new ItemStack(RawMaterials.Banana.Food);
     }
 
 }

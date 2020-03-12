@@ -8,6 +8,7 @@ import net.minecraftforge.common.IPlantable;
 
 public abstract class JapaneseFoodPlant extends BlockCrops implements IPlantable, IGrowable, IBlockRegisterEvent {
     protected Item Seed;
+    protected Item Food;
     protected final String Name;
 
     public JapaneseFoodPlant(String name) {
@@ -20,6 +21,10 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IPlantable
         this.Seed = seed;
     }
 
+    public void setFood(Item food) {
+        this.Food = food;
+    }
+
     @Override
     public Item getSeed() {
         return this.Seed;
@@ -27,6 +32,6 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IPlantable
 
     @Override
     public Item getCrop() {
-        return this.Seed;
+        return this.Food;
     }
 }

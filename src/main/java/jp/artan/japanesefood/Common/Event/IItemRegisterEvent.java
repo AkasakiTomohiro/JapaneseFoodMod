@@ -7,13 +7,13 @@ import net.minecraftforge.event.RegistryEvent;
 public interface IItemRegisterEvent {
 
     /**
-     * アイテムを登録する
+     * Register Item
      * @param event
      */
     void registerItem(RegistryEvent.Register<Item> event);
 
     /**
-     * モデルを登録する
+     * Register Model
      * @param event
      */
     void registerModel(ModelRegistryEvent event);

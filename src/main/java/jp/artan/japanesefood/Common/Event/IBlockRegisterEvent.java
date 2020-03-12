@@ -7,13 +7,13 @@ import net.minecraftforge.event.RegistryEvent;
 public interface IBlockRegisterEvent {
 
     /**
-     * ブロックを登録する
+     * Register Block
      * @param event
      */
     void registerBlock(RegistryEvent.Register<Block> event);
 
     /**
-     * モデルを登録する
+     * Register Model
      * @param event
      */
     void registerModel(ModelRegistryEvent event);

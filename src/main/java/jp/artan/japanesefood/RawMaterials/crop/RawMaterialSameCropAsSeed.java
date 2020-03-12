@@ -1,6 +1,8 @@
-package jp.artan.japanesefood.RawMaterials.Food;
+package jp.artan.japanesefood.RawMaterials.crop;
 
 import jp.artan.japanesefood.Common.Crop.SameCropAsSeed;
+import jp.artan.japanesefood.RawMaterials.Food.RawMaterialFoodAsSeed;
+import jp.artan.japanesefood.RawMaterials.Food.RawMaterialPlant;
 
 public class RawMaterialSameCropAsSeed extends SameCropAsSeed {
     /**

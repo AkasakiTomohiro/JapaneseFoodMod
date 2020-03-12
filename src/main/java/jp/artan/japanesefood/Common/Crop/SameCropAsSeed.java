@@ -23,6 +23,7 @@ public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegist
         this.Seed = seed;
         this.Plant = this.Seed.Plant;
         this.Seed.Plant.setSeed(this.Seed);
+        this.Seed.Plant.setFood(this.Seed);
     }
 
     @Override
