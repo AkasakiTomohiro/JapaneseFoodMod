@@ -12,7 +12,7 @@ public class SouvenirCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(Items.APPLE);
+        return new ItemStack(JapaneseFoodSouvenir.TokyoBanana);
     }
 
 }

@@ -21,6 +21,7 @@ public class JapaneseFoodMod
     public static final String VERSION = "1.0";
     public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);";
 
+
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
