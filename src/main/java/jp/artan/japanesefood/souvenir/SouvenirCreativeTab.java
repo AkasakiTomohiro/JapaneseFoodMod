@@ -1,4 +1,4 @@
-package jp.artan.japanesefood.Souvenir;
+package jp.artan.japanesefood.souvenir;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
