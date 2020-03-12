@@ -1,5 +1,6 @@
 package jp.artan.japanesefood.RawMaterials;
 
+import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -31,6 +32,11 @@ public class JapaneseFoodRawMaterialsMod
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         RawMaterials.registerItem(event);
+    }
+
+    @SubscribeEvent
+    public void registerBlocks(RegistryEvent.Register<Block> event) {
+        RawMaterials.registerBlocks(event);
     }
 
     @SubscribeEvent

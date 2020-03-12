@@ -4,6 +4,7 @@ import jp.artan.japanesefood.Common.Crop.CropsWithSeeds;
 import jp.artan.japanesefood.Common.Crop.SameCropAsSeed;
 import jp.artan.japanesefood.RawMaterials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefood.RawMaterials.crop.RawMaterialSameCropsWithSeeds;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -19,6 +20,11 @@ public class RawMaterials {
     public static void registerItem(RegistryEvent.Register<Item> event) {
         Banana.registerItem(event);
         Soy.registerItem(event);
+    }
+
+    public static void registerBlocks(RegistryEvent.Register<Block> event) {
+        Banana.registerBlock(event);
+        Soy.registerBlock(event);
     }
 
     public static void registerModel(ModelRegistryEvent event) {

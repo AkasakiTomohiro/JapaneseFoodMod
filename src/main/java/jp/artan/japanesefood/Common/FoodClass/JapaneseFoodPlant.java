@@ -11,7 +11,7 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
 
     public JapaneseFoodPlant(String name) {
         super();
-        this.Name = name + "_crop_block";
+        this.Name = name + "_plant";
         this.setUnlocalizedName(this.Name);
     }
 
