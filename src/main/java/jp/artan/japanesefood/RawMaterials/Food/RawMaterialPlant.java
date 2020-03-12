@@ -1,6 +1,6 @@
 package jp.artan.japanesefood.RawMaterials.Food;
 
-import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodPlant;
+import jp.artan.japanesefood.common.food.JapaneseFoodPlant;
 import jp.artan.japanesefood.RawMaterials.JapaneseFoodRawMaterialsMod;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

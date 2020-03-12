@@ -1,6 +1,6 @@
-package jp.artan.japanesefood.Common.FoodClass;
+package jp.artan.japanesefood.common.food;
 
-import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
+import jp.artan.japanesefood.common.event.IItemRegisterEvent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraftforge.client.event.ModelRegistryEvent;

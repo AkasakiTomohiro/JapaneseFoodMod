@@ -1,16 +1,16 @@
-package jp.artan.japanesefood.Common.Event;
+package jp.artan.japanesefood.common.event;
 
-import net.minecraft.item.Item;
+import net.minecraft.block.Block;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-public interface IItemRegisterEvent {
+public interface IBlockRegisterEvent {
 
     /**
-     * Register Item
+     * Register Block
      * @param event
      */
-    void registerItem(RegistryEvent.Register<Item> event);
+    void registerBlock(RegistryEvent.Register<Block> event);
 
     /**
      * Register Model

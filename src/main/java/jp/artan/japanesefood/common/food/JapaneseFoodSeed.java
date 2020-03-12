@@ -1,6 +1,6 @@
-package jp.artan.japanesefood.Common.FoodClass;
+package jp.artan.japanesefood.common.food;
 
-import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
+import jp.artan.japanesefood.common.event.IItemRegisterEvent;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;

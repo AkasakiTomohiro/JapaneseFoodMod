@@ -1,6 +1,6 @@
 package jp.artan.japanesefood.RawMaterials;
 
-import jp.artan.japanesefood.Common.crop.SameCropAsSeed;
+import jp.artan.japanesefood.common.crop.SameCropAsSeed;
 import jp.artan.japanesefood.RawMaterials.crop.RawMaterialSameCropAsSeed;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

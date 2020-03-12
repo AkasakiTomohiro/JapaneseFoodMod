@@ -1,6 +1,6 @@
-package jp.artan.japanesefood.Common.FoodClass;
+package jp.artan.japanesefood.common.food;
 
-import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
+import jp.artan.japanesefood.common.event.IBlockRegisterEvent;
 import net.minecraft.block.BlockCrops;
 import net.minecraft.item.Item;
 
