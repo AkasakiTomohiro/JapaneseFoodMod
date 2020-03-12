@@ -10,9 +10,9 @@ import net.minecraftforge.event.RegistryEvent;
 
 public class RawMaterials {
 
-    public static final JapaneseFood Banana = new RawMaterialFood("banana", 2, 0.5F);
+    public static final JapaneseFood Banana = new RawMaterialFood("banana", 1, 0.5F);
 
-    public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 2, 0.5F);
+    public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
 
     public static void registerItem(RegistryEvent.Register<Item> event) {
         Banana.registerItem(event);

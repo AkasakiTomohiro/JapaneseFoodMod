@@ -29,6 +29,7 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
      * アイテムを登録する
      * @param event
      */
+    @Override
     public void registerItem(RegistryEvent.Register<Item> event) {
         event.getRegistry().register(this);
     }

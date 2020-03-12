@@ -1,29 +1,40 @@
 package jp.artan.japanesefood.Common.FoodClass;
 
+import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
 import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 
-public abstract class SameCropAsSeed implements IItemRegisterEvent {
+public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegisterEvent {
 
-    public final JapaneseFood Food;
+    public final JapaneseFoodPlant Plant;
+
+    public final JapaneseFoodSeed Seed;
 
     /**
      * コンストラクタ
-     * @param food 食べ物の名前(※英字小文字のみ)
+     * @param seed 種
      */
-    public SameCropAsSeed(JapaneseFood food) {
-        this.Food = food;
+    public SameCropAsSeed(JapaneseFoodSeed seed) {
+        this.Seed = seed;
+        this.Plant = this.Seed.Plant;
+        this.Seed.Plant.setSeed(this.Seed);
     }
 
     @Override
     public void registerItem(RegistryEvent.Register<Item> event) {
-        this.Food.registerItem(event);
+        this.Seed.registerItem(event);
+    }
+
+    @Override
+    public void registerBlock(RegistryEvent.Register<Block> event) {
+        this.Plant.registerBlock(event);
     }
 
     @Override
     public void registerModel(ModelRegistryEvent event) {
-        this.Food.registerModel(event);
+        this.Seed.registerModel(event);
     }
 }
