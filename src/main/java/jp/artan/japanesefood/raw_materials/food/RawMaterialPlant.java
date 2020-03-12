@@ -1,7 +1,7 @@
-package jp.artan.japanesefood.RawMaterials.Food;
+package jp.artan.japanesefood.raw_materials.food;
 
 import jp.artan.japanesefood.common.food.JapaneseFoodPlant;
-import jp.artan.japanesefood.RawMaterials.JapaneseFoodRawMaterialsMod;
+import jp.artan.japanesefood.raw_materials.JapaneseFoodRawMaterialsMod;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

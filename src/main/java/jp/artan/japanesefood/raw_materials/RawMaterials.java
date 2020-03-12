@@ -1,7 +1,7 @@
-package jp.artan.japanesefood.RawMaterials;
+package jp.artan.japanesefood.raw_materials;
 
 import jp.artan.japanesefood.common.crop.SameCropAsSeed;
-import jp.artan.japanesefood.RawMaterials.crop.RawMaterialSameCropAsSeed;
+import jp.artan.japanesefood.raw_materials.crop.RawMaterialSameCropAsSeed;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
