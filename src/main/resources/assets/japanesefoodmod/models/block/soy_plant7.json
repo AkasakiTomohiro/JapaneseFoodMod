@@ -1,6 +1,6 @@
 {
   "parent": "block/crop",
   "textures": {
-    "crop": "japanesefoodrawmaterials:blocks/soy_plant7"
+    "crop": "japanesefoodmod:blocks/soy_plant7"
   }
 }

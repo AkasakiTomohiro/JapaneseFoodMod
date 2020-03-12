@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "japanesefoodrawmaterials:blocks/soy_clop_block"
+    "all": "japanesefoodmod:blocks/soy_clop_block"
   }
 }
