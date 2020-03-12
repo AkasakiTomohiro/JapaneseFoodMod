@@ -11,13 +11,13 @@ public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegist
 
     public final JapaneseFoodPlant Plant;
 
-    public final JapaneseFoodSeed Seed;
+    public final JapaneseFoodAsSeed Seed;
 
     /**
      * コンストラクタ
      * @param seed 種
      */
-    public SameCropAsSeed(JapaneseFoodSeed seed) {
+    public SameCropAsSeed(JapaneseFoodAsSeed seed) {
         this.Seed = seed;
         this.Plant = this.Seed.Plant;
         this.Seed.Plant.setSeed(this.Seed);
@@ -36,5 +36,6 @@ public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegist
     @Override
     public void registerModel(ModelRegistryEvent event) {
         this.Seed.registerModel(event);
+        this.Plant.registerModel(event);
     }
 }

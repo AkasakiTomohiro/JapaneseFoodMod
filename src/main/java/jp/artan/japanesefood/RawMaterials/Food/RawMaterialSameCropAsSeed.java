@@ -1,6 +1,5 @@
 package jp.artan.japanesefood.RawMaterials.Food;
 
-import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodPlant;
 import jp.artan.japanesefood.Common.FoodClass.SameCropAsSeed;
 
 public class RawMaterialSameCropAsSeed extends SameCropAsSeed {
@@ -11,6 +10,6 @@ public class RawMaterialSameCropAsSeed extends SameCropAsSeed {
      * @param saturation 回復する隠し満腹度
      */
     public RawMaterialSameCropAsSeed(String name, int amount, float saturation) {
-        super(new RawMaterialSeed(name, new RawMaterialPlant(name)));
+        super(new RawMaterialFoodAsSeed(name, amount, saturation, new RawMaterialPlant(name)));
     }
 }
