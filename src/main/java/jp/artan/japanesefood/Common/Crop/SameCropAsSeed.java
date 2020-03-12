@@ -1,7 +1,9 @@
-package jp.artan.japanesefood.Common.FoodClass;
+package jp.artan.japanesefood.Common.Crop;
 
 import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
 import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
+import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodAsSeed;
+import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodPlant;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;

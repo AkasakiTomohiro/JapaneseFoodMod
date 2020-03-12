@@ -1,6 +1,6 @@
 package jp.artan.japanesefood.RawMaterials.Food;
 
-import jp.artan.japanesefood.Common.FoodClass.SameCropAsSeed;
+import jp.artan.japanesefood.Common.Crop.SameCropAsSeed;
 
 public class RawMaterialSameCropAsSeed extends SameCropAsSeed {
     /**

@@ -1,7 +1,7 @@
 package jp.artan.japanesefood.RawMaterials;
 
 import jp.artan.japanesefood.Common.FoodClass.JapaneseFood;
-import jp.artan.japanesefood.Common.FoodClass.SameCropAsSeed;
+import jp.artan.japanesefood.Common.Crop.SameCropAsSeed;
 import jp.artan.japanesefood.RawMaterials.Food.RawMaterialFood;
 import jp.artan.japanesefood.RawMaterials.Food.RawMaterialSameCropAsSeed;
 import net.minecraft.item.Item;
