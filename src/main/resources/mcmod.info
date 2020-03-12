@@ -1,22 +1,8 @@
 [
   {
-    "modid": "japanesefoodrawmaterials",
-    "name": "Japanese Food Core Mod",
-    "description": "Japanese Food Souvenir Mod.",
-    "version": "${version}",
-    "mcversion": "${mcversion}",
-    "url": "https://github.com/AkasakiTomohiro/JapaneseFoodMod",
-    "updateUrl": "",
-    "authorList": ["t.Akasaki", "hinokuma"],
-    "credits": "\"Japanese Food\" is making by t.Akasaki",
-    "logoFile": "",
-    "screenshots": [],
-    "dependencies": []
-  },
-  {
-    "modid": "japanesefoodsouvenir",
-    "name": "Japanese Food Souvenir Mod",
-    "description": "Japanese Food Souvenir Mod.",
+    "modid": "japanesefoodmod",
+    "name": "Japanese Food Mod",
+    "description": "Japanese Food Mod.",
     "version": "${version}",
     "mcversion": "${mcversion}",
     "url": "https://github.com/AkasakiTomohiro/JapaneseFoodMod",

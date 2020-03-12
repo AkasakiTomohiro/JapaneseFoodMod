@@ -1,0 +1,12 @@
+#日本語言語ファイル
+
+# Tabs
+itemGroup.japanesefoodrawmaterials=日本料理MOD[材料]
+itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
+
+# Items
+item.banana.name=バナナ
+item.banana_seeds.name=バナナの種
+item.soy_seeds.name=大豆
+item.tokyo_banana.name=東京バナ奈
+
