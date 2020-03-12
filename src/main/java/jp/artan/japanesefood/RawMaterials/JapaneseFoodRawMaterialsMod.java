@@ -20,7 +20,7 @@ public class JapaneseFoodRawMaterialsMod
     public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);";
 
 
-    public static CreativeTabs creativeTab = new RawMaterialsCreativeTab("JapaneseFoodRawMaterials");
+    public static CreativeTabs creativeTab = new RawMaterialsCreativeTab();
 
 
     @Mod.EventHandler

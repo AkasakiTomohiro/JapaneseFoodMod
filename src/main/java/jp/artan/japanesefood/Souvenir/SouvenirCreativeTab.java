@@ -6,8 +6,8 @@ import net.minecraft.item.ItemStack;
 
 public class SouvenirCreativeTab extends CreativeTabs {
 
-    public SouvenirCreativeTab(String label){
-        super(label);
+    public SouvenirCreativeTab(){
+        super("japanesefoodsouvenir");
     }
 
     @Override

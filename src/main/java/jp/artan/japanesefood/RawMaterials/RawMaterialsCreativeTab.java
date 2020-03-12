@@ -5,8 +5,8 @@ import net.minecraft.item.ItemStack;
 
 public class RawMaterialsCreativeTab extends CreativeTabs {
 
-    public RawMaterialsCreativeTab(String label){
-        super(label);
+    public RawMaterialsCreativeTab(){
+        super("japanesefoodrawmaterials");
     }
 
     @Override
