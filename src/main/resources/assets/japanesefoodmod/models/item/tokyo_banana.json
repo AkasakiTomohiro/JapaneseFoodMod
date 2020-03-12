@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "japanesefoodsouvenir:items/tokyo_banana"
+    "layer0": "japanesefoodmod:items/tokyo_banana"
   }
 }
