@@ -3,7 +3,6 @@ package jp.artan.japanesefood.Common.Crop;
 import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
 import jp.artan.japanesefood.Common.Event.IItemRegisterEvent;
 import jp.artan.japanesefood.Common.FoodClass.JapaneseFood;
-import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodAsSeed;
 import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodPlant;
 import jp.artan.japanesefood.Common.FoodClass.JapaneseFoodSeed;
 import net.minecraft.block.Block;

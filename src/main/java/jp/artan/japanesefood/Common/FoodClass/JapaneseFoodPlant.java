@@ -2,11 +2,9 @@ package jp.artan.japanesefood.Common.FoodClass;
 
 import jp.artan.japanesefood.Common.Event.IBlockRegisterEvent;
 import net.minecraft.block.BlockCrops;
-import net.minecraft.block.IGrowable;
 import net.minecraft.item.Item;
-import net.minecraftforge.common.IPlantable;
 
-public abstract class JapaneseFoodPlant extends BlockCrops implements IPlantable, IGrowable, IBlockRegisterEvent {
+public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegisterEvent {
     protected Item Seed;
     protected Item Food;
     protected final String Name;

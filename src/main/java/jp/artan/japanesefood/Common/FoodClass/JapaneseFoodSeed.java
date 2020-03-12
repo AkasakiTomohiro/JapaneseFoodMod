@@ -14,10 +14,9 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.EnumPlantType;
-import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.event.RegistryEvent;
 
-public abstract class JapaneseFoodSeed extends ItemSeeds implements IPlantable, IItemRegisterEvent {
+public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegisterEvent {
     public JapaneseFoodPlant Plant;
     protected final String Name;
 

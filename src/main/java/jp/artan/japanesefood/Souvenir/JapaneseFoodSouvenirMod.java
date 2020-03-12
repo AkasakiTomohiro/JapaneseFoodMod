@@ -10,7 +10,6 @@ import net.minecraftforge.fml.common.event.FMLConstructionEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.apache.logging.log4j.Logger;
 
 @Mod(modid = JapaneseFoodSouvenirMod.MODID, name = JapaneseFoodSouvenirMod.NAME, version = JapaneseFoodSouvenirMod.VERSION, dependencies = JapaneseFoodSouvenirMod.DEPENDENCIES)
 public class JapaneseFoodSouvenirMod {
@@ -18,8 +17,6 @@ public class JapaneseFoodSouvenirMod {
     public static final String NAME = "Japanese Food Souvenir Mod";
     public static final String VERSION = "1.0";
     public static final String DEPENDENCIES = "required-after:forge@[14.23.5.2838,);";
-
-    private static Logger logger;
 
     public static CreativeTabs creativeTab = new SouvenirCreativeTab("JapaneseFoodSouvenir");
 
