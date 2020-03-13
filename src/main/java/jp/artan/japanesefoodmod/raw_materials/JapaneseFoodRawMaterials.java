@@ -20,15 +20,13 @@ public class JapaneseFoodRawMaterials
 
     public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
 
-    public static final RawMaterialFish ROW_FISH = new RawMaterialFish("row_fish", false);
+    public static final RawMaterialFish FISH = new RawMaterialFish("fish");
 
-    public static final RawMaterialFish COOKED_FISH = new RawMaterialFish("baked_fish", true);
 
     public static void registerItems(RegistryEvent.Register<Item> event) {
         Banana.registerItem(event);
         Soy.registerItem(event);
-        ROW_FISH.registerItem(event);
-        COOKED_FISH.registerItem(event);
+        FISH.registerItem(event);
     }
 
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -38,15 +36,14 @@ public class JapaneseFoodRawMaterials
     public static void registerModels(ModelRegistryEvent event) {
         Banana.registerModel(event);
         Soy.registerModel(event);
-        ROW_FISH.registerModel(event);
-        COOKED_FISH.registerModel(event);
+        FISH.registerModel(event);
     }
 
     /**
      * 清廉レシピを登録
      * @param event
      */
-    public void init(FMLInitializationEvent event) {
-//        GameRegistry.addSmelting();
+    public static void init(FMLInitializationEvent event) {
+        FISH.registerSmelting();
     }
 }

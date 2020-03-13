@@ -27,6 +27,7 @@ public class CommonProxy {
 
     public void init(FMLInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.init");
+        JapaneseFoodRawMaterials.init(event);
     }
 
     public void postInit(FMLPostInitializationEvent event) {

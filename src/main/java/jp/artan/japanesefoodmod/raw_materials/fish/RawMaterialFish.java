@@ -16,15 +16,57 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import java.util.Map;
 
-public class RawMaterialFish extends ItemFood implements IItemRegisterEvent {
+public class RawMaterialFish implements IItemRegisterEvent {
+
+    final JapaneseFish ROW;
+    final JapaneseFish COOKED;
+
+    public RawMaterialFish(String name) {
+        ROW = new JapaneseFish("row_" + name, false);
+        COOKED = new JapaneseFish("baked_" + name, true);
+    }
+
+    /**
+     * アイテムを登録する
+     * @param event
+     */
+    @Override
+    public void registerItem(RegistryEvent.Register<Item> event) {
+        ROW.registerItem(event);
+        COOKED.registerItem(event);
+    }
+
+    /**
+     * モデルを登録する
+     * @param event
+     */
+    public void registerModel(ModelRegistryEvent event){
+        ROW.registerModel(event);
+        COOKED.registerModel(event);
+    }
+
+    public void registerSmelting() {
+        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++)
+        {
+            ItemStack itemStack = new ItemStack(ROW, 1, i);
+            JapaneseFish.JapaneseFishType fish = JapaneseFish.JapaneseFishType.byItemStack(itemStack);
+            if (fish.canCook()) {
+                GameRegistry.addSmelting(itemStack, new ItemStack(COOKED, 1, i), 0.4F);
+            }
+        }
+    }
+}
+
+class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     /** Indicates whether this fish is "cooked" or not. */
     private final boolean cooked;
     private final String Name;
 
-    public RawMaterialFish(String name, boolean cooked)
+    public JapaneseFish(String name, boolean cooked)
     {
         super(0, 0.0F, false);
         this.cooked = cooked;
@@ -193,6 +235,10 @@ public class RawMaterialFish extends ItemFood implements IItemRegisterEvent {
             return this.cookable;
         }
 
+        public static int getMetaDataLength() {
+            return META_LOOKUP.size();
+        }
+
         /**
          * Gets the corresponding FishType value for the given item damage value of an ItemStack, defaulting to COD for
          * unrecognized damage values.
@@ -209,7 +255,7 @@ public class RawMaterialFish extends ItemFood implements IItemRegisterEvent {
          */
         public static JapaneseFishType byItemStack(ItemStack stack)
         {
-            return stack.getItem() instanceof RawMaterialFish ? byMetadata(stack.getMetadata()) : TEST;
+            return stack.getItem() instanceof JapaneseFish ? byMetadata(stack.getMetadata()) : TEST;
         }
 
         static
