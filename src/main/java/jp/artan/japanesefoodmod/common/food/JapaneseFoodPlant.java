@@ -1,8 +1,13 @@
 package jp.artan.japanesefoodmod.common.food;
 
+import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import net.minecraft.block.BlockCrops;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
+import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 
 public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegisterEvent {
     protected Item Seed;
@@ -13,6 +18,7 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
         super();
         this.Name = name + "_plant";
         this.setUnlocalizedName(this.Name);
+        this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
     }
 
     public void setSeed(Item seed) {
@@ -31,5 +37,13 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
     @Override
     public Item getCrop() {
         return this.Food;
+    }
+
+    @Override
+    public void registerModel(ModelRegistryEvent event) {
+        ModelLoader.setCustomModelResourceLocation(
+                Item.getItemFromBlock(this),
+                0,
+                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }

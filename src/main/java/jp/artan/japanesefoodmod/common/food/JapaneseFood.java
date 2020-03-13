@@ -2,9 +2,12 @@ package jp.artan.japanesefoodmod.common.food;
 
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 
 /**
@@ -40,5 +43,10 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
      * モデルを登録する
      * @param event
      */
-    public abstract void registerModel(ModelRegistryEvent event);
+    public void registerModel(ModelRegistryEvent event){
+        ModelLoader.setCustomModelResourceLocation(
+                this,
+                0,
+                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
+    }
 }

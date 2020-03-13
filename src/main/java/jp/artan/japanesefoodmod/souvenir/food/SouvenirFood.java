@@ -1,12 +1,7 @@
 package jp.artan.japanesefoodmod.souvenir.food;
 
-import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 
 public class SouvenirFood extends JapaneseFood {
 
@@ -19,13 +14,5 @@ public class SouvenirFood extends JapaneseFood {
     public SouvenirFood(String name, int amount, float saturation) {
         super(name, amount, saturation);
         this.setCreativeTab(JapaneseFoodSouvenir.creativeTab);
-    }
-
-    @Override
-    public void registerModel(ModelRegistryEvent event){
-        ModelLoader.setCustomModelResourceLocation(
-                this,
-                0,
-                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }
