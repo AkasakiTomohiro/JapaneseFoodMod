@@ -74,6 +74,7 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
         this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
+        this.setHasSubtypes(true);
     }
 
     public int getHealAmount(ItemStack stack)
@@ -127,6 +128,10 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     public String getUnlocalizedName(ItemStack stack)
     {
         JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
+        return getUnlocalizedName(itemfishfood$fishtype);
+    }
+
+    private String getUnlocalizedName(JapaneseFishType itemfishfood$fishtype) {
         return this.getUnlocalizedName() + "." + itemfishfood$fishtype.getUnlocalizedName() + "." + (this.cooked && itemfishfood$fishtype.canCook() ? "cooked" : "raw");
     }
 
@@ -282,9 +287,12 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * @param event
      */
     public void registerModel(ModelRegistryEvent event){
-        ModelLoader.setCustomModelResourceLocation(
-                this,
-                0,
-                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
+        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++)
+        {
+            ModelLoader.setCustomModelResourceLocation(
+                    this,
+                    i,
+                    new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.getUnlocalizedName(JapaneseFishType.byMetadata(i))), "inventory"));
+        }
     }
 }
