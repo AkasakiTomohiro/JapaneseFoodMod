@@ -5,6 +5,7 @@ import jp.artan.japanesefoodmod.souvenir.food.SouvenirFood;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 
@@ -23,5 +24,8 @@ public class JapaneseFoodSouvenir {
 
     public static void registerModels(ModelRegistryEvent event) {
         TokyoBanana.registerModel(event);
+    }
+
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
     }
 }

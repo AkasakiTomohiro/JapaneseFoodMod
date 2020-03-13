@@ -7,6 +7,7 @@ import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 
@@ -30,5 +31,9 @@ public class JapaneseFoodRawMaterials
     public static void registerModels(ModelRegistryEvent event) {
         Banana.registerModel(event);
         Soy.registerModel(event);
+    }
+
+    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
+        event.getRegistry().registerAll();
     }
 }
