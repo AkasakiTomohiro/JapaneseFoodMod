@@ -7,9 +7,9 @@ import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
 public class JapaneseFoodRawMaterials
 {
@@ -33,7 +33,11 @@ public class JapaneseFoodRawMaterials
         Soy.registerModel(event);
     }
 
-    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-        event.getRegistry().registerAll();
+    /**
+     * 清廉レシピを登録
+     * @param event
+     */
+    public void init(FMLInitializationEvent event) {
+//        GameRegistry.addSmelting();
     }
 }
