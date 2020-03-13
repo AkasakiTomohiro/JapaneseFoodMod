@@ -41,55 +41,25 @@ public class JapaneseFoodMod
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(proxy);
     }
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
+        logger.info("JapaneseFoodMod.preInit");
         proxy.preInit(event);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
+        logger.info("JapaneseFoodMod.init");
         proxy.init(event);
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+        logger.info("JapaneseFoodMod.postInit");
         proxy.postInit(event);
-    }
-
-    /**
-     * アイテムを登録するイベント
-     * @param event
-     */
-    @SubscribeEvent
-    public void registerItems(RegistryEvent.Register<Item> event) {
-        JapaneseFoodMod.logger.info("registerItems");
-        JapaneseFoodRawMaterials.registerItems(event);
-        JapaneseFoodSouvenir.registerItems(event);
-    }
-
-    /**
-     * ブロックを登録するイベント
-     * @param event
-     */
-    @SubscribeEvent
-    public void registerBlocks(RegistryEvent.Register<Block> event) {
-        JapaneseFoodMod.logger.info("registerBlocks");
-        JapaneseFoodRawMaterials.registerBlocks(event);
-        JapaneseFoodSouvenir.registerBlocks(event);
-    }
-
-    /**
-     * モデルを登録するイベント
-     * @param event
-     */
-    @SubscribeEvent
-    @SideOnly(Side.CLIENT)
-    public void registerModels(ModelRegistryEvent event) {
-        JapaneseFoodMod.logger.info("registerModels");
-        JapaneseFoodRawMaterials.registerModels(event);
-        JapaneseFoodSouvenir.registerModels(event);
     }
 }
