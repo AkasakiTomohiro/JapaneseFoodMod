@@ -1,10 +1,9 @@
 package jp.artan.japanesefoodmod.raw_materials;
 
 import jp.artan.japanesefoodmod.common.crop.SameCropAsSeed;
-import jp.artan.japanesefoodmod.common.food.JapaneseFish;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
-import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFish;
+import jp.artan.japanesefoodmod.raw_materials.fish.RawMaterialFish;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
@@ -21,12 +20,15 @@ public class JapaneseFoodRawMaterials
 
     public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
 
-    public static final JapaneseFish fish = new RawMaterialFish("test_fish", false);
+    public static final RawMaterialFish ROW_FISH = new RawMaterialFish("row_fish", false);
+
+    public static final RawMaterialFish COOKED_FISH = new RawMaterialFish("baked_fish", true);
 
     public static void registerItems(RegistryEvent.Register<Item> event) {
         Banana.registerItem(event);
         Soy.registerItem(event);
-        fish.registerItem(event);
+        ROW_FISH.registerItem(event);
+        COOKED_FISH.registerItem(event);
     }
 
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -36,7 +38,8 @@ public class JapaneseFoodRawMaterials
     public static void registerModels(ModelRegistryEvent event) {
         Banana.registerModel(event);
         Soy.registerModel(event);
-        fish.registerModel(event);
+        ROW_FISH.registerModel(event);
+        COOKED_FISH.registerModel(event);
     }
 
     /**

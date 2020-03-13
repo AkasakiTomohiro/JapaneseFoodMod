@@ -1,8 +1,9 @@
-package jp.artan.japanesefoodmod.common.food;
+package jp.artan.japanesefoodmod.raw_materials.fish;
 
 import com.google.common.collect.Maps;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -18,18 +19,19 @@ import net.minecraftforge.event.RegistryEvent;
 
 import java.util.Map;
 
-public abstract class JapaneseFish extends ItemFood implements IItemRegisterEvent {
+public class RawMaterialFish extends ItemFood implements IItemRegisterEvent {
     /** Indicates whether this fish is "cooked" or not. */
     private final boolean cooked;
     private final String Name;
 
-    public JapaneseFish(String name, boolean cooked)
+    public RawMaterialFish(String name, boolean cooked)
     {
         super(0, 0.0F, false);
         this.cooked = cooked;
         this.Name = name;
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
+        this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
     }
 
     public int getHealAmount(ItemStack stack)
@@ -207,7 +209,7 @@ public abstract class JapaneseFish extends ItemFood implements IItemRegisterEven
          */
         public static JapaneseFishType byItemStack(ItemStack stack)
         {
-            return stack.getItem() instanceof JapaneseFish ? byMetadata(stack.getMetadata()) : TEST;
+            return stack.getItem() instanceof RawMaterialFish ? byMetadata(stack.getMetadata()) : TEST;
         }
 
         static
