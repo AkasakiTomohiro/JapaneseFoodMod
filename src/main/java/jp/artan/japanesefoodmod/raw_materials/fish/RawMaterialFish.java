@@ -132,7 +132,8 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
 
     public enum JapaneseFishType
     {
-        TEST(0, "cod", 2, 0.1F, 5, 0.6F);
+        TEST(0, "cod", 2, 0.1F, 5, 0.6F),
+        TEST2(1, "test2", 2, 0.1F);
 
         /** Maps an item damage value for an ItemStack to the corresponding FishType value. */
         private static final Map<Integer, JapaneseFishType> META_LOOKUP = Maps.<Integer, JapaneseFishType>newHashMap();
