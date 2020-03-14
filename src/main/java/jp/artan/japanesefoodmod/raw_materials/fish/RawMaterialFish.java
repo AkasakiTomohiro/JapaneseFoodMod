@@ -110,15 +110,15 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     }
 
     public int getHealAmount(ItemStack stack) {
-        JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
-        return this.cooked && itemfishfood$fishtype.canCook() ? itemfishfood$fishtype.getCookedHealAmount()
-                : itemfishfood$fishtype.getUncookedHealAmount();
+        JapaneseFishType type = JapaneseFishType.byItemStack(stack);
+        return this.cooked && type.canCook() ? type.getCookedHealAmount()
+                : type.getUncookedHealAmount();
     }
 
     public float getSaturationModifier(ItemStack stack) {
-        JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
-        return this.cooked && itemfishfood$fishtype.canCook() ? itemfishfood$fishtype.getCookedSaturationModifier()
-                : itemfishfood$fishtype.getUncookedSaturationModifier();
+        JapaneseFishType type = JapaneseFishType.byItemStack(stack);
+        return this.cooked && type.canCook() ? type.getCookedSaturationModifier()
+                : type.getUncookedSaturationModifier();
     }
 
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
@@ -141,9 +141,9 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      */
     public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items) {
         if (this.isInCreativeTab(tab)) {
-            for (JapaneseFishType itemfishfood$fishtype : JapaneseFishType.values()) {
-                if (!this.cooked || itemfishfood$fishtype.canCook()) {
-                    items.add(new ItemStack(this, 1, itemfishfood$fishtype.getMetadata()));
+            for (JapaneseFishType type : JapaneseFishType.values()) {
+                if (!this.cooked || type.canCook()) {
+                    items.add(new ItemStack(this, 1, type.getMetadata()));
                 }
             }
         }
@@ -154,12 +154,8 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * so different stacks can have different names based on their damage or NBT.
      */
     public String getUnlocalizedName(ItemStack stack) {
-        JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
-        return getUnlocalizedName(itemfishfood$fishtype);
-    }
-
-    private String getUnlocalizedName(JapaneseFishType itemfishfood$fishtype) {
-        return this.Name + "." + itemfishfood$fishtype.getUnlocalizedName();
+        JapaneseFishType type = JapaneseFishType.byItemStack(stack);
+        return this.Name + "." + type.getUnlocalizedName();
     }
 
     public enum JapaneseFishType {
