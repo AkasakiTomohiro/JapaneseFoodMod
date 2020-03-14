@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Init:Win",
+      "type": "shell",
+      "command": "gradlew setupDecompWorkspace"
+    },
+    {
+      "label": "Init:Mac",
+      "type": "shell",
+      "command": "chmod +x ./gradlew && gradlew setupDecompWorkspace"
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "./gradlew build"
+    },
+    {
+      "label": "runClient",
+      "type": "shell",
+      "command": "./gradlew runClient",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "runServer",
+      "type": "shell",
+      "command": "./gradlew runServer",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "./gradlew clean"
+    },
+    {
+      "label": "cleanCache",
+      "type": "shell",
+      "command": "./gradlew cleanCache"
+    }
+  ]
+}
