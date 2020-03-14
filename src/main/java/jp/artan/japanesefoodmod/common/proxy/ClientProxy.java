@@ -37,10 +37,7 @@ public class ClientProxy extends CommonProxy {
                     new ModelResourceLocation(item.getRegistryName(), "inventory"));
         }
 
-        for (Block block : Init.BLOCKS) {
-            ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
-                    new ModelResourceLocation(block.getRegistryName(), "inventory"));
-        }
+        Init.BLOCKS.forEach(f -> f.registerModel(event));
 
         JapaneseFoodRawMaterials.registerModels(event);
         JapaneseFoodSouvenir.registerModels(event);

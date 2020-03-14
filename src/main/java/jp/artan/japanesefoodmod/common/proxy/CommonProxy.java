@@ -49,7 +49,7 @@ public class CommonProxy {
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBlocks");
-        event.getRegistry().registerAll(Init.BLOCKS.toArray(new Block[0]));
+        Init.BLOCKS.forEach(f -> f.registerBlock(event));
     }
 
     @SubscribeEvent
