@@ -9,7 +9,7 @@
     {
       "label": "Init:Mac",
       "type": "shell",
-      "command": "chmod +x ./gradlew && gradlew setupDecompWorkspace"
+      "command": "chmod +x ./gradlew && ./gradlew setupDecompWorkspace"
     },
     {
       "label": "build",
