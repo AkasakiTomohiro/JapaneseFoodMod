@@ -24,15 +24,20 @@ public class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
+        JapaneseFoodRawMaterials.preInit(event);
+        JapaneseFoodSouvenir.preInit(event);
     }
 
     public void init(FMLInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.init");
         JapaneseFoodRawMaterials.init(event);
+        JapaneseFoodSouvenir.init(event);
     }
 
     public void postInit(FMLPostInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.postInit");
+        JapaneseFoodRawMaterials.postInit(event);
+        JapaneseFoodSouvenir.postInit(event);
     }
 
     @SubscribeEvent
@@ -44,8 +49,7 @@ public class CommonProxy {
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBlocks");
-        JapaneseFoodRawMaterials.registerBlocks(event);
-        JapaneseFoodSouvenir.registerBlocks(event);
+        event.getRegistry().registerAll(Init.BLOCKS.toArray(new Block[0]));
     }
 
     @SubscribeEvent

@@ -5,13 +5,12 @@ import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.fish.RawMaterialFish;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
-import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class JapaneseFoodRawMaterials {
     public static CreativeTabs creativeTab = new RawMaterialsCreativeTab();
@@ -22,14 +21,13 @@ public class JapaneseFoodRawMaterials {
 
     public static final RawMaterialFish FISH = new RawMaterialFish("fish");
 
-    public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        Soy.registerBlock(event);
-    }
-
     public static void registerModels(ModelRegistryEvent event) {
         Banana.registerModel(event);
         Soy.registerModel(event);
         FISH.registerModel(event);
+    }
+
+    public static void preInit(FMLPreInitializationEvent event) {
     }
 
     /**
@@ -39,6 +37,9 @@ public class JapaneseFoodRawMaterials {
      */
     public static void init(FMLInitializationEvent event) {
         FISH.registerSmelting();
+    }
+
+    public static void postInit(FMLPostInitializationEvent event) {
     }
 
     public static void onLootTablesLoaded(LootTableLoadEvent event) {

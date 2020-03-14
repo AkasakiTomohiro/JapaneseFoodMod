@@ -5,9 +5,7 @@ import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodSeed;
-import net.minecraft.block.Block;
 import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.event.RegistryEvent;
 
 public abstract class CropsWithSeeds implements IItemRegisterEvent, IBlockRegisterEvent {
 
@@ -28,11 +26,6 @@ public abstract class CropsWithSeeds implements IItemRegisterEvent, IBlockRegist
         this.Plant = this.Seed.Plant;
         this.Seed.Plant.setSeed(this.Seed);
         this.Seed.Plant.setFood(this.Food);
-    }
-
-    @Override
-    public void registerBlock(RegistryEvent.Register<Block> event) {
-        this.Plant.registerBlock(event);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod.common.food;
 
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import net.minecraft.block.BlockCrops;
@@ -19,6 +20,8 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
         this.Name = name + "_plant";
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
+
+        Init.BLOCKS.add(this);
     }
 
     public void setSeed(Item seed) {

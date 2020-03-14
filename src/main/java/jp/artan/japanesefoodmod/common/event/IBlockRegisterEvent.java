@@ -7,13 +7,6 @@ import net.minecraftforge.event.RegistryEvent;
 public interface IBlockRegisterEvent {
 
     /**
-     * Register Block
-     * 
-     * @param event
-     */
-    void registerBlock(RegistryEvent.Register<Block> event);
-
-    /**
      * Register Model
      * 
      * @param event
