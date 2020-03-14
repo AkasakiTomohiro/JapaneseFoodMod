@@ -9,7 +9,13 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionType;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.storage.loot.LootEntry;
+import net.minecraft.world.storage.loot.LootEntryTable;
+import net.minecraft.world.storage.loot.LootPool;
+import net.minecraft.world.storage.loot.LootTableList;
+import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -79,6 +85,13 @@ public class CommonProxy {
 
     @SubscribeEvent
     public void onLootTablesLoaded(LootTableLoadEvent event) {
-        JapaneseFoodRawMaterials.onLootTablesLoaded(event);
+        if (event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
+            JapaneseFoodMod.logger.info("LootTableList.GAMEPLAY_FISHING_FISH");
+            final LootPool pool = event.getTable().getPool("main");
+            if (pool != null) {
+                LootEntry entry = new LootEntryTable(new ResourceLocation("japanesefoodmod:gameplay/fishing/fishing"), 300, -10, new LootCondition[0], "japanesefoodmod");
+                pool.addEntry(entry);
+            }
+        }
     }
 }

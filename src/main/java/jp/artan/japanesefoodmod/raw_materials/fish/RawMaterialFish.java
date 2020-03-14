@@ -13,9 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.LootEntryItem;
-import net.minecraft.world.storage.loot.LootPool;
-import net.minecraft.world.storage.loot.LootTableList;
+import net.minecraft.world.storage.loot.*;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.functions.LootFunction;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -34,34 +32,12 @@ public class RawMaterialFish {
         COOKED = new JapaneseFish(name + "_baked", true);
     }
 
-    public void registerModels() {
-        for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
-            ModelLoader.setCustomModelResourceLocation(ROW, i, new ModelResourceLocation(ROW.Name, "meta=" + i));
-
-            ModelLoader.setCustomModelResourceLocation(COOKED, i, new ModelResourceLocation(COOKED.Name, "meta=" + i));
-        }
-    }
-
     public void registerSmelting() {
         for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
             ItemStack itemStack = new ItemStack(ROW, 1, i);
             JapaneseFishType fish = JapaneseFishType.byItemStack(itemStack);
             if (fish.canCook()) {
                 GameRegistry.addSmelting(itemStack, new ItemStack(COOKED, 1, i), 0.4F);
-            }
-        }
-    }
-
-    public void registerFish(LootTableLoadEvent event) {
-        if (event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
-            JapaneseFoodMod.logger.info("LootTableList.GAMEPLAY_FISHING_FISH");
-            final LootPool pool = event.getTable().getPool("main");
-            if (pool != null) {
-                for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
-                    ItemStack itemStack = new ItemStack(ROW, 1, i);
-                    pool.addEntry(new LootEntryItem(itemStack.getItem(), 300, -1, new LootFunction[0],
-                            new LootCondition[0], ROW.getUnlocalizedName(itemStack)));
-                }
             }
         }
     }

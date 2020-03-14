@@ -21,10 +21,6 @@ public class JapaneseFoodRawMaterials {
 
     public static final RawMaterialFish FISH = new RawMaterialFish("fish");
 
-    public static void registerModels(ModelRegistryEvent event) {
-        FISH.registerModels();
-    }
-
     public static void preInit(FMLPreInitializationEvent event) {
     }
 
@@ -38,9 +34,5 @@ public class JapaneseFoodRawMaterials {
     }
 
     public static void postInit(FMLPostInitializationEvent event) {
-    }
-
-    public static void onLootTablesLoaded(LootTableLoadEvent event) {
-        FISH.registerFish(event);
     }
 }
