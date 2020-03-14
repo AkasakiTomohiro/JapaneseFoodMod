@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "meta=0": {
+            "model": "japanesefoodmod:fish_row_test"
+        },
+        "meta=1": {
+            "model": "japanesefoodmod:fish_row_test2"
+        }
+    }
+}
