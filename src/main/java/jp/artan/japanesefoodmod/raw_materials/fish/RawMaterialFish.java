@@ -13,17 +13,22 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraft.world.storage.loot.LootEntryItem;
+import net.minecraft.world.storage.loot.LootPool;
+import net.minecraft.world.storage.loot.LootTableList;
+import net.minecraft.world.storage.loot.conditions.LootCondition;
+import net.minecraft.world.storage.loot.functions.LootFunction;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
 import java.util.Map;
 
 public class RawMaterialFish implements IItemRegisterEvent {
 
-    final JapaneseFish ROW;
-    final JapaneseFish COOKED;
+    public final JapaneseFish ROW;
+    public final JapaneseFish COOKED;
 
     public RawMaterialFish(String name) {
         ROW = new JapaneseFish("row_" + name, false);
@@ -59,12 +64,21 @@ public class RawMaterialFish implements IItemRegisterEvent {
             }
         }
     }
+
+    public void registerFish(LootTableLoadEvent event) {
+        if(event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
+            final LootPool pool = event.getTable().getPool("main");
+            if(pool != null) {
+                pool.addEntry(new LootEntryItem(ROW, 120, -1, new LootFunction[0], new LootCondition[0], JapaneseFoodMod.MODID + ":" + ROW.Name));
+            }
+        }
+    }
 }
 
 class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     /** Indicates whether this fish is "cooked" or not. */
     private final boolean cooked;
-    private final String Name;
+    public final String Name;
 
     public JapaneseFish(String name, boolean cooked)
     {
@@ -242,7 +256,7 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
         }
 
         public static int getMetaDataLength() {
-            return META_LOOKUP.size();
+            return values().length;
         }
 
         /**
@@ -287,12 +301,11 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * @param event
      */
     public void registerModel(ModelRegistryEvent event){
-        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++)
-        {
+        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
             ModelLoader.setCustomModelResourceLocation(
                     this,
                     i,
-                    new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.getUnlocalizedName(JapaneseFishType.byMetadata(i))), "inventory"));
+                    new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "meta=" + i));
         }
     }
 }

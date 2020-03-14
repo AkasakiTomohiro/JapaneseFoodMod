@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
@@ -45,5 +46,9 @@ public class JapaneseFoodRawMaterials
      */
     public static void init(FMLInitializationEvent event) {
         FISH.registerSmelting();
+    }
+
+    public static void onLootTablesLoaded(LootTableLoadEvent event) {
+        FISH.registerFish(event);
     }
 }
