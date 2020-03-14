@@ -3,7 +3,12 @@
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
-    "**/.factorypath": true
+    "**/.factorypath": true,
+    "bin": true,
+    "build": true,
+    "run": true,
+    ".idea": true,
+    "*gradle": true
   },
   "java.dependency.packagePresentation": "flat",
   "java.dependency.syncWithFolderExplorer": true,
