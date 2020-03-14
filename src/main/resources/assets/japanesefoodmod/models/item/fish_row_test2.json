@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "japanesefoodmod:items/banana"
+    "layer0": "japanesefoodmod:items/fish_row_test2"
   }
 }

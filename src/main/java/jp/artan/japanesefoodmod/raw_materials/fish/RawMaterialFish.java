@@ -100,12 +100,10 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * @param event
      */
     public void registerModel(ModelRegistryEvent event) {
-//        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(
-//                new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
         for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
             ItemStack itemStack = new ItemStack(this, 1, i);
             ModelLoader.setCustomModelResourceLocation(itemStack.getItem(), i, new ModelResourceLocation(
-                    new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "meta=" + i));
+                    new ResourceLocation(JapaneseFoodMod.MODID, this.getUnlocalizedName(itemStack)), "inventory"));
         }
     }
 
