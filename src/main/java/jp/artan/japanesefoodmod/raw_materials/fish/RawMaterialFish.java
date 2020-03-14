@@ -69,7 +69,10 @@ public class RawMaterialFish implements IItemRegisterEvent {
         if(event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
             final LootPool pool = event.getTable().getPool("main");
             if(pool != null) {
-                pool.addEntry(new LootEntryItem(ROW, 120, -1, new LootFunction[0], new LootCondition[0], JapaneseFoodMod.MODID + ":" + ROW.Name));
+                for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
+                    ItemStack itemStack = new ItemStack(ROW, 1,i);
+                    pool.addEntry(new LootEntryItem(itemStack.getItem(), 120, -1, new LootFunction[0], new LootCondition[0], ROW.getUnlocalizedName(itemStack)));
+                }
             }
         }
     }
