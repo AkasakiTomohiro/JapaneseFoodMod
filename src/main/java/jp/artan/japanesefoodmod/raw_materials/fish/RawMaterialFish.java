@@ -5,6 +5,7 @@ import com.google.common.collect.Maps;
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
@@ -16,6 +17,7 @@ import net.minecraft.world.storage.loot.LootPool;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.functions.LootFunction;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import java.util.Map;
@@ -28,6 +30,16 @@ public class RawMaterialFish {
     public RawMaterialFish(String name) {
         ROW = new JapaneseFish("row_" + name, false);
         COOKED = new JapaneseFish("baked_" + name, true);
+    }
+
+    public void registerModels() {
+        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
+            ModelLoader.setCustomModelResourceLocation(ROW, i,
+                    new ModelResourceLocation(ROW.getUnlocalizedName(), "inventory"));
+
+            ModelLoader.setCustomModelResourceLocation(COOKED, i,
+                    new ModelResourceLocation(COOKED.getUnlocalizedName(), "inventory"));
+        }
     }
 
     public void registerSmelting() {
