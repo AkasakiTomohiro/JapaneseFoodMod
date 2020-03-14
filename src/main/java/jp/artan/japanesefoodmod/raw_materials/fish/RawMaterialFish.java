@@ -108,7 +108,7 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     }
 
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
-        JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
+        // JapaneseFishType itemfishfood$fishtype = JapaneseFishType.byItemStack(stack);
 
         // 食べたものに応じてポーションを付与する場合はこれを利用する
         // if (itemfishfood$fishtype == JapaneseFishType.PUFFERFISH)
