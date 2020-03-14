@@ -33,17 +33,15 @@ public class RawMaterialFish {
     public final JapaneseFish COOKED;
 
     public RawMaterialFish(String name) {
-        ROW = new JapaneseFish("row_" + name, false);
-        COOKED = new JapaneseFish("baked_" + name, true);
+        ROW = new JapaneseFish(name + "_row", false);
+        COOKED = new JapaneseFish(name + "_baked", true);
     }
 
     public void registerModels() {
         for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
-            ModelLoader.setCustomModelResourceLocation(ROW, i,
-                    new ModelResourceLocation(ROW.Name, "meta=" + i));
+            ModelLoader.setCustomModelResourceLocation(ROW, i, new ModelResourceLocation(ROW.Name, "meta=" + i));
 
-            ModelLoader.setCustomModelResourceLocation(COOKED, i,
-                    new ModelResourceLocation(COOKED.Name, "meta=" + i));
+            ModelLoader.setCustomModelResourceLocation(COOKED, i, new ModelResourceLocation(COOKED.Name, "meta=" + i));
         }
     }
 
@@ -105,14 +103,16 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * @param event
      */
     public void registerModel(ModelRegistryEvent event) {
-        ModelLoader.setCustomModelResourceLocation(this, 0,
-                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
+        for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
+            ItemStack itemStack = new ItemStack(this, 1, i);
+            ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(
+                    new ResourceLocation(JapaneseFoodMod.MODID, this.Name), this.getUnlocalizedName(itemStack)));
+        }
     }
 
     public int getHealAmount(ItemStack stack) {
         JapaneseFishType type = JapaneseFishType.byItemStack(stack);
-        return this.cooked && type.canCook() ? type.getCookedHealAmount()
-                : type.getUncookedHealAmount();
+        return this.cooked && type.canCook() ? type.getCookedHealAmount() : type.getUncookedHealAmount();
     }
 
     public float getSaturationModifier(ItemStack stack) {
@@ -155,7 +155,7 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      */
     public String getUnlocalizedName(ItemStack stack) {
         JapaneseFishType type = JapaneseFishType.byItemStack(stack);
-        return this.Name + "." + type.getUnlocalizedName();
+        return this.Name + "_" + type.getUnlocalizedName();
     }
 
     public enum JapaneseFishType {
