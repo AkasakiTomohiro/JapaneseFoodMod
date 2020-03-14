@@ -2,7 +2,6 @@ package jp.artan.japanesefoodmod.common.crop;
 
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodAsSeed;
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
-import net.minecraftforge.client.event.ModelRegistryEvent;
 
 public abstract class SameCropAsSeed {
 
