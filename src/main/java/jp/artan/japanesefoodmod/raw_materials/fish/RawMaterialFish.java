@@ -1,7 +1,5 @@
 package jp.artan.japanesefoodmod.raw_materials.fish;
 
-import com.google.common.collect.Maps;
-
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
@@ -25,7 +23,6 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import java.util.Map;
 
 public class RawMaterialFish {
 
@@ -38,7 +35,7 @@ public class RawMaterialFish {
     }
 
     public void registerModels() {
-        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
+        for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
             ModelLoader.setCustomModelResourceLocation(ROW, i, new ModelResourceLocation(ROW.Name, "meta=" + i));
 
             ModelLoader.setCustomModelResourceLocation(COOKED, i, new ModelResourceLocation(COOKED.Name, "meta=" + i));
@@ -46,9 +43,9 @@ public class RawMaterialFish {
     }
 
     public void registerSmelting() {
-        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
+        for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
             ItemStack itemStack = new ItemStack(ROW, 1, i);
-            JapaneseFish.JapaneseFishType fish = JapaneseFish.JapaneseFishType.byItemStack(itemStack);
+            JapaneseFishType fish = JapaneseFishType.byItemStack(itemStack);
             if (fish.canCook()) {
                 GameRegistry.addSmelting(itemStack, new ItemStack(COOKED, 1, i), 0.4F);
             }
@@ -60,7 +57,7 @@ public class RawMaterialFish {
             JapaneseFoodMod.logger.info("LootTableList.GAMEPLAY_FISHING_FISH");
             final LootPool pool = event.getTable().getPool("main");
             if (pool != null) {
-                for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
+                for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
                     ItemStack itemStack = new ItemStack(ROW, 1, i);
                     pool.addEntry(new LootEntryItem(itemStack.getItem(), 300, -1, new LootFunction[0],
                             new LootCondition[0], ROW.getUnlocalizedName(itemStack)));
@@ -103,10 +100,12 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
      * @param event
      */
     public void registerModel(ModelRegistryEvent event) {
+//        ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(
+//                new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
         for (int i = 0; i < JapaneseFishType.getMetaDataLength(); i++) {
             ItemStack itemStack = new ItemStack(this, 1, i);
-            ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(
-                    new ResourceLocation(JapaneseFoodMod.MODID, this.Name), this.getUnlocalizedName(itemStack)));
+            ModelLoader.setCustomModelResourceLocation(itemStack.getItem(), i, new ModelResourceLocation(
+                    new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "meta=" + i));
         }
     }
 
@@ -156,149 +155,5 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
     public String getUnlocalizedName(ItemStack stack) {
         JapaneseFishType type = JapaneseFishType.byItemStack(stack);
         return this.Name + "_" + type.getUnlocalizedName();
-    }
-
-    public enum JapaneseFishType {
-        TEST(0, "test", 2, 0.1F, 5, 0.6F), TEST2(1, "test2", 2, 0.1F);
-
-        /**
-         * Maps an item damage value for an ItemStack to the corresponding FishType
-         * value.
-         */
-        private static final Map<Integer, JapaneseFishType> META_LOOKUP = Maps.<Integer, JapaneseFishType>newHashMap();
-        /** The item damage value on an ItemStack that represents this fish type */
-        private final int meta;
-        /**
-         * The value that this fish type uses to replace "XYZ" in: "fish.XYZ.raw" /
-         * "fish.XYZ.cooked" for the unlocalized name and "fish_XYZ_raw" /
-         * "fish_XYZ_cooked" for the icon string.
-         */
-        private final String unlocalizedName;
-        /**
-         * The amount that eating the uncooked version of this fish should heal the
-         * player.
-         */
-        private final int uncookedHealAmount;
-        /**
-         * The saturation modifier to apply to the heal amount when the player eats the
-         * uncooked version of this fish.
-         */
-        private final float uncookedSaturationModifier;
-        /**
-         * The amount that eating the cooked version of this fish should heal the
-         * player.
-         */
-        private final int cookedHealAmount;
-        /**
-         * The saturation modifier to apply to the heal amount when the player eats the
-         * cooked version of this fish.
-         */
-        private final float cookedSaturationModifier;
-        /** Indicates whether this type of fish has "raw" and "cooked" variants */
-        private final boolean cookable;
-
-        private JapaneseFishType(int meta, String unlocalizedName, int uncookedHeal, float uncookedSaturation,
-                int cookedHeal, float cookedSaturation) {
-            this.meta = meta;
-            this.unlocalizedName = unlocalizedName;
-            this.uncookedHealAmount = uncookedHeal;
-            this.uncookedSaturationModifier = uncookedSaturation;
-            this.cookedHealAmount = cookedHeal;
-            this.cookedSaturationModifier = cookedSaturation;
-            this.cookable = true;
-        }
-
-        private JapaneseFishType(int meta, String unlocalizedName, int uncookedHeal, float uncookedSaturation) {
-            this.meta = meta;
-            this.unlocalizedName = unlocalizedName;
-            this.uncookedHealAmount = uncookedHeal;
-            this.uncookedSaturationModifier = uncookedSaturation;
-            this.cookedHealAmount = 0;
-            this.cookedSaturationModifier = 0.0F;
-            this.cookable = false;
-        }
-
-        /**
-         * Gets the item damage value on an ItemStack that represents this fish type
-         */
-        public int getMetadata() {
-            return this.meta;
-        }
-
-        /**
-         * Gets the value that this fish type uses to replace "XYZ" in: "fish.XYZ.raw" /
-         * "fish.XYZ.cooked" for the unlocalized name and "fish_XYZ_raw" /
-         * "fish_XYZ_cooked" for the icon string.
-         */
-        public String getUnlocalizedName() {
-            return this.unlocalizedName;
-        }
-
-        /**
-         * Gets the amount that eating the uncooked version of this fish should heal the
-         * player.
-         */
-        public int getUncookedHealAmount() {
-            return this.uncookedHealAmount;
-        }
-
-        /**
-         * Gets the saturation modifier to apply to the heal amount when the player eats
-         * the uncooked version of this fish.
-         */
-        public float getUncookedSaturationModifier() {
-            return this.uncookedSaturationModifier;
-        }
-
-        /**
-         * Gets the amount that eating the cooked version of this fish should heal the
-         * player.
-         */
-        public int getCookedHealAmount() {
-            return this.cookedHealAmount;
-        }
-
-        /**
-         * Gets the saturation modifier to apply to the heal amount when the player eats
-         * the cooked version of this fish.
-         */
-        public float getCookedSaturationModifier() {
-            return this.cookedSaturationModifier;
-        }
-
-        /**
-         * Gets a value indicating whether this type of fish has "raw" and "cooked"
-         * variants.
-         */
-        public boolean canCook() {
-            return this.cookable;
-        }
-
-        public static int getMetaDataLength() {
-            return values().length;
-        }
-
-        /**
-         * Gets the corresponding FishType value for the given item damage value of an
-         * ItemStack, defaulting to COD for unrecognized damage values.
-         */
-        public static JapaneseFishType byMetadata(int meta) {
-            JapaneseFishType itemfishfood$fishtype = META_LOOKUP.get(Integer.valueOf(meta));
-            return itemfishfood$fishtype == null ? TEST : itemfishfood$fishtype;
-        }
-
-        /**
-         * Gets the FishType that corresponds to the given ItemStack, defaulting to COD
-         * if the given ItemStack does not actually contain a fish.
-         */
-        public static JapaneseFishType byItemStack(ItemStack stack) {
-            return stack.getItem() instanceof JapaneseFish ? byMetadata(stack.getMetadata()) : TEST;
-        }
-
-        static {
-            for (JapaneseFishType itemfishfood$fishtype : values()) {
-                META_LOOKUP.put(Integer.valueOf(itemfishfood$fishtype.getMetadata()), itemfishfood$fishtype);
-            }
-        }
     }
 }
