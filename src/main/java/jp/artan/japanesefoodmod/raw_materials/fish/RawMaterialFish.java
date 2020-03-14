@@ -35,10 +35,10 @@ public class RawMaterialFish {
     public void registerModels() {
         for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
             ModelLoader.setCustomModelResourceLocation(ROW, i,
-                    new ModelResourceLocation(ROW.getUnlocalizedName(), "inventory"));
+                    new ModelResourceLocation(ROW.Name, "meta=" + i));
 
             ModelLoader.setCustomModelResourceLocation(COOKED, i,
-                    new ModelResourceLocation(COOKED.getUnlocalizedName(), "inventory"));
+                    new ModelResourceLocation(COOKED.Name, "meta=" + i));
         }
     }
 
@@ -54,11 +54,12 @@ public class RawMaterialFish {
 
     public void registerFish(LootTableLoadEvent event) {
         if (event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
+            JapaneseFoodMod.logger.info("LootTableList.GAMEPLAY_FISHING_FISH");
             final LootPool pool = event.getTable().getPool("main");
             if (pool != null) {
                 for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
                     ItemStack itemStack = new ItemStack(ROW, 1, i);
-                    pool.addEntry(new LootEntryItem(itemStack.getItem(), 120, -1, new LootFunction[0],
+                    pool.addEntry(new LootEntryItem(itemStack.getItem(), 300, -1, new LootFunction[0],
                             new LootCondition[0], ROW.getUnlocalizedName(itemStack)));
                 }
             }
@@ -133,12 +134,11 @@ class JapaneseFish extends ItemFood {
     }
 
     private String getUnlocalizedName(JapaneseFishType itemfishfood$fishtype) {
-        return this.getUnlocalizedName() + "." + itemfishfood$fishtype.getUnlocalizedName() + "."
-                + (this.cooked && itemfishfood$fishtype.canCook() ? "cooked" : "raw");
+        return this.Name + "." + itemfishfood$fishtype.getUnlocalizedName();
     }
 
     public enum JapaneseFishType {
-        TEST(0, "cod", 2, 0.1F, 5, 0.6F), TEST2(1, "test2", 2, 0.1F);
+        TEST(0, "test", 2, 0.1F, 5, 0.6F), TEST2(1, "test2", 2, 0.1F);
 
         /**
          * Maps an item damage value for an ItemStack to the corresponding FishType

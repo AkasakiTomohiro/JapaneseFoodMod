@@ -31,8 +31,6 @@ public class ClientProxy extends CommonProxy {
     @SubscribeEvent
     public void registerModels(ModelRegistryEvent event) {
         JapaneseFoodMod.logger.info("ClientProxy.registerModels");
-        JapaneseFoodRawMaterials.registerModels(event);
-        JapaneseFoodSouvenir.registerModels(event);
 
         for (Item item : Init.ITEMS) {
             ModelLoader.setCustomModelResourceLocation(item, 0,
@@ -43,5 +41,8 @@ public class ClientProxy extends CommonProxy {
             ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
                     new ModelResourceLocation(block.getRegistryName(), "inventory"));
         }
+
+        JapaneseFoodRawMaterials.registerModels(event);
+        JapaneseFoodSouvenir.registerModels(event);
     }
 }

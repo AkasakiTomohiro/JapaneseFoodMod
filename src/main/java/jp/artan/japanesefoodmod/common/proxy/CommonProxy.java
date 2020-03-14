@@ -79,7 +79,6 @@ public class CommonProxy {
 
     @SubscribeEvent
     public void onLootTablesLoaded(LootTableLoadEvent event) {
-        JapaneseFoodMod.logger.info("CommonProxy.onLootTablesLoaded");
         JapaneseFoodRawMaterials.onLootTablesLoaded(event);
     }
 }
