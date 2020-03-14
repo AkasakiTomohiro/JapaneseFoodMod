@@ -1,12 +1,11 @@
 package jp.artan.japanesefoodmod.souvenir;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 public class SouvenirCreativeTab extends CreativeTabs {
 
-    public SouvenirCreativeTab(){
+    public SouvenirCreativeTab() {
         super("japanesefoodsouvenir");
     }
 

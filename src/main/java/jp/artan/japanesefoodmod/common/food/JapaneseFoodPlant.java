@@ -41,9 +41,7 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
 
     @Override
     public void registerModel(ModelRegistryEvent event) {
-        ModelLoader.setCustomModelResourceLocation(
-                Item.getItemFromBlock(this),
-                0,
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0,
                 new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }

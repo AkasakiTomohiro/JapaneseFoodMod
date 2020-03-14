@@ -35,13 +35,16 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
     }
 
     @Override
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand,
+            EnumFacing facing, float hitX, float hitY, float hitZ) {
         ItemStack stack = player.getHeldItem(hand);
         IBlockState state = worldIn.getBlockState(pos);
 
-        if(facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn,pos,EnumFacing.UP, this) && worldIn.isAirBlock(pos.up())){
+        if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack)
+                && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this)
+                && worldIn.isAirBlock(pos.up())) {
             worldIn.setBlockState(pos.up(), this.Plant.getDefaultState());
-            if(player.capabilities.isCreativeMode || !worldIn.isRemote){
+            if (player.capabilities.isCreativeMode || !worldIn.isRemote) {
                 stack.shrink(1);
             }
             return EnumActionResult.SUCCESS;
@@ -66,9 +69,7 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
 
     @Override
     public void registerModel(ModelRegistryEvent event) {
-        ModelLoader.setCustomModelResourceLocation(
-                this,
-                0,
+        ModelLoader.setCustomModelResourceLocation(this, 0,
                 new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }

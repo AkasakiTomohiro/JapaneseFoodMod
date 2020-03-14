@@ -28,9 +28,10 @@ public class JapaneseFoodSouvenir {
 
     /**
      * 清廉レシピを登録
+     * 
      * @param event
      */
     public void init(FMLInitializationEvent event) {
-//        GameRegistry.addSmelting();
+        // GameRegistry.addSmelting();
     }
 }

@@ -11,8 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = JapaneseFoodMod.MODID, name = JapaneseFoodMod.NAME, version = JapaneseFoodMod.VERSION, dependencies = JapaneseFoodMod.DEPENDENCIES)
-public class JapaneseFoodMod
-{
+public class JapaneseFoodMod {
     public static final String MODID = "japanesefoodmod";
     public static final String NAME = "Japanese Food Mod";
     public static final String VERSION = "1.0";

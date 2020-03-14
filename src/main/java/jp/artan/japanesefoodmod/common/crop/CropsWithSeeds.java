@@ -20,6 +20,7 @@ public abstract class CropsWithSeeds implements IItemRegisterEvent, IBlockRegist
 
     /**
      * コンストラクタ
+     * 
      * @param seed 種
      */
     public CropsWithSeeds(JapaneseFood food, JapaneseFoodSeed seed) {

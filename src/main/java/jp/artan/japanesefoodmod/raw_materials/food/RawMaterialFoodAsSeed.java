@@ -8,12 +8,13 @@ public class RawMaterialFoodAsSeed extends JapaneseFoodAsSeed {
 
     /**
      * コンストラクタ
-     * @param name 食べ物の名前(※英字小文字のみ)
-     * @param amount 回復する満腹度
+     * 
+     * @param name       食べ物の名前(※英字小文字のみ)
+     * @param amount     回復する満腹度
      * @param saturation 回復する隠し満腹度
      */
     public RawMaterialFoodAsSeed(String name, int amount, float saturation, JapaneseFoodPlant plant) {
-        super(name, amount, saturation,plant);
+        super(name, amount, saturation, plant);
         this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
     }
 }

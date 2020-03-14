@@ -8,12 +8,14 @@ public interface IItemRegisterEvent {
 
     /**
      * Register Item
+     * 
      * @param event
      */
     void registerItem(RegistryEvent.Register<Item> event);
 
     /**
      * Register Model
+     * 
      * @param event
      */
     void registerModel(ModelRegistryEvent event);

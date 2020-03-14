@@ -17,6 +17,7 @@ public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegist
 
     /**
      * コンストラクタ
+     * 
      * @param seed 種
      */
     public SameCropAsSeed(JapaneseFoodAsSeed seed) {

@@ -31,8 +31,9 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
 
     /**
      * コンストラクタ
-     * @param name 食べ物の名前(※英字小文字のみ)
-     * @param amount 回復する満腹度
+     * 
+     * @param name       食べ物の名前(※英字小文字のみ)
+     * @param amount     回復する満腹度
      * @param saturation 回復する隠し満腹度
      */
     public JapaneseFoodAsSeed(String name, int amount, float saturation, JapaneseFoodPlant plant) {
@@ -44,15 +45,17 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
         this.Plant = plant;
     }
 
-
     @Override
-    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+    public EnumActionResult onItemUse(EntityPlayer player, World worldIn, BlockPos pos, EnumHand hand,
+            EnumFacing facing, float hitX, float hitY, float hitZ) {
         ItemStack stack = player.getHeldItem(hand);
         IBlockState state = worldIn.getBlockState(pos);
 
-        if(facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack) && state.getBlock().canSustainPlant(state, worldIn,pos,EnumFacing.UP, this) && worldIn.isAirBlock(pos.up())){
+        if (facing == EnumFacing.UP && player.canPlayerEdit(pos.offset(facing), facing, stack)
+                && state.getBlock().canSustainPlant(state, worldIn, pos, EnumFacing.UP, this)
+                && worldIn.isAirBlock(pos.up())) {
             worldIn.setBlockState(pos.up(), this.Plant.getDefaultState());
-            if(player.capabilities.isCreativeMode || !worldIn.isRemote){
+            if (player.capabilities.isCreativeMode || !worldIn.isRemote) {
                 stack.shrink(1);
             }
             return EnumActionResult.SUCCESS;
@@ -70,9 +73,9 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
         return this.Plant.getDefaultState();
     }
 
-
     /**
      * アイテムを登録する
+     * 
      * @param event
      */
     @Override
@@ -82,13 +85,12 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
 
     /**
      * モデルを登録する
+     * 
      * @param event
      */
     @Override
-    public void registerModel(ModelRegistryEvent event){
-        ModelLoader.setCustomModelResourceLocation(
-                this,
-                0,
+    public void registerModel(ModelRegistryEvent event) {
+        ModelLoader.setCustomModelResourceLocation(this, 0,
                 new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }

@@ -8,12 +8,14 @@ public interface IBlockRegisterEvent {
 
     /**
      * Register Block
+     * 
      * @param event
      */
     void registerBlock(RegistryEvent.Register<Block> event);
 
     /**
      * Register Model
+     * 
      * @param event
      */
     void registerModel(ModelRegistryEvent event);

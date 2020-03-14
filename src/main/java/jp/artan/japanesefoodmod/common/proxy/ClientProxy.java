@@ -21,6 +21,7 @@ public class ClientProxy extends CommonProxy {
 
     /**
      * モデルを登録するイベント
+     * 
      * @param event
      */
     @SubscribeEvent

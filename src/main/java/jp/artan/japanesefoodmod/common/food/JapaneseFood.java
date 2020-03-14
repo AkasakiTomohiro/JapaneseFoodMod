@@ -19,8 +19,9 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
 
     /**
      * コンストラクタ
-     * @param name 食べ物の名前(※英字小文字のみ)
-     * @param amount 回復する満腹度
+     * 
+     * @param name       食べ物の名前(※英字小文字のみ)
+     * @param amount     回復する満腹度
      * @param saturation 回復する隠し満腹度
      */
     public JapaneseFood(String name, int amount, float saturation) {
@@ -32,6 +33,7 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
 
     /**
      * アイテムを登録する
+     * 
      * @param event
      */
     @Override
@@ -41,12 +43,11 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
 
     /**
      * モデルを登録する
+     * 
      * @param event
      */
-    public void registerModel(ModelRegistryEvent event){
-        ModelLoader.setCustomModelResourceLocation(
-                this,
-                0,
+    public void registerModel(ModelRegistryEvent event) {
+        ModelLoader.setCustomModelResourceLocation(this, 0,
                 new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
 }

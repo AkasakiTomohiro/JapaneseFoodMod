@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 
 public class RawMaterialsCreativeTab extends CreativeTabs {
 
-    public RawMaterialsCreativeTab(){
+    public RawMaterialsCreativeTab() {
         super("japanesefoodrawmaterials");
     }
 

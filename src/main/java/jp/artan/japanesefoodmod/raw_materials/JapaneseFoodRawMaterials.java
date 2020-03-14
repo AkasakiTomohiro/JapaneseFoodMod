@@ -13,8 +13,7 @@ import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 
-public class JapaneseFoodRawMaterials
-{
+public class JapaneseFoodRawMaterials {
     public static CreativeTabs creativeTab = new RawMaterialsCreativeTab();
 
     public static final JapaneseFood Banana = new RawMaterialFood("banana", 1, 0.5F);
@@ -22,7 +21,6 @@ public class JapaneseFoodRawMaterials
     public static final SameCropAsSeed Soy = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
 
     public static final RawMaterialFish FISH = new RawMaterialFish("fish");
-
 
     public static void registerItems(RegistryEvent.Register<Item> event) {
         Banana.registerItem(event);
@@ -42,6 +40,7 @@ public class JapaneseFoodRawMaterials
 
     /**
      * 清廉レシピを登録
+     * 
      * @param event
      */
     public static void init(FMLInitializationEvent event) {
