@@ -4,28 +4,23 @@ import com.google.common.collect.Maps;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.minecraft.world.storage.loot.LootEntryItem;
 import net.minecraft.world.storage.loot.LootPool;
 import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.functions.LootFunction;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import java.util.Map;
 
-public class RawMaterialFish implements IItemRegisterEvent {
+public class RawMaterialFish {
 
     public final JapaneseFish ROW;
     public final JapaneseFish COOKED;
@@ -33,16 +28,6 @@ public class RawMaterialFish implements IItemRegisterEvent {
     public RawMaterialFish(String name) {
         ROW = new JapaneseFish("row_" + name, false);
         COOKED = new JapaneseFish("baked_" + name, true);
-    }
-
-    /**
-     * モデルを登録する
-     * 
-     * @param event
-     */
-    public void registerModel(ModelRegistryEvent event) {
-        ROW.registerModel(event);
-        COOKED.registerModel(event);
     }
 
     public void registerSmelting() {
@@ -69,7 +54,7 @@ public class RawMaterialFish implements IItemRegisterEvent {
     }
 }
 
-class JapaneseFish extends ItemFood implements IItemRegisterEvent {
+class JapaneseFish extends ItemFood {
     /** Indicates whether this fish is "cooked" or not. */
     private final boolean cooked;
     public final String Name;
@@ -281,18 +266,6 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
             for (JapaneseFishType itemfishfood$fishtype : values()) {
                 META_LOOKUP.put(Integer.valueOf(itemfishfood$fishtype.getMetadata()), itemfishfood$fishtype);
             }
-        }
-    }
-
-    /**
-     * モデルを登録する
-     * 
-     * @param event
-     */
-    public void registerModel(ModelRegistryEvent event) {
-        for (int i = 0; i < JapaneseFish.JapaneseFishType.getMetaDataLength(); i++) {
-            ModelLoader.setCustomModelResourceLocation(this, i,
-                    new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "meta=" + i));
         }
     }
 }

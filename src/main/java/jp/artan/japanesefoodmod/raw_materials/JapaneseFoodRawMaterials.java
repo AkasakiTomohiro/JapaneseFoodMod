@@ -22,9 +22,6 @@ public class JapaneseFoodRawMaterials {
     public static final RawMaterialFish FISH = new RawMaterialFish("fish");
 
     public static void registerModels(ModelRegistryEvent event) {
-        Banana.registerModel(event);
-        Soy.registerModel(event);
-        FISH.registerModel(event);
     }
 
     public static void preInit(FMLPreInitializationEvent event) {

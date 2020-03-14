@@ -2,9 +2,7 @@ package jp.artan.japanesefoodmod.common.food;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemSeeds;
@@ -12,15 +10,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.EnumPlantType;
 
-public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegisterEvent {
+public abstract class JapaneseFoodSeed extends ItemSeeds {
     public JapaneseFoodPlant Plant;
     protected final String Name;
 
@@ -63,9 +58,4 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
         return this.Plant.getDefaultState();
     }
 
-    @Override
-    public void registerModel(ModelRegistryEvent event) {
-        ModelLoader.setCustomModelResourceLocation(this, 0,
-                new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
-    }
 }

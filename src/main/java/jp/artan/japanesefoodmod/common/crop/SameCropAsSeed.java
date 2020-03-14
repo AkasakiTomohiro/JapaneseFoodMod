@@ -1,12 +1,10 @@
 package jp.artan.japanesefoodmod.common.crop;
 
-import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
-import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodAsSeed;
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
-public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegisterEvent {
+public abstract class SameCropAsSeed {
 
     public final JapaneseFoodPlant Plant;
 
@@ -24,9 +22,4 @@ public abstract class SameCropAsSeed implements IItemRegisterEvent, IBlockRegist
         this.Seed.Plant.setFood(this.Seed);
     }
 
-    @Override
-    public void registerModel(ModelRegistryEvent event) {
-        this.Seed.registerModel(event);
-        this.Plant.registerModel(event);
-    }
 }
