@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
@@ -37,8 +38,7 @@ public class CommonProxy {
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerItems");
-        JapaneseFoodRawMaterials.registerItems(event);
-        JapaneseFoodSouvenir.registerItems(event);
+        event.getRegistry().registerAll(Init.ITEMS.toArray(new Item[0]));
     }
 
     @SubscribeEvent

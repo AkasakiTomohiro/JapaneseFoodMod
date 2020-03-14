@@ -1,14 +1,13 @@
 package jp.artan.japanesefoodmod.common.food;
 
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.event.RegistryEvent;
 
 /**
  * 食べ物の共通クラス
@@ -29,16 +28,8 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
         this.Name = name;
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
-    }
 
-    /**
-     * アイテムを登録する
-     * 
-     * @param event
-     */
-    @Override
-    public void registerItem(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(this);
+        Init.ITEMS.add(this);
     }
 
     /**

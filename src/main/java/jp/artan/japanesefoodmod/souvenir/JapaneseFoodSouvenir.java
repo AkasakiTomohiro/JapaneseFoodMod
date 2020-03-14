@@ -14,10 +14,6 @@ public class JapaneseFoodSouvenir {
 
     public static final JapaneseFood TokyoBanana = new SouvenirFood("tokyo_banana", 3, 0.5F);
 
-    public static void registerItems(RegistryEvent.Register<Item> event) {
-        TokyoBanana.registerItem(event);
-    }
-
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
 
     }

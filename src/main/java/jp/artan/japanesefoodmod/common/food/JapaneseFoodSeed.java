@@ -1,12 +1,12 @@
 package jp.artan.japanesefoodmod.common.food;
 
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemSeeds;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
@@ -19,7 +19,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.EnumPlantType;
-import net.minecraftforge.event.RegistryEvent;
 
 public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegisterEvent {
     public JapaneseFoodPlant Plant;
@@ -32,6 +31,8 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
         this.Plant = plant;
+
+        Init.ITEMS.add(this);
     }
 
     @Override
@@ -60,11 +61,6 @@ public abstract class JapaneseFoodSeed extends ItemSeeds implements IItemRegiste
     @Override
     public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
         return this.Plant.getDefaultState();
-    }
-
-    @Override
-    public void registerItem(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(this);
     }
 
     @Override

@@ -1,13 +1,14 @@
 package jp.artan.japanesefoodmod.raw_materials.fish;
 
 import com.google.common.collect.Maps;
+
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -21,7 +22,6 @@ import net.minecraft.world.storage.loot.functions.LootFunction;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.LootTableLoadEvent;
-import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import java.util.Map;
 
@@ -33,17 +33,6 @@ public class RawMaterialFish implements IItemRegisterEvent {
     public RawMaterialFish(String name) {
         ROW = new JapaneseFish("row_" + name, false);
         COOKED = new JapaneseFish("baked_" + name, true);
-    }
-
-    /**
-     * アイテムを登録する
-     * 
-     * @param event
-     */
-    @Override
-    public void registerItem(RegistryEvent.Register<Item> event) {
-        ROW.registerItem(event);
-        COOKED.registerItem(event);
     }
 
     /**
@@ -93,6 +82,8 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
         this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
         this.setHasSubtypes(true);
+
+        Init.ITEMS.add(this);
     }
 
     public int getHealAmount(ItemStack stack) {
@@ -291,16 +282,6 @@ class JapaneseFish extends ItemFood implements IItemRegisterEvent {
                 META_LOOKUP.put(Integer.valueOf(itemfishfood$fishtype.getMetadata()), itemfishfood$fishtype);
             }
         }
-    }
-
-    /**
-     * アイテムを登録する
-     * 
-     * @param event
-     */
-    @Override
-    public void registerItem(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(this);
     }
 
     /**

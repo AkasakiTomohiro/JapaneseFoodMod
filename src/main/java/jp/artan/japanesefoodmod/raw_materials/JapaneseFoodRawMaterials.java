@@ -22,12 +22,6 @@ public class JapaneseFoodRawMaterials {
 
     public static final RawMaterialFish FISH = new RawMaterialFish("fish");
 
-    public static void registerItems(RegistryEvent.Register<Item> event) {
-        Banana.registerItem(event);
-        Soy.registerItem(event);
-        FISH.registerItem(event);
-    }
-
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         Soy.registerBlock(event);
     }

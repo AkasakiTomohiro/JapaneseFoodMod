@@ -1,11 +1,11 @@
 package jp.artan.japanesefoodmod.common.food;
 
+import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
@@ -19,7 +19,6 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.EnumPlantType;
 import net.minecraftforge.common.IPlantable;
-import net.minecraftforge.event.RegistryEvent;
 
 /**
  * 食べ物の共通クラス
@@ -43,6 +42,8 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
         this.Plant = plant;
+
+        Init.ITEMS.add(this);
     }
 
     @Override
@@ -71,16 +72,6 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IItemRegist
     @Override
     public IBlockState getPlant(IBlockAccess world, BlockPos pos) {
         return this.Plant.getDefaultState();
-    }
-
-    /**
-     * アイテムを登録する
-     * 
-     * @param event
-     */
-    @Override
-    public void registerItem(RegistryEvent.Register<Item> event) {
-        event.getRegistry().register(this);
     }
 
     /**
