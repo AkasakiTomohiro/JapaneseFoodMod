@@ -43,7 +43,7 @@ public class CommonProxy {
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerItems");
-        event.getRegistry().registerAll(Init.ITEMS.toArray(new Item[0]));
+        Init.ITEMS.forEach(f -> f.registerItem(event));
     }
 
     @SubscribeEvent

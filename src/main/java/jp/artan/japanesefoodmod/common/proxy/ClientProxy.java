@@ -32,14 +32,7 @@ public class ClientProxy extends CommonProxy {
     public void registerModels(ModelRegistryEvent event) {
         JapaneseFoodMod.logger.info("ClientProxy.registerModels");
 
-        for (Item item : Init.ITEMS) {
-            ModelLoader.setCustomModelResourceLocation(item, 0,
-                    new ModelResourceLocation(item.getRegistryName(), "inventory"));
-        }
-
+        Init.ITEMS.forEach(f -> f.registerModel(event));
         Init.BLOCKS.forEach(f -> f.registerModel(event));
-
-        JapaneseFoodRawMaterials.registerModels(event);
-        JapaneseFoodSouvenir.registerModels(event);
     }
 }

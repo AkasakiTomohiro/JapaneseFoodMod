@@ -4,10 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
+import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 
 public class Init {
-  public static List<Item> ITEMS = new ArrayList<Item>();
+  public static List<IItemRegisterEvent> ITEMS = new ArrayList<IItemRegisterEvent>();
   public static List<IBlockRegisterEvent> BLOCKS = new ArrayList<IBlockRegisterEvent>();
 }
