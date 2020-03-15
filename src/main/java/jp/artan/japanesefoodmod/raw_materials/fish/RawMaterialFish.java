@@ -24,7 +24,7 @@ public class RawMaterialFish {
     public final JapaneseFish COOKED;
 
     public RawMaterialFish(String name) {
-        ROW = new JapaneseFish(name + "_row", false);
+        ROW = new JapaneseFish(name + "_raw", false);
         COOKED = new JapaneseFish(name + "_baked", true);
     }
 

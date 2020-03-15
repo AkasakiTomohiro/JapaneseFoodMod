@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "japanesefoodmod:fish_row",
+          "name": "japanesefoodmod:fish_raw",
           "functions": [
             {
               "function": "set_data",
