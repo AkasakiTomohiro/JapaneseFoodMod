@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.common;
+package jp.artan.japanesefoodmod;
 
 import jp.artan.japanesefoodmod.common.proxy.CommonProxy;
 import net.minecraftforge.common.MinecraftForge;

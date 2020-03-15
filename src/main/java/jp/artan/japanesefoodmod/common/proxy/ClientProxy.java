@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.Init;
-import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

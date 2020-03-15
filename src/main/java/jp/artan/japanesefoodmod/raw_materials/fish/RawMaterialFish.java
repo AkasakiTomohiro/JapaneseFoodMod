@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.raw_materials.fish;
 
 import jp.artan.japanesefoodmod.common.Init;
-import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -13,12 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
-import net.minecraft.world.storage.loot.*;
-import net.minecraft.world.storage.loot.conditions.LootCondition;
-import net.minecraft.world.storage.loot.functions.LootFunction;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

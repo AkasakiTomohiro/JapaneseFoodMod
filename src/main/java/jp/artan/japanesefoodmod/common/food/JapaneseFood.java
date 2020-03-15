@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.food;
 
 import jp.artan.japanesefoodmod.common.Init;
-import jp.artan.japanesefoodmod.common.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
