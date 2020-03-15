@@ -30,7 +30,6 @@ public class JapaneseFoodMod {
 
     @Mod.EventHandler
     public void construct(FMLConstructionEvent event) {
-        MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(proxy);
     }
 
