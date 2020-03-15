@@ -85,11 +85,11 @@ public class CommonProxy {
 
     @SubscribeEvent
     public void onLootTablesLoaded(LootTableLoadEvent event) {
-        if (event.getName().equals(LootTableList.GAMEPLAY_FISHING_FISH)) {
-            JapaneseFoodMod.logger.info("LootTableList.GAMEPLAY_FISHING_FISH");
+        if (event.getName().equals(LootTableList.GAMEPLAY_FISHING)) {
+            JapaneseFoodMod.logger.info(event.getName());
             final LootPool pool = event.getTable().getPool("main");
             if (pool != null) {
-                LootEntry entry = new LootEntryTable(new ResourceLocation("japanesefoodmod:gameplay/fishing/fishing"), 300, -10, new LootCondition[0], "japanesefoodmod");
+                LootEntry entry = new LootEntryTable(new ResourceLocation("japanesefoodmod:gameplay/fishing"), 100, -10, new LootCondition[0], "japanesefoodmod");
                 pool.addEntry(entry);
             }
         }

@@ -1,0 +1,16 @@
+{
+  "pools": [
+    {
+      "name": "main",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "japanesefoodmod:gameplay/fishing/fish",
+          "weight": 300,
+          "quality": -10
+        }
+      ]
+    }
+  ]
+}
