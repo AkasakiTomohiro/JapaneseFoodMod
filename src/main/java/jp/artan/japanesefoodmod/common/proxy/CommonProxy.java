@@ -26,7 +26,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 
 @Mod.EventBusSubscriber(modid = JapaneseFoodMod.MODID)
-public class CommonProxy {
+public abstract class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
