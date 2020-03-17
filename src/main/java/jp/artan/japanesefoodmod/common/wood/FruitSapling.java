@@ -157,7 +157,7 @@ public abstract class FruitSapling extends BlockBush implements IGrowable, IBloc
             @Override
             public int getItemBurnTime(ItemStack itemStack)
             {
-                return 300;
+                return 100;
             }
         }.setUnlocalizedName(name).setRegistryName(JapaneseFoodMod.MODID, name));
     }
