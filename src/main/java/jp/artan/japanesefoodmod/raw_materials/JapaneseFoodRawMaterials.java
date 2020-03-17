@@ -40,7 +40,11 @@ public class JapaneseFoodRawMaterials {
      * @param event
      */
     public static void init(FMLInitializationEvent event) {
+        // 精錬レシピ登録
         GameRegistry.addSmelting(FISH, new ItemStack(FISH_BAKED, 1), 0.4F);
+
+        // 鉱石辞書登録
+        BANANA.registerOreDictionaryEntries();
     }
 
     public static void postInit(FMLPostInitializationEvent event) {

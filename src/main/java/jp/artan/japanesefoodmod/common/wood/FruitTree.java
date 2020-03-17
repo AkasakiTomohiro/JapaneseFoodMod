@@ -1,6 +1,8 @@
 package jp.artan.japanesefoodmod.common.wood;
 
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 /**
  * 果樹を追加するクラス
@@ -35,5 +37,10 @@ public abstract class FruitTree {
         this.fruit = fruit;
         this.log = log;
         this.leaves = leaves;
+    }
+
+    public void registerOreDictionaryEntries() {
+        OreDictionary.registerOre("logWood", new ItemStack(this.log, 1, OreDictionary.WILDCARD_VALUE));
+        OreDictionary.registerOre("treeLeaves", this.leaves);
     }
 }
