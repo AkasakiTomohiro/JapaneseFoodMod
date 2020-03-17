@@ -39,11 +39,11 @@ import java.util.Random;
  * ./lang/ja_JP.lang　言語設定
  *      tile.${name}_leaves.name=XXXXX
  * ./models/block/${name}_leaves.json
- *      ブロックの側面と上下のテクスチャ情報を規定
+ *      ブロックのテクスチャ情報を規定
  * ./models/item/${name}_leaves.json
  *      ブロックの情報を記述
  * ./textures/block/${name}_leaves.png
- *      ブロックの情報を記述
+ *      テクスチャ
  */
 public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterEvent {
     private final String name;
@@ -61,6 +61,10 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
         Init.BLOCKS.add(this);
     }
 
+    public void setItemDropped(Block sapling) {
+        this.sapling = sapling;
+    }
+
     @Override
     protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance)
     {
@@ -74,10 +78,6 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
         return Item.getItemFromBlock(this.sapling);
-    }
-
-    public void setItemDropped(Block sapling) {
-        this.sapling = sapling;
     }
 
     @Override

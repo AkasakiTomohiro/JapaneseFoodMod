@@ -38,7 +38,7 @@ import net.minecraftforge.event.RegistryEvent;
  *      ブロックの情報を記述
  * ./textures/block/${name}_log_side.png
  * ./textures/block/${name}_log_top.png
- *      ブロックの情報を記述
+ *      テクスチャ
  */
 public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
     private final String name;

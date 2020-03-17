@@ -30,7 +30,23 @@ import net.minecraftforge.event.terraingen.TerrainGen;
 
 import java.util.Random;
 
-public class FruitSapling extends BlockBush implements IGrowable, IBlockRegisterEvent {
+/**
+ * 原木ブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_sapling.json
+ *      ブロックの設置向きの回転角度を記述
+ * ./lang/en_us.lang　言語設定
+ *      tile.${name}_sapling.name=XXXXX
+ * ./lang/ja_JP.lang　言語設定
+ *      tile.${name}_sapling.name=XXXXX
+ * ./models/block/${name}_sapling.json
+ *      ブロックのテクスチャ情報を規定
+ * ./models/item/${name}_sapling.json
+ *      ブロックの情報を記述
+ * ./textures/block/${name}_sapling.png
+ *      テクスチャ
+ */
+public abstract class FruitSapling extends BlockBush implements IGrowable, IBlockRegisterEvent {
     public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
     protected static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
     private final String name;
