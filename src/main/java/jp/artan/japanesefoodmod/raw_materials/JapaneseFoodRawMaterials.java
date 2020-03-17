@@ -5,6 +5,8 @@ import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
+import jp.artan.japanesefoodmod.raw_materials.tabs.FruitTreeCreativeTab;
+import jp.artan.japanesefoodmod.raw_materials.tabs.RawMaterialsCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -15,7 +17,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class JapaneseFoodRawMaterials {
     // クリエイティブタブ
-    public static CreativeTabs creativeTab = new RawMaterialsCreativeTab();
+    public static CreativeTabs rawMaterialsCreativeTab = new RawMaterialsCreativeTab();
+    public static CreativeTabs fruitTreeCreativeTab = new FruitTreeCreativeTab();
 
     // 果樹
     public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.5F);

@@ -2,6 +2,7 @@
 
 # Tabs
 itemGroup.japanesefoodrawmaterials=Japanese Food[Raw Materials]
+itemGroup.japanesefoodfruittree=Japanese Food[Fruit Tree]
 itemGroup.japanesefoodsouvenir=Japanese Food[Souvenir]
 
 # Items
@@ -11,3 +12,4 @@ item.tokyo_banana.name=Tokyo Banana
 
 # Block
 tile.banana_log.name=Banana Log
+tile.banana_leaves.name=Banana Leaves

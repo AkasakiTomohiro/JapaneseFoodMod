@@ -2,6 +2,7 @@
 
 # Tabs
 itemGroup.japanesefoodrawmaterials=日本料理MOD[材料]
+itemGroup.japanesefoodfruittree=日本料理MOD[果樹]
 itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
 
 # Items
@@ -11,4 +12,5 @@ item.tokyo_banana.name=東京バナ奈
 
 # Block
 tile.banana_log.name=バナナの木
+tile.banana_leaves.name=バナナの葉
 

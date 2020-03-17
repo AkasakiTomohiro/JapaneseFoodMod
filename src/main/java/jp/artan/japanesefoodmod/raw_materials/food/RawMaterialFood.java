@@ -14,6 +14,6 @@ public class RawMaterialFood extends JapaneseFood {
      */
     public RawMaterialFood(String name, int amount, float saturation) {
         super(name, amount, saturation);
-        this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
+        this.setCreativeTab(JapaneseFoodRawMaterials.rawMaterialsCreativeTab);
     }
 }

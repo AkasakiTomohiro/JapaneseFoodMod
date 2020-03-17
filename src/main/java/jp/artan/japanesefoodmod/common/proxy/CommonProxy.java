@@ -2,6 +2,7 @@ package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 import net.minecraft.block.Block;
@@ -95,4 +96,6 @@ public abstract class CommonProxy {
             }
         }
     }
+
+    public abstract void setGraphicsLevel(FruitLeaves leaves);
 }

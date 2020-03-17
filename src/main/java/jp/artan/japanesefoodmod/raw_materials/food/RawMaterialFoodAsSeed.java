@@ -15,6 +15,6 @@ public class RawMaterialFoodAsSeed extends JapaneseFoodAsSeed {
      */
     public RawMaterialFoodAsSeed(String name, int amount, float saturation, JapaneseFoodPlant plant) {
         super(name, amount, saturation, plant);
-        this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
+        this.setCreativeTab(JapaneseFoodRawMaterials.rawMaterialsCreativeTab);
     }
 }

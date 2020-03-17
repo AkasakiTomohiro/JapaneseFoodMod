@@ -7,6 +7,6 @@ import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 public class RawMaterialSeed extends JapaneseFoodSeed {
     public RawMaterialSeed(String name, JapaneseFoodPlant block) {
         super(name, block);
-        this.setCreativeTab(JapaneseFoodRawMaterials.creativeTab);
+        this.setCreativeTab(JapaneseFoodRawMaterials.rawMaterialsCreativeTab);
     }
 }

@@ -8,21 +8,21 @@ import net.minecraftforge.event.RegistryEvent;
 public interface IBlockRegisterEvent {
 
     /**
-     * Register Block
+     * ブロックを追加
      *
      * @param event
      */
     void registerBlock(RegistryEvent.Register<Block> event);
 
     /**
-     * Register Model
+     * モデルを追加
      *
      * @param event
      */
     void registerModel(ModelRegistryEvent event);
 
     /**
-     * Register ItemBlock
+     * ブロックをアイテムとして取得するときに実装
      *
      * @param event
      */

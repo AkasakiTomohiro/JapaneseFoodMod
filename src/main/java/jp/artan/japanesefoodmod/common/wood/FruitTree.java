@@ -29,8 +29,11 @@ public abstract class FruitTree {
 
     public final FruitLog log;
 
-    public FruitTree(JapaneseFood fruit, FruitLog log){
+    public final FruitLeaves leaves;
+
+    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves){
         this.fruit = fruit;
         this.log = log;
+        this.leaves = leaves;
     }
 }

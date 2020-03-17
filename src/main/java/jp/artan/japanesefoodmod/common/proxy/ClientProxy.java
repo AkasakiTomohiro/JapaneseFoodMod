@@ -2,6 +2,7 @@ package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -28,5 +29,9 @@ public class ClientProxy extends CommonProxy {
 
         Init.ITEMS.forEach(f -> f.registerModel(event));
         Init.BLOCKS.forEach(f -> f.registerModel(event));
+    }
+
+    public void setGraphicsLevel(FruitLeaves leaves){
+        leaves.setGraphicsLevel(true);
     }
 }
