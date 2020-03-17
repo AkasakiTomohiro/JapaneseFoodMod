@@ -6,13 +6,7 @@
       "entries": [
         {
           "type": "loot_table",
-          "name": "japanesefoodmod:gameplay/fishing/fish_raw_test",
-          "weight": 300,
-          "quality": -10
-        },
-        {
-          "type": "loot_table",
-          "name": "japanesefoodmod:gameplay/fishing/fish_raw_test2",
+          "name": "japanesefoodmod:gameplay/fishing/fish",
           "weight": 300,
           "quality": -10
         }
