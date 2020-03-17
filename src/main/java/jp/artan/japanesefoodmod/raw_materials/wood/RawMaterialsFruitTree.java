@@ -1,15 +1,16 @@
 package jp.artan.japanesefoodmod.raw_materials.wood;
 
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
+import jp.artan.japanesefoodmod.common.world.WorldGenSupplier;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
-import net.minecraft.init.Blocks;
 
 public class RawMaterialsFruitTree extends FruitTree {
     private final String name;
 
-    public RawMaterialsFruitTree(String name, int amount, float saturation) {
-        super(new RawMaterialFood(name, amount, saturation), new RawMaterialsFruitLog(name), new RawMaterialsFruitLeaves(name));
+    public RawMaterialsFruitTree(String name, int amount, float saturation, WorldGenSupplier supplier) {
+        super(new RawMaterialFood(name, amount, saturation), new RawMaterialsFruitLog(name), new RawMaterialsFruitLeaves(name), new RawMaterialsFruitSapling(name, supplier));
         this.name = name;
-        this.leaves.setItemDropped(Blocks.SAPLING);
+        this.leaves.setItemDropped(this.sapling);
+        supplier.setIBlockState(this.log, this.leaves);
     }
 }

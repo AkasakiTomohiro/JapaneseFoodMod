@@ -33,14 +33,18 @@ public abstract class FruitTree {
 
     public final FruitLeaves leaves;
 
-    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves){
+    public final FruitSapling sapling;
+
+    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves, FruitSapling sapling){
         this.fruit = fruit;
         this.log = log;
         this.leaves = leaves;
+        this.sapling = sapling;
     }
 
     public void registerOreDictionaryEntries() {
         OreDictionary.registerOre("logWood", new ItemStack(this.log, 1, OreDictionary.WILDCARD_VALUE));
         OreDictionary.registerOre("treeLeaves", this.leaves);
+        OreDictionary.registerOre("treeSapling", this.sapling);
     }
 }
