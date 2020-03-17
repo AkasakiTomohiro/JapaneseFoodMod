@@ -8,3 +8,6 @@ itemGroup.japanesefoodsouvenir=Japanese Food[Souvenir]
 item.banana.name=Banana
 item.soy_seeds.name=Soy
 item.tokyo_banana.name=Tokyo Banana
+
+# Block
+tile.banana_log.name=Banana Log

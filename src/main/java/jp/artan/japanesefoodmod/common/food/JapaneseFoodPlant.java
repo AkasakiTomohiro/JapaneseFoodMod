@@ -66,4 +66,9 @@ public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegi
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0,
                 new ModelResourceLocation(new ResourceLocation(JapaneseFoodMod.MODID, this.Name), "inventory"));
     }
+
+    @Override
+    public void registerItemBlocks(RegistryEvent.Register<Item> event) {
+        // 食物ブロックはアイテムとして入手不可能ブロックなので、何もしない
+    }
 }

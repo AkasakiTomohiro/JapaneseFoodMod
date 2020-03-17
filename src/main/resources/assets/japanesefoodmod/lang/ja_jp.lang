@@ -9,3 +9,6 @@ item.banana.name=バナナ
 item.soy_seeds.name=大豆
 item.tokyo_banana.name=東京バナ奈
 
+# Block
+tile.banana_log.name=バナナの木
+
