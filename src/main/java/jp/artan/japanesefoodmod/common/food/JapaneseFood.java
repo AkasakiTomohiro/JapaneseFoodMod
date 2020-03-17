@@ -13,6 +13,15 @@ import net.minecraftforge.event.RegistryEvent;
 
 /**
  * 食べ物の共通クラス
+ * @apiNote
+ * ./lang/en_us.lang　言語設定
+ *      item.${name}.name=XXXXX
+ * ./lang/ja_JP.lang　言語設定
+ *      item.${name}.name=XXXXX
+ * ./models/item/${name}.json
+ *      アイテムのテクスチャ情報を記述
+ * ./textures/item/${name}.png
+ *      アイテムのテクスチャ情報を記述
  */
 public abstract class JapaneseFood extends ItemFood implements IItemRegisterEvent {
 

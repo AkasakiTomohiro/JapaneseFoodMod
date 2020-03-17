@@ -23,7 +23,16 @@ import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.event.RegistryEvent;
 
 /**
- * 食べ物の共通クラス
+ * 食べられる種の共通クラス
+ * @apiNote
+ * ./lang/en_us.lang　言語設定
+ *      item.${name}_seeds.name=XXXXX
+ * ./lang/ja_JP.lang　言語設定
+ *      item.${name}_seeds.name=XXXXX
+ * ./models/item/${name}_seeds.json
+ *      アイテムのテクスチャ情報を記述
+ * ./textures/item/${name}_seeds.png
+ *      アイテムのテクスチャ情報を記述
  */
 public abstract class JapaneseFoodAsSeed extends ItemFood implements IPlantable, IItemRegisterEvent {
 

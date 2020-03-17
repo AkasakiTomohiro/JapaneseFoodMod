@@ -12,6 +12,18 @@ import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
 
+/**
+ * 作物ブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_plant.json
+ *      成長段階に合わせたブロックの情報を記述（０～７の８段階）
+ * ./models/block/${name}_plant${Age(0~7)}.json
+ *      成長段階に合わせたブロックのテクスチャ情報を記述
+ * ./models/item/${name}_plant.json
+ *      ブロックの情報を記述
+ * ./textures/block/${name}_plant${Age(0~7)}.png
+ *      ブロックの情報を記述
+ */
 public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegisterEvent {
     protected Item Seed;
     protected Item Food;

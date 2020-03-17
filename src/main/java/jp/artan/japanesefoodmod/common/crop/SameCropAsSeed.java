@@ -6,7 +6,7 @@ import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
 /**
  * 種と作物が同じ作物を作成するクラス
  * @apiNote
- * ./blockstates/${name}.json
+ * ./blockstates/${name}_plant.json
  *      成長段階に合わせたブロックの情報を記述（０～７の８段階）
  * ./lang/en_us.lang　言語設定
  *      item.${name}_seeds.name=XXXXX
