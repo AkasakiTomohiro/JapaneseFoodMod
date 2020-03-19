@@ -2,6 +2,7 @@ package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
@@ -39,6 +40,8 @@ public abstract class CommonProxy {
         JapaneseFoodMod.logger.info("CommonProxy.init");
         JapaneseFoodRawMaterials.init(event);
         JapaneseFoodSouvenir.init(event);
+
+        RightClickHarvesting.instance.register();
     }
 
     public void postInit(FMLPostInitializationEvent event) {

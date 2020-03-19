@@ -67,6 +67,14 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
         this.fruitItem = fruitItem;
     }
 
+    public boolean isMature(IBlockState state) {
+        return getMetaFromState(state) >= MATURE_AGE;
+    }
+
+    public PropertyInteger getAgeProperty() {
+        return AGE;
+    }
+
     @Override
     public float getBlockHardness(IBlockState blockState, World worldIn, BlockPos pos) {
         if(getMetaFromState(blockState) >= MATURE_AGE) {
