@@ -68,10 +68,7 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     @Override
     protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance)
     {
-        if (worldIn.rand.nextInt(chance) == 0)
-        {
-            spawnAsEntity(worldIn, pos, new ItemStack(Items.APPLE));
-        }
+        // 何もしない
     }
 
     @Override
