@@ -46,11 +46,14 @@ public abstract class FruitTree {
 
     public final FruitSapling sapling;
 
-    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves, FruitSapling sapling){
+    public final FruitBlock fruitBlock;
+
+    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves, FruitSapling sapling, FruitBlock fruitBlock){
         this.fruit = fruit;
         this.log = log;
         this.leaves = leaves;
         this.sapling = sapling;
+        this.fruitBlock = fruitBlock;
     }
 
     public void registerOreDictionaryEntries() {

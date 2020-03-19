@@ -8,9 +8,10 @@ public class RawMaterialsFruitTree extends FruitTree {
     private final String name;
 
     public RawMaterialsFruitTree(String name, int amount, float saturation, WorldGenSupplier supplier) {
-        super(new RawMaterialFood(name, amount, saturation), new RawMaterialsFruitLog(name), new RawMaterialsFruitLeaves(name), new RawMaterialsFruitSapling(name, supplier));
+        super(new RawMaterialFood(name, amount, saturation), new RawMaterialsFruitLog(name), new RawMaterialsFruitLeaves(name), new RawMaterialsFruitSapling(name, supplier), new RawMaterialsFruitBlock(name));
         this.name = name;
         this.leaves.setItemDropped(this.sapling);
-        supplier.setIBlockState(this.log, this.leaves);
+        this.fruitBlock.setFruitItem(this.fruit);
+        supplier.setIBlockState(this.log, this.leaves, this.fruitBlock);
     }
 }

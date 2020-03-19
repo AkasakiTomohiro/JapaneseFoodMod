@@ -1,6 +1,7 @@
 package jp.artan.japanesefoodmod.raw_materials.world.tree;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
+import jp.artan.japanesefoodmod.common.wood.FruitBlock;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.wood.FruitLog;
 import jp.artan.japanesefoodmod.common.world.WorldGenFruitTrees;
@@ -18,15 +19,17 @@ import java.util.Random;
 public class BananaTreeSupplier extends WorldGenSupplier {
     private FruitLog log;
     private FruitLeaves leaves;
+    private FruitBlock fruitBlock;
 
     @Override
     public WorldGenFruitTrees getWorldGenerate(boolean parShouldNotify) {
-        return new BananaTreeGen(parShouldNotify, this.log, this.leaves);
+        return new BananaTreeGen(parShouldNotify, this.log, this.leaves, this.fruitBlock);
     }
 
-    public void setIBlockState(FruitLog log, FruitLeaves leaves) {
+    public void setIBlockState(FruitLog log, FruitLeaves leaves, FruitBlock fruitBlock) {
         this.log = log;
         this.leaves = leaves;
+        this.fruitBlock = fruitBlock;
     }
 
 }
@@ -34,8 +37,8 @@ public class BananaTreeSupplier extends WorldGenSupplier {
 class BananaTreeGen extends WorldGenFruitTrees {
     private final int minTreeHeight = 5;
 
-    public BananaTreeGen(boolean parShouldNotify, FruitLog log, FruitLeaves leaves) {
-        super(parShouldNotify, log, leaves);
+    public BananaTreeGen(boolean parShouldNotify, FruitLog log, FruitLeaves leaves, FruitBlock fruitBlock) {
+        super(parShouldNotify, log, leaves, fruitBlock);
     }
 
     @Override
@@ -115,7 +118,7 @@ class BananaTreeGen extends WorldGenFruitTrees {
                         && state.getBlock().isLeaves(stateLeaves, parWorld, blockPos) && parRandom.nextInt(10) == 1) {
                     JapaneseFoodMod.logger
                             .info("foliageX: " + foliageX + ", foliageY: " + foliageY + ", foliageZ: " + foliageZ);
-                    setBlockAndNotifyAdequately(parWorld, blockPos, Blocks.DIRT.getDefaultState());
+                    setBlockAndNotifyAdequately(parWorld, blockPos, this.blockStateFruit);
                 }
             }
         }
