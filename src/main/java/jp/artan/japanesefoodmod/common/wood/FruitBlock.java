@@ -5,6 +5,7 @@ import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyInteger;
 import net.minecraft.block.state.BlockStateContainer;
@@ -43,6 +44,9 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
 
     public FruitBlock(String name) {
         super(Material.PLANTS);
+        this.setTickRandomly(true);
+        setSoundType(SoundType.WOOD);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(AGE, 0));
         this.name = name + "_fruit_block";
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
