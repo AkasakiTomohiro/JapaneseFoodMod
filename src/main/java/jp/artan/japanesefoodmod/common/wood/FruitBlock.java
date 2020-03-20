@@ -13,7 +13,6 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.NonNullList;
@@ -35,6 +34,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * フルーツブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_fruit_block.json
+ *      ブロックの設置向きの回転角度を記述
+ * ./models/block/fruits/${name}_fruit_block_${Age(0~7)}.json
+ *      ブロックのテクスチャ情報を規定
+ * ./textures/block/fruits/${name}_fruit_block_${Age(0~7)}.png
+ *      テクスチャ
+ */
 public abstract class FruitBlock extends Block implements IGrowable, IBlockRegisterEvent, IShearable {
     private final String name;
     private static final int MATURE_AGE = 2;

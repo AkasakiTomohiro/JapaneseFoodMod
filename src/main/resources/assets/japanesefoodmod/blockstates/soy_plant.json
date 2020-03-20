@@ -1,28 +1,28 @@
 {
     "variants": {
         "age=0": {
-            "model": "japanesefoodmod:soy_plant0"
+            "model": "japanesefoodmod:soy_plant_0"
         },
         "age=1": {
-            "model": "japanesefoodmod:soy_plant1"
+            "model": "japanesefoodmod:soy_plant_1"
         },
         "age=2": {
-            "model": "japanesefoodmod:soy_plant2"
+            "model": "japanesefoodmod:soy_plant_2"
         },
         "age=3": {
-            "model": "japanesefoodmod:soy_plant3"
+            "model": "japanesefoodmod:soy_plant_3"
         },
         "age=4": {
-            "model": "japanesefoodmod:soy_plant4"
+            "model": "japanesefoodmod:soy_plant_4"
         },
         "age=5": {
-            "model": "japanesefoodmod:soy_plant5"
+            "model": "japanesefoodmod:soy_plant_5"
         },
         "age=6": {
-            "model": "japanesefoodmod:soy_plant6"
+            "model": "japanesefoodmod:soy_plant_6"
         },
         "age=7": {
-            "model": "japanesefoodmod:soy_plant7"
+            "model": "japanesefoodmod:soy_plant_7"
         }
     }
 }

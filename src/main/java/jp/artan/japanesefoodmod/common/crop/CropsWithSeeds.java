@@ -15,14 +15,14 @@ import jp.artan.japanesefoodmod.common.food.JapaneseFoodSeed;
  * ./lang/ja_JP.lang　言語設定
  *      item.${name}.name=XXXXX
  *      item.${name}_seeds.name=XXXXX
- * ./models/block/${name}_plant${Age(0~7)}.json
+ * ./models/block/${name}_plant_${Age(0~7)}.json
  *      成長段階に合わせたブロックのテクスチャ情報を記述
  * ./models/item/${name}_plant.json
  *      ブロックの情報を記述
  * ./models/item/${name}.json
  * ./models/item/${name}_seeds.json
  *      アイテムのテクスチャ情報を記述
- * ./textures/block/${name}_plant${Age(0~7)}.png
+ * ./textures/block/${name}_plant_${Age(0~7)}.png
  *      ブロックの情報を記述
  * ./textures/item/${name}.png
  * ./textures/item/${name}_seeds.png

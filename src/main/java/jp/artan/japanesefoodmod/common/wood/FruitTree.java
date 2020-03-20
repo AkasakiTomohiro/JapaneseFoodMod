@@ -10,6 +10,7 @@ import net.minecraftforge.oredict.OreDictionary;
  * ./blockstates/${name}_log.json
  * ./blockstates/${name}_leaves.json
  * ./blockstates/${name}_sapling.json
+ * ./blockstates/${name}_fruit_block.json
  *      ブロックの設置向きの回転角度を記述
  * ./lang/en_us.lang　言語設定
  *      item.${name}.name=XXXXX
@@ -24,6 +25,7 @@ import net.minecraftforge.oredict.OreDictionary;
  * ./models/block/${name}_log.json
  * ./models/block/${name}_leaves.json
  * ./models/block/${name}_sapling.json
+ * ./models/block/fruits/${name}_fruit_block_${Age(0~7)}.json
  *      ブロックの側面と上下のテクスチャ情報を規定
  * ./models/item/${name}.json
  * ./models/item/${name}_log.json
@@ -34,6 +36,7 @@ import net.minecraftforge.oredict.OreDictionary;
  * ./textures/block/${name}_log_top.png
  * ./textures/block/${name}_leaves.png
  * ./textures/block/${name}_sapling.png
+ * ./textures/block/fruits/${name}_fruit_block_${Age(0~7)}.png
  * ./textures/item/${name}.png
  *      テクスチャ
  */
@@ -48,7 +51,8 @@ public abstract class FruitTree {
 
     public final FruitBlock fruitBlock;
 
-    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves, FruitSapling sapling, FruitBlock fruitBlock){
+    public FruitTree(JapaneseFood fruit, FruitLog log, FruitLeaves leaves, FruitSapling sapling,
+            FruitBlock fruitBlock) {
         this.fruit = fruit;
         this.log = log;
         this.leaves = leaves;

@@ -49,11 +49,13 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     private final String name;
     private Block sapling;
 
-    public FruitLeaves(String name)
-    {
+    public FruitLeaves(String name) {
         super();
-        this.setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true)).withProperty(DECAYABLE, Boolean.valueOf(true)));
-        this.name = name + "_leaves";;
+        this.setDefaultState(blockState.getBaseState().withProperty(CHECK_DECAY, Boolean.valueOf(true))
+                .withProperty(DECAYABLE, Boolean.valueOf(true)));
+        this.name = name + "_leaves";
+        ;
+
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
         JapaneseFoodMod.proxy.setGraphicsLevel(this);
@@ -66,47 +68,40 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     }
 
     @Override
-    protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance)
-    {
+    protected void dropApple(World worldIn, BlockPos pos, IBlockState state, int chance) {
         // 何もしない
     }
 
     @Override
-    public Item getItemDropped(IBlockState state, Random rand, int fortune)
-    {
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         return Item.getItemFromBlock(this.sapling);
     }
 
     @Override
-    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
-    {
+    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
         items.add(new ItemStack(this));
     }
 
     @Override
-    protected ItemStack getSilkTouchDrop(IBlockState state)
-    {
+    protected ItemStack getSilkTouchDrop(IBlockState state) {
         return new ItemStack(Item.getItemFromBlock(this));
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
-        return getDefaultState().withProperty(DECAYABLE, Boolean.valueOf((meta & 4) == 0)).withProperty(CHECK_DECAY, Boolean.valueOf((meta & 8) > 0));
+    public IBlockState getStateFromMeta(int meta) {
+        return getDefaultState().withProperty(DECAYABLE, Boolean.valueOf((meta & 4) == 0)).withProperty(CHECK_DECAY,
+                Boolean.valueOf((meta & 8) > 0));
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int i = 0;
 
-        if (!state.getValue(DECAYABLE).booleanValue())
-        {
+        if (!state.getValue(DECAYABLE).booleanValue()) {
             i |= 4;
         }
 
-        if (state.getValue(CHECK_DECAY).booleanValue())
-        {
+        if (state.getValue(CHECK_DECAY).booleanValue()) {
             i |= 8;
         }
 
@@ -114,39 +109,33 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     }
 
     @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {CHECK_DECAY, DECAYABLE});
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, new IProperty[] { CHECK_DECAY, DECAYABLE });
     }
 
     @Override
-    public int damageDropped(IBlockState state)
-    {
+    public int damageDropped(IBlockState state) {
         return 0;
     }
 
     @Override
-    public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state, @Nullable TileEntity te, ItemStack stack)
-    {
-        if (!worldIn.isRemote && stack.getItem() == Items.SHEARS)
-        {
+    public void harvestBlock(World worldIn, EntityPlayer player, BlockPos pos, IBlockState state,
+            @Nullable TileEntity te, ItemStack stack) {
+        if (!worldIn.isRemote && stack.getItem() == Items.SHEARS) {
             player.addStat(StatList.getBlockStats(this));
-        }
-        else
-        {
+        } else {
             super.harvestBlock(worldIn, player, pos, state, te, stack);
         }
     }
 
     @Override
-    public NonNullList<ItemStack> onSheared(ItemStack item, net.minecraft.world.IBlockAccess world, BlockPos pos, int fortune)
-    {
+    public NonNullList<ItemStack> onSheared(ItemStack item, net.minecraft.world.IBlockAccess world, BlockPos pos,
+            int fortune) {
         return NonNullList.withSize(1, new ItemStack(this));
     }
 
     @Override
-    public EnumType getWoodType(int meta)
-    {
+    public EnumType getWoodType(int meta) {
         return null;
     }
 
@@ -164,6 +153,7 @@ public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterE
     @Override
     public void registerItemBlocks(RegistryEvent.Register<Item> event) {
         String name = getRegistryName().getResourcePath();
-        event.getRegistry().register(new ItemBlock(this).setUnlocalizedName(name).setRegistryName(JapaneseFoodMod.MODID, this.name));
+        event.getRegistry().register(
+                new ItemBlock(this).setUnlocalizedName(name).setRegistryName(JapaneseFoodMod.MODID, this.name));
     }
 }

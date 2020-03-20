@@ -46,7 +46,8 @@ public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
     public FruitLog(String name) {
         super();
         this.setDefaultState(blockState.getBaseState().withProperty(LOG_AXIS, BlockLog.EnumAxis.Y));
-        this.name = name + "_log";;
+        this.name = name + "_log";
+        ;
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
 
@@ -54,24 +55,20 @@ public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
     }
 
     @Override
-    public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos)
-    {
+    public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
         return Blocks.LOG.getDefaultState().getMapColor(worldIn, pos);
     }
 
     @Override
-    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items)
-    {
+    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
         items.add(new ItemStack(this));
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         IBlockState state = this.getDefaultState();
 
-        switch (meta & 12)
-        {
+        switch (meta & 12) {
             case 0:
                 state = state.withProperty(LOG_AXIS, BlockLog.EnumAxis.Y);
                 break;
@@ -90,12 +87,10 @@ public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
 
     @Override
     @SuppressWarnings("incomplete-switch")
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int meta = 0;
 
-        switch (state.getValue(LOG_AXIS))
-        {
+        switch (state.getValue(LOG_AXIS)) {
             case X:
                 meta |= 4;
                 break;
@@ -110,20 +105,17 @@ public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
     }
 
     @Override
-    protected BlockStateContainer createBlockState()
-    {
-        return new BlockStateContainer(this, new IProperty[] {LOG_AXIS});
+    protected BlockStateContainer createBlockState() {
+        return new BlockStateContainer(this, new IProperty[] { LOG_AXIS });
     }
 
     @Override
-    protected ItemStack getSilkTouchDrop(IBlockState state)
-    {
+    protected ItemStack getSilkTouchDrop(IBlockState state) {
         return new ItemStack(Item.getItemFromBlock(this), 1);
     }
 
     @Override
-    public int damageDropped(IBlockState state)
-    {
+    public int damageDropped(IBlockState state) {
         return 0;
     }
 
@@ -143,8 +135,7 @@ public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {
         String name = getRegistryName().getResourcePath();
         event.getRegistry().register(new ItemBlock(this) {
             @Override
-            public int getItemBurnTime(ItemStack itemStack)
-            {
+            public int getItemBurnTime(ItemStack itemStack) {
                 return 300;
             }
         }.setUnlocalizedName(name).setRegistryName(JapaneseFoodMod.MODID, name));
