@@ -4,9 +4,14 @@ import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.event.RegistryEvent;
@@ -41,6 +46,15 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
 
         Init.ITEMS.add(this);
+    }
+
+    @Override
+    protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
+        // if (player.isPotionActive(MobEffects.LUCK)) {
+        //     player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 1200, 3));
+        // }
+
+        // player.addPotionEffect(new PotionEffect(MobEffects.LUCK, 1200, 3));
     }
 
     /**
