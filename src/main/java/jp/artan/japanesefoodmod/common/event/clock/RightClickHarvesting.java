@@ -1,7 +1,6 @@
 package jp.artan.japanesefoodmod.common.event.clock;
 
 import com.google.common.collect.Iterables;
-import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
 import jp.artan.japanesefoodmod.common.wood.FruitBlock;
 import net.minecraft.block.BlockCarrot;
 import net.minecraft.block.BlockCrops;
@@ -32,64 +31,69 @@ public class RightClickHarvesting {
 
     public static final RightClickHarvesting instance = new RightClickHarvesting();
 
-    private RightClickHarvesting() {}
+    private RightClickHarvesting() {
+    }
 
     public void register() {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
     @SubscribeEvent
-    public void onPlayerInteract(PlayerInteractEvent.RightClickBlock event){
-        if(event.getEntityPlayer() == null) return;
+    public void onPlayerInteract(PlayerInteractEvent.RightClickBlock event) {
+        if (event.getEntityPlayer() == null)
+            return;
 
         final IBlockState blockState = event.getWorld().getBlockState(event.getPos());
 
-        if(!(blockState.getBlock() instanceof BlockCrops ||
-                blockState.getBlock() instanceof BlockNetherWart ||
-                blockState.getBlock() instanceof FruitBlock)){
+        if (!(blockState.getBlock() instanceof BlockCrops || blockState.getBlock() instanceof BlockNetherWart
+                || blockState.getBlock() instanceof FruitBlock)) {
             return;
         }
-
 
         // ブロックを持っている状態で、クリックしてもブロックを設置できないようにする。
         disableItemBlock(event);
 
-        // Disable right click harvesting if holding a tool that can harvest crops (e.g. TiCo's Kama or Scythe).
-        // Note that Item.canHarvestBlock(IBlockState) doesn't have the same effect as ItemStack.canHarvestBlock(IBlockState)
-        // because TiCo's tools overload Item.canHarvestBlock(IBlockState, ItemStack) instead.
-        if((blockState.getBlock() instanceof BlockCrops || blockState.getBlock() instanceof BlockNetherWart) &&
-                (event.getEntityPlayer().getHeldItemMainhand().canHarvestBlock(blockState) ||
-                        event.getEntityPlayer().getHeldItemOffhand().canHarvestBlock(blockState))){
+        // Disable right click harvesting if holding a tool that can harvest crops (e.g.
+        // TiCo's Kama or Scythe).
+        // Note that Item.canHarvestBlock(IBlockState) doesn't have the same effect as
+        // ItemStack.canHarvestBlock(IBlockState)
+        // because TiCo's tools overload Item.canHarvestBlock(IBlockState, ItemStack)
+        // instead.
+        if ((blockState.getBlock() instanceof BlockCrops || blockState.getBlock() instanceof BlockNetherWart)
+                && (event.getEntityPlayer().getHeldItemMainhand().canHarvestBlock(blockState)
+                        || event.getEntityPlayer().getHeldItemOffhand().canHarvestBlock(blockState))) {
             return;
         }
 
         // 利き手以外の時はイベントを処理しない
-        if(event.getHand() != EnumHand.MAIN_HAND) return;
+        if (event.getHand() != EnumHand.MAIN_HAND)
+            return;
 
         // BlockCropsの収集
-        if(canHarvestCrops(blockState, event.getWorld(), event.getPos())) {
-            if(!event.getWorld().isRemote)
+        if (canHarvestCrops(blockState, event.getWorld(), event.getPos())) {
+            if (!event.getWorld().isRemote)
                 harvestCrops(blockState, event.getEntityPlayer(), event.getWorld(), event.getPos());
             event.getEntityPlayer().swingArm(EnumHand.MAIN_HAND);
         }
 
         // BlockNetherWartの収集
-        else if(canHarvestNetherWart(blockState)) {
-            if(!event.getWorld().isRemote)
+        else if (canHarvestNetherWart(blockState)) {
+            if (!event.getWorld().isRemote)
                 harvestNetherWart(blockState, event.getEntityPlayer(), event.getWorld(), event.getPos());
             event.getEntityPlayer().swingArm(EnumHand.MAIN_HAND);
         }
 
-        //　FruitBlockの収集
-        else if(canHarvestFruit(blockState)) {
-            if(!event.getWorld().isRemote)
+        // FruitBlockの収集
+        else if (canHarvestFruit(blockState)) {
+            if (!event.getWorld().isRemote)
                 harvestFruit(blockState, event.getEntityPlayer(), event.getWorld(), event.getPos());
             event.getEntityPlayer().swingArm(EnumHand.MAIN_HAND);
         }
     }
 
     private static boolean canHarvestFruit(IBlockState blockState) {
-        if(!(blockState.getBlock() instanceof FruitBlock)) return false;
+        if (!(blockState.getBlock() instanceof FruitBlock))
+            return false;
         final FruitBlock blockPamFruit = (FruitBlock) blockState.getBlock();
         return blockPamFruit.isMature(blockState);
     }
@@ -101,29 +105,32 @@ public class RightClickHarvesting {
         final int fortune = EnchantmentHelper.getEnchantmentLevel(Enchantments.FORTUNE, stack);
         final List<ItemStack> drops = blockPamFruit.getDrops(world, blockPos, blockState, fortune);
 
-        // This removes exactly one fruit from drops in order to make this more fair compared to "vanilla"
+        // This removes exactly one fruit from drops in order to make this more fair
+        // compared to "vanilla"
         // as one fruit stays planted.
-        if(drops.size() > 1)
+        if (drops.size() > 1)
             drops.remove(drops.size() - 1);
 
         ForgeEventFactory.fireBlockHarvesting(drops, world, blockPos, blockState, fortune, 1f, false, player);
 
-        if(FruitBlock.fruitRemoval) {
+        if (FruitBlock.fruitRemoval) {
             world.setBlockToAir(blockPos);
         } else {
             world.setBlockState(blockPos, blockState.withProperty(blockPamFruit.getAgeProperty(), 0), 3);
         }
 
-        for(ItemStack drop : drops) {
+        for (ItemStack drop : drops) {
             dropItem(drop, world, blockPos);
         }
     }
 
     private static boolean canHarvestCrops(IBlockState plantBlockState, World world, BlockPos pos) {
-        if(!(plantBlockState.getBlock() instanceof BlockCrops)) return false;
+        if (!(plantBlockState.getBlock() instanceof BlockCrops))
+            return false;
         final BlockCrops crops = (BlockCrops) plantBlockState.getBlock();
         IBlockState soilBlockState = world.getBlockState(pos.down());
-        if(!soilBlockState.getBlock().canSustainPlant(soilBlockState, world, pos.down(), EnumFacing.UP, crops)) return false;
+        if (!soilBlockState.getBlock().canSustainPlant(soilBlockState, world, pos.down(), EnumFacing.UP, crops))
+            return false;
         return crops.isMaxAge(plantBlockState);
     }
 
@@ -134,15 +141,16 @@ public class RightClickHarvesting {
 
         final List<ItemStack> drops = crops.getDrops(world, blockPos, blockState, fortune);
 
-        // This removes exactly one seed from drops in order to make this more fair compared to vanilla
+        // This removes exactly one seed from drops in order to make this more fair
+        // compared to vanilla
         // as one seed stays planted.
         final Item seedItem = crops.getItemDropped(blockState, world.rand, fortune);
-        if(seedItem != null)
-            for(Iterator<ItemStack> iterator = drops.iterator(); iterator.hasNext();) {
+        if (seedItem != null)
+            for (Iterator<ItemStack> iterator = drops.iterator(); iterator.hasNext();) {
                 final ItemStack drop = iterator.next();
 
                 // Remove a seed, then break.
-                if(!(drop.getItem() == seedItem) || crops instanceof BlockCarrot || crops instanceof BlockPotato) {
+                if (!(drop.getItem() == seedItem) || crops instanceof BlockCarrot || crops instanceof BlockPotato) {
                     iterator.remove();
                     break;
                 }
@@ -153,14 +161,15 @@ public class RightClickHarvesting {
         // Reset growth level
         world.setBlockState(blockPos, crops.withAge(0));
 
-        for(ItemStack drop : drops) {
+        for (ItemStack drop : drops) {
             dropItem(drop, world, blockPos);
         }
 
     }
 
     private static boolean canHarvestNetherWart(IBlockState blockState) {
-        if(!(blockState.getBlock() instanceof BlockNetherWart)) return false;
+        if (!(blockState.getBlock() instanceof BlockNetherWart))
+            return false;
         final BlockNetherWart netherWart = (BlockNetherWart) blockState.getBlock();
         return blockState.getValue(BlockNetherWart.AGE) >= Iterables.getLast(BlockNetherWart.AGE.getAllowedValues());
     }
@@ -172,11 +181,12 @@ public class RightClickHarvesting {
 
         final List<ItemStack> drops = netherWart.getDrops(world, blockPos, blockState, fortune);
 
-        // This removes exactly one seed from drops in order to make this more fair compared to vanilla
+        // This removes exactly one seed from drops in order to make this more fair
+        // compared to vanilla
         // as one seed stays planted.
         final Item seedItem = netherWart.getItemDropped(blockState, world.rand, fortune);
         if (seedItem != null) {
-            for (Iterator<ItemStack> iterator = drops.iterator(); iterator.hasNext(); ) {
+            for (Iterator<ItemStack> iterator = drops.iterator(); iterator.hasNext();) {
                 final ItemStack drop = iterator.next();
 
                 // Remove a seed, then break.
@@ -196,7 +206,7 @@ public class RightClickHarvesting {
     }
 
     private static void dropItem(ItemStack itemStack, World world, BlockPos pos) {
-        if(world.restoringBlockSnapshots || world.isRemote)
+        if (world.restoringBlockSnapshots || world.isRemote)
             return;
 
         float f = 0.5F;
@@ -204,8 +214,8 @@ public class RightClickHarvesting {
         double d1 = (world.rand.nextFloat() * f) + 0.25D;
         double d2 = (world.rand.nextFloat() * f) + 0.25D;
 
-        final EntityItem entityItem =
-                new EntityItem(world, pos.getX() + d0, pos.getY() + d1, pos.getZ() + d2, itemStack);
+        final EntityItem entityItem = new EntityItem(world, pos.getX() + d0, pos.getY() + d1, pos.getZ() + d2,
+                itemStack);
         entityItem.setDefaultPickupDelay();
         world.spawnEntity(entityItem);
     }

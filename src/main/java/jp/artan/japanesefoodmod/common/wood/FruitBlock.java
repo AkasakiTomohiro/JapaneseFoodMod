@@ -40,7 +40,7 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
     private static final int MATURE_AGE = 2;
     public static final PropertyInteger AGE = PropertyInteger.create("age", 0, MATURE_AGE);
     private Item fruitItem;
-    public static boolean fruitRemoval = false;//This is for Dynamic Trees since the fruits grow back completely
+    public static boolean fruitRemoval = false;// This is for Dynamic Trees since the fruits grow back completely
 
     public FruitBlock(String name) {
         super(Material.PLANTS);
@@ -77,9 +77,9 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
 
     @Override
     public float getBlockHardness(IBlockState blockState, World worldIn, BlockPos pos) {
-        if(getMetaFromState(blockState) >= MATURE_AGE) {
+        if (getMetaFromState(blockState) >= MATURE_AGE) {
             return 2f;
-        } else{
+        } else {
             return 5f;
         }
     }
@@ -94,24 +94,19 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
         return NULL_AABB;
     }
 
-    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos)
-    {
-        if (!this.canBlockStay(worldIn, pos))
-        {
+    public void neighborChanged(IBlockState state, World worldIn, BlockPos pos, Block blockIn, BlockPos fromPos) {
+        if (!this.canBlockStay(worldIn, pos)) {
             this.dropBlock(worldIn, pos, state);
         }
 
     }
 
-    private boolean canBlockStay(World worldIn, BlockPos pos)
-    {
+    private boolean canBlockStay(World worldIn, BlockPos pos) {
         return worldIn.getBlockState(pos.up()).getMaterial().isSolid();
     }
 
-    private void dropBlock(World worldIn, BlockPos pos, IBlockState state)
-    {
-        if (!(state.getValue(AGE) != 3))
-        {
+    private void dropBlock(World worldIn, BlockPos pos, IBlockState state) {
+        if (!(state.getValue(AGE) != 3)) {
 
         }
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 3);
@@ -119,9 +114,10 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
     }
 
     @Override
-    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state, int fortune) {
-        if(getMetaFromState(state) >= MATURE_AGE) {
-            if(!fruitRemoval) {
+    public void getDrops(NonNullList<ItemStack> drops, IBlockAccess world, BlockPos pos, IBlockState state,
+            int fortune) {
+        if (getMetaFromState(state) >= MATURE_AGE) {
+            if (!fruitRemoval) {
                 drops.add(new ItemStack(getFruitItem(), 1));
             }
             drops.add(new ItemStack(getFruitItem(), 1));
@@ -141,7 +137,7 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
 
     public void validatePosition(World world, BlockPos pos) {
 
-        if(!this.canPlaceBlockAt(world, pos)) {
+        if (!this.canPlaceBlockAt(world, pos)) {
             world.setBlockToAir(pos);
         }
     }
@@ -181,12 +177,11 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
         return new BlockStateContainer(this, AGE);
     }
 
-
     @Override
     public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
         int i = state.getValue(AGE);
 
-        if(i < MATURE_AGE && rand.nextInt(1) == 0) {
+        if (i < MATURE_AGE && rand.nextInt(1) == 0) {
             state = state.withProperty(AGE, i + 1);
             worldIn.setBlockState(pos, state, 2);
         }
@@ -197,7 +192,7 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
 
     private void grow(World worldIn, BlockPos pos, IBlockState state) {
         int i = state.getValue(AGE) + MathHelper.getInt(worldIn.rand, 1, 2);
-        if(i > MATURE_AGE) {
+        if (i > MATURE_AGE) {
             i = MATURE_AGE;
         }
         worldIn.setBlockState(pos, state.withProperty(AGE, i), 2);
@@ -218,11 +213,13 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
         this.grow(worldIn, pos, state);
     }
 
-    @Override public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos){ return true; }
+    @Override
+    public boolean isShearable(ItemStack item, IBlockAccess world, BlockPos pos) {
+        return true;
+    }
 
     @Override
     public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) {
-        // TODO Auto-generated method stub
         ArrayList<ItemStack> ret = new ArrayList<ItemStack>();
         ret.add(new ItemStack(this, 1, 0));
         return ret;
@@ -241,13 +238,6 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
 
     @Override
     public void registerItemBlocks(RegistryEvent.Register<Item> event) {
-        String name = getRegistryName().getResourcePath();
-        event.getRegistry().register(new ItemBlock(this) {
-            @Override
-            public int getItemBurnTime(ItemStack itemStack)
-            {
-                return 300;
-            }
-        }.setUnlocalizedName(name).setRegistryName(JapaneseFoodMod.MODID, name));
+        // 何もしない
     }
 }

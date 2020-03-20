@@ -116,8 +116,6 @@ class BananaTreeGen extends WorldGenFruitTrees {
 
                 if (state.getBlock().isAir(state, parWorld, blockPos)
                         && state.getBlock().isLeaves(stateLeaves, parWorld, blockPos) && parRandom.nextInt(10) == 1) {
-                    JapaneseFoodMod.logger
-                            .info("foliageX: " + foliageX + ", foliageY: " + foliageY + ", foliageZ: " + foliageZ);
                     setBlockAndNotifyAdequately(parWorld, blockPos, this.blockStateFruit);
                 }
             }
