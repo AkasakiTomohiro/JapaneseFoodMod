@@ -2,10 +2,6 @@ package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
-import jp.artan.japanesefoodmod.common.potion.CommonPotion;
-import jp.artan.japanesefoodmod.common.potion.JapanesePotion;
-import jp.artan.japanesefoodmod.common.potion.JapanesePotionType;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
@@ -43,8 +39,6 @@ public abstract class CommonProxy {
         JapaneseFoodMod.logger.info("CommonProxy.init");
         JapaneseFoodRawMaterials.init(event);
         JapaneseFoodSouvenir.init(event);
-
-        RightClickHarvesting.instance.register();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
@@ -75,8 +69,6 @@ public abstract class CommonProxy {
     public void registerEnchantments(RegistryEvent.Register<Enchantment> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerEnchantments");
     }
-
-    public static CommonPotion potion = new CommonPotion("test", false, 0xFFFFFF);
 
     @SubscribeEvent
     public void registerPotions(RegistryEvent.Register<Potion> event) {
