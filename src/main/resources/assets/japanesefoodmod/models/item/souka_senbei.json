@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "japanesefoodmod:items/fish2"
+    "layer0": "japanesefoodmod:items/souka_senbei"
   }
 }

@@ -18,10 +18,10 @@ public class JapaneseFoodRawMaterials {
     public static CreativeTabs fruitTreeCreativeTab = new FruitTreeCreativeTab();
 
     // 果樹
-    public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.5F, new BananaTreeSupplier());
+    public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.3F, new BananaTreeSupplier());
 
     // 作物
-    public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.5F);
+    public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.1F);
 
     // 魚
 
