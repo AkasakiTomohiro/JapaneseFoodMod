@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod;
 
+import jp.artan.core.ArtanCoreMod;
 import jp.artan.japanesefoodmod.common.proxy.CommonProxy;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -15,7 +16,7 @@ public class JapaneseFoodMod {
     public static final String MODID = "japanesefoodmod";
     public static final String NAME = "Japanese Food Mod";
     public static final String VERSION = "1.0";
-    public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);";
+    public static final String DEPENDENCIES = "required:forge@[14.23.5.2838,);required:artancoremod@[1.0.0,);";
 
     public static Logger logger;
 
@@ -37,6 +38,7 @@ public class JapaneseFoodMod {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         logger.info("JapaneseFoodMod.preInit");
+        logger.info(ArtanCoreMod.MODID);
         proxy.preInit(event);
     }
 
