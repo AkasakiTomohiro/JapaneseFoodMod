@@ -18,7 +18,10 @@ archivesBaseName = "JapaneseFoodMod"
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
     sourceCompatibility = targetCompatibility = '1.8'
+}
 
+dependencies {
+    compile fileTree(dir: './../ArtanCoreMod/build/libs', include: 'artancoremod-1.0.jar')
 }
 
 tasks.withType(JavaCompile) {
