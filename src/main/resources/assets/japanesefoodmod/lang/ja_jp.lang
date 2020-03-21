@@ -9,6 +9,14 @@ itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
 item.banana.name=バナナ
 item.soy_seeds.name=大豆
 item.marusei_butter_sand.name=マルセイバターサンド
+item.kinin_tsugaru_duke.name=金印つがる漬
+item.le_desere.name=ル・デゼール
+item.kamomes_egg.name=かもめの玉子
+item.kokyo.name=古鏡
+item.haginotsuki.name=萩の月
+item.kaden_yubeshi.name=家伝ゆべし
+item.yoshiwaradentyu.name=吉原殿中
+item.koin_monaka.name=古印最中
 item.tokyo_banana.name=東京バナ奈
 
 # Block
