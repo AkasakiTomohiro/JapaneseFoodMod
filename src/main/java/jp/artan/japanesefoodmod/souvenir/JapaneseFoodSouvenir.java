@@ -10,8 +10,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class JapaneseFoodSouvenir {
     public static CreativeTabs creativeTab = new SouvenirCreativeTab();
-
-    public static final JapaneseFood TokyoBanana = new SouvenirFood("tokyo_banana", 3, 0.5F);
+    // 食べ物
+    public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 1.0F);
+    public static final JapaneseFood TokyoBanana = new SouvenirFood("tokyo_banana", 2, 0.5F);
 
     public static void registerModels(ModelRegistryEvent event) {
     }

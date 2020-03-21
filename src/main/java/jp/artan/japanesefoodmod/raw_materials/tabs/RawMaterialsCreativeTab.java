@@ -12,7 +12,7 @@ public class RawMaterialsCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(JapaneseFoodRawMaterials.Soy.Seed);
+        return new ItemStack(JapaneseFoodRawMaterials.SOY.Seed);
     }
 
 }
