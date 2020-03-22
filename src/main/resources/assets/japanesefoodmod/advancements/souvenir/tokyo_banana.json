@@ -1,0 +1,44 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:tokyo_banana"
+    },
+    "title": {
+      "translate": ""
+    },
+    "description": {
+      "translate": ""
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/root",
+  "criteria": {
+    "craft_tokyo_banana": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:tokyo_banana"
+          }
+        ]
+      }
+    },
+    "eaten_tokyo_banana": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:tokyo_banana"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_tokyo_banana"
+    ],
+    [
+      "eaten_tokyo_banana"
+    ]
+  ]
+}
