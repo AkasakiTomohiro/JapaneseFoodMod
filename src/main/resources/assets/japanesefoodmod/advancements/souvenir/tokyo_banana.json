@@ -12,7 +12,7 @@
   },
   "parent": "japanesefoodmod:souvenir/root",
   "criteria": {
-    "craft": {
+    "craft_tokyo_banana": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -22,7 +22,7 @@
         ]
       }
     },
-    "eaten": {
+    "eaten_tokyo_banana": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "items": [
@@ -35,10 +35,10 @@
   },
   "requirements": [
     [
-      "craft"
+      "craft_tokyo_banana"
     ],
     [
-      "eaten"
+      "eaten_tokyo_banana"
     ]
   ]
 }
