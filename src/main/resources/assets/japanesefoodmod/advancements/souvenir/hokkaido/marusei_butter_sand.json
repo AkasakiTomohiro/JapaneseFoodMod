@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:marusei_butter_sand"
+    },
+    "title": {
+      "translate": "advancements.souvenir.marusei_butter_sand.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.marusei_butter_sand.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/hokkaido/souvenir_hokkaido",
+  "criteria": {
+    "craft_marusei_butter_sand": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:marusei_butter_sand"
+          }
+        ]
+      }
+    },
+    "eaten_marusei_butter_sand": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:marusei_butter_sand",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_marusei_butter_sand"
+    ],
+    [
+      "eaten_marusei_butter_sand"
+    ]
+  ]
+}

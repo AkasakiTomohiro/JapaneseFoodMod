@@ -1,29 +1,45 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:grass"
+      "item": "minecraft:apple"
     },
     "title": {
-      "translate": "bbbbb"
+      "translate": "advancements.souvenir.root.title"
     },
     "description": {
-      "translate": "aaaaa"
+      "translate": "advancements.souvenir.root.description"
     },
     "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
     "show_toast": false,
     "announce_to_chat": false,
-    "hidden": false
+    "frame": "goal"
   },
   "criteria": {
-    "crafting_table": {
-      "trigger": "minecraft:inventory_changed",
+    "eaten_marusei_butter_sand": {
+      "trigger": "minecraft:consume_item",
       "conditions": {
-        "items": [
-          {
-            "item": "minecraft:crafting_table"
-          }
-        ]
+        "item": {
+          "item": "japanesefoodmod:marusei_butter_sand",
+          "count": 1
+        }
+      }
+    },
+    "eaten_tokyo_banana": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:tokyo_banana",
+          "count": 1
+        }
       }
     }
-  }
+  },
+  "requirements": [
+    [
+      "eaten_marusei_butter_sand"
+    ],
+    [
+      "eaten_tokyo_banana"
+    ]
+  ]
 }

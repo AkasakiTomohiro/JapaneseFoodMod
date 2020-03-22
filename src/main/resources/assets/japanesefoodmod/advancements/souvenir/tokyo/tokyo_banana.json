@@ -10,7 +10,7 @@
       "translate": "advancements.souvenir.tokyo_banana.description"
     }
   },
-  "parent": "japanesefoodmod:souvenir/root",
+  "parent": "japanesefoodmod:souvenir/tokyo/souvenir_tokyo",
   "criteria": {
     "craft_tokyo_banana": {
       "trigger": "minecraft:inventory_changed",
@@ -25,11 +25,10 @@
     "eaten_tokyo_banana": {
       "trigger": "minecraft:consume_item",
       "conditions": {
-        "items": [
-          {
-            "item": "japanesefoodmod:tokyo_banana"
-          }
-        ]
+        "item": {
+          "item": "japanesefoodmod:tokyo_banana",
+          "count": 1
+        }
       }
     }
   },

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:tokyo_banana"
+    },
+    "title": {
+      "translate": "advancements.souvenir.souvenir_tokyo.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.souvenir_tokyo.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "japanesefoodmod:souvenir/root",
+  "criteria": {
+    "eaten_tokyo_banana": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:tokyo_banana",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eaten_tokyo_banana"
+    ]
+  ]
+}

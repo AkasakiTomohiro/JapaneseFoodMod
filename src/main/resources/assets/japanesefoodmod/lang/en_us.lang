@@ -1,6 +1,12 @@
 #English Language File
 
 # Advancements
+advancements.souvenir.root.title=Goal
+advancements.souvenir.root.description=All souvenir eaten
+advancements.souvenir.souvenir_hokkaido.title=Hokkaido
+advancements.souvenir.souvenir_hokkaido.description=All Hokkaido souvenir eaten
+advancements.souvenir.souvenir_tokyo.title=Tokyo
+advancements.souvenir.souvenir_tokyo.description=All Tokyo souvenir eaten
 advancements.souvenir.tokyo_banana.title=Tokyo Banana
 advancements.souvenir.tokyo_banana.description="Tokyo Banana" is crafting and eaten
 
