@@ -4,10 +4,10 @@
       "item": "japanesefoodmod:tokyo_banana"
     },
     "title": {
-      "translate": "advancements.adventure.tokyo_banana.title"
+      "translate": "advancements.souvenir.tokyo_banana.title"
     },
     "description": {
-      "translate": "advancements.adventure.tokyo_banana.description"
+      "translate": "advancements.souvenir.tokyo_banana.description"
     }
   },
   "parent": "japanesefoodmod:souvenir/root",
