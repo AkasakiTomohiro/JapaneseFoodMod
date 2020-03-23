@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kanokomoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.kanokomoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.kanokomoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/16-toyama/souvenir_toyama",
+    "criteria": {
+        "craft_kanokomoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:kanokomoti"
+                    }
+                ]
+            }
+        },
+        "eaten_kanokomoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kanokomoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_kanokomoti"
+        ],
+        [
+            "eaten_kanokomoti"
+        ]
+    ]
+}

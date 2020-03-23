@@ -22,6 +22,8 @@ item.peanuts_monaka.name=Peanuts Monaka
 item.souka_senbei.name=Souka Senbei
 item.hato_sable.name=Hato Sable
 item.tokyo_banana.name=Tokyo Banana
+item.sasadango.name=Sasadango
+item.kanokomoti.name=Kanokomoti
 
 # Block
 tile.banana_log.name=Banana Log
@@ -101,3 +103,13 @@ advancements.souvenir.souvenir_kanagawa.title=Kanagawa
 advancements.souvenir.souvenir_kanagawa.description=All Kanagawa souvenir eaten
 advancements.souvenir.hato_sable.title=Hato Sable
 advancements.souvenir.hato_sable.description="Hato Sable" is crafting and eaten
+
+advancements.souvenir.souvenir_niigata.title=Niigata
+advancements.souvenir.souvenir_niigata.description=All Niigata souvenir eaten
+advancements.souvenir.sasadango.title=Sasadango
+advancements.souvenir.sasadango.description="Sasadango" is crafting and eaten
+
+advancements.souvenir.souvenir_toyama.title=Toyama
+advancements.souvenir.souvenir_toyama.description=All Toyama souvenir eaten
+advancements.souvenir.kanokomoti.title=Kanokomoti
+advancements.souvenir.kanokomoti.description="Kanokomoti" is crafting and eaten

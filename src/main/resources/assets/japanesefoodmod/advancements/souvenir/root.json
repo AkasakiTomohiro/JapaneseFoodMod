@@ -140,6 +140,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_sasadango": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:sasadango",
+          "count": 1
+        }
+      }
+    },
+    "eaten_kanokomoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kanokomoti",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -184,6 +202,12 @@
     ],
     [
       "eaten_hato_sable"
+    ],
+    [
+      "eaten_sasadango"
+    ],
+    [
+      "eaten_kanokomoti"
     ]
   ]
 }

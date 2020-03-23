@@ -22,6 +22,8 @@ item.peanuts_monaka.name=ぴーなっつ最中
 item.souka_senbei.name=草加せんべい
 item.tokyo_banana.name=東京バナ奈
 item.hato_sable.name=鳩サブレー
+item.sasadango.name=笹だんご
+item.kanokomoti.name=鹿の子餅
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -101,4 +103,14 @@ advancements.souvenir.souvenir_kanagawa.title=神奈川
 advancements.souvenir.souvenir_kanagawa.description=神奈川のお土産を食べつくした
 advancements.souvenir.hato_sable.title=鳩サブレー
 advancements.souvenir.hato_sable.description="鳩サブレー"を作って食べた
+
+advancements.souvenir.souvenir_niigata.title=新潟
+advancements.souvenir.souvenir_niigata.description=新潟のお土産を食べつくした
+advancements.souvenir.sasadango.title=笹だんご
+advancements.souvenir.sasadango.description="笹だんご"を作って食べた
+
+advancements.souvenir.souvenir_toyama.title=富山
+advancements.souvenir.souvenir_toyama.description=富山のお土産を食べつくした
+advancements.souvenir.kanokomoti.title=鹿の子餅
+advancements.souvenir.kanokomoti.description="鹿の子餅"を作って食べた
 

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:sasadango"
+        },
+        "title": {
+            "translate": "advancements.souvenir.sasadango.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.sasadango.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/15-niigata/souvenir_niigata",
+    "criteria": {
+        "craft_sasadango": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:sasadango"
+                    }
+                ]
+            }
+        },
+        "eaten_sasadango": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:sasadango",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_sasadango"
+        ],
+        [
+            "eaten_sasadango"
+        ]
+    ]
+}
