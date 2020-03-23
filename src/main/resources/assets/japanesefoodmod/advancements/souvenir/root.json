@@ -104,6 +104,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_tabigarasu": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:tabigarasu",
+          "count": 1
+        }
+      }
+    },
+    "eaten_peanuts_monaka": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:peanuts_monaka",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -136,6 +154,12 @@
     ],
     [
       "eaten_koin_monaka"
+    ],
+    [
+      "eaten_tabigarasu"
+    ],
+    [
+      "eaten_peanuts_monaka"
     ]
   ]
 }

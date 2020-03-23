@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:tabigarasu"
+        },
+        "title": {
+            "translate": "advancements.souvenir.tabigarasu.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.tabigarasu.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/10-gunma/souvenir_gunma",
+    "criteria": {
+        "craft_tabigarasu": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:tabigarasu"
+                    }
+                ]
+            }
+        },
+        "eaten_tabigarasu": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:tabigarasu",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_tabigarasu"
+        ],
+        [
+            "eaten_tabigarasu"
+        ]
+    ]
+}

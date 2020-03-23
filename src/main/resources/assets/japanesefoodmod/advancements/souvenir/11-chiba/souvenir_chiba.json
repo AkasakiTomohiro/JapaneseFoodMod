@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:peanuts_monaka"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_chiba.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_chiba.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_peanuts_monaka": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:peanuts_monaka",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_peanuts_monaka"
+        ]
+    ]
+}
