@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:yoshiwaradentyu"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_ibaraki.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_ibaraki.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_yoshiwaradentyu": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:yoshiwaradentyu",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_yoshiwaradentyu"
+        ]
+    ]
+}

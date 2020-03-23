@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:koin_monaka"
+        },
+        "title": {
+            "translate": "advancements.souvenir.koin_monaka.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.koin_monaka.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/9-tochigi/souvenir_tochigi",
+    "criteria": {
+        "craft_koin_monaka": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:koin_monaka"
+                    }
+                ]
+            }
+        },
+        "eaten_koin_monaka": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:koin_monaka",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_koin_monaka"
+        ],
+        [
+            "eaten_koin_monaka"
+        ]
+    ]
+}

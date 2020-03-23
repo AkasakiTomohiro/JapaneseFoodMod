@@ -86,6 +86,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_yoshiwaradentyu": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:yoshiwaradentyu",
+          "count": 1
+        }
+      }
+    },
+    "eaten_koin_monaka": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:koin_monaka",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -112,6 +130,12 @@
     ],
     [
       "eaten_kaden_yubeshi"
+    ],
+    [
+      "eaten_yoshiwaradentyu"
+    ],
+    [
+      "eaten_koin_monaka"
     ]
   ]
 }
