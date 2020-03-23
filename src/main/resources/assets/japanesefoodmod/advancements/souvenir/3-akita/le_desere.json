@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:le_desere"
+    },
+    "title": {
+      "translate": "advancements.souvenir.le_desere.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.le_desere.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/3-akita/souvenir_akita",
+  "criteria": {
+    "craft_le_desere": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:le_desere"
+          }
+        ]
+      }
+    },
+    "eaten_le_desere": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:le_desere",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_le_desere"
+    ],
+    [
+      "eaten_le_desere"
+    ]
+  ]
+}

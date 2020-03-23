@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:marusei_butter_sand"
+    },
+    "title": {
+      "translate": "advancements.souvenir.souvenir_aomori.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.souvenir_aomori.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "japanesefoodmod:souvenir/root",
+  "criteria": {
+    "eaten_kinin_tsugaru_duke": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kinin_tsugaru_duke",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eaten_kinin_tsugaru_duke"
+    ]
+  ]
+}

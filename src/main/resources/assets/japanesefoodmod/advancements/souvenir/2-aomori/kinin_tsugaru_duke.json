@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:kinin_tsugaru_duke"
+    },
+    "title": {
+      "translate": "advancements.souvenir.kinin_tsugaru_duke.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.kinin_tsugaru_duke.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/2-aomori/souvenir_aomori",
+  "criteria": {
+    "craft_kinin_tsugaru_duke": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:kinin_tsugaru_duke"
+          }
+        ]
+      }
+    },
+    "eaten_kinin_tsugaru_duke": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kinin_tsugaru_duke",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_kinin_tsugaru_duke"
+    ],
+    [
+      "eaten_kinin_tsugaru_duke"
+    ]
+  ]
+}

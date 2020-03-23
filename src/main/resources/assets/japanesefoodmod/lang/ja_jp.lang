@@ -31,10 +31,22 @@ tile.banana_sapling.name=バナナの苗木
 # 進捗
 advancements.souvenir.root.title=ゴール
 advancements.souvenir.root.description=すべてのお土産を食べつくした
+
 advancements.souvenir.souvenir_hokkaido.title=北海道
 advancements.souvenir.souvenir_hokkaido.description=北海道のお土産を食べつくした
 advancements.souvenir.marusei_butter_sand.title=マルセイバターサンド
 advancements.souvenir.marusei_butter_sand.description="マルセイバターサンド"を作って食べた
+
+advancements.souvenir.souvenir_aomori.title=青森
+advancements.souvenir.souvenir_aomori.description=青森のお土産を食べつくした
+advancements.souvenir.kinin_tsugaru_duke.title=金印つがる漬
+advancements.souvenir.kinin_tsugaru_duke.description="金印つがる漬"を作って食べた
+
+advancements.souvenir.souvenir_akita.title=秋田
+advancements.souvenir.souvenir_akita.description=秋田のお土産を食べつくした
+advancements.souvenir.le_desere.title=ル・デゼール
+advancements.souvenir.le_desere.description="ル・デゼール"を作って食べた
+
 advancements.souvenir.souvenir_tokyo.title=東京
 advancements.souvenir.souvenir_tokyo.description=東京のお土産を食べつくした
 advancements.souvenir.tokyo_banana.title=東京バナ奈

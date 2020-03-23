@@ -32,6 +32,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_kinin_tsugaru_duke": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kinin_tsugaru_duke",
+          "count": 1
+        }
+      }
+    },
+    "eaten_le_desere": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:le_desere",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -40,6 +58,12 @@
     ],
     [
       "eaten_tokyo_banana"
+    ],
+    [
+      "eaten_kinin_tsugaru_duke"
+    ],
+    [
+      "eaten_le_desere"
     ]
   ]
 }
