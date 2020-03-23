@@ -1,17 +1,5 @@
 #English Language File
 
-# Advancements
-advancements.souvenir.root.title=Goal
-advancements.souvenir.root.description=All souvenir eaten
-advancements.souvenir.souvenir_hokkaido.title=Hokkaido
-advancements.souvenir.souvenir_hokkaido.description=All Hokkaido souvenir eaten
-advancements.souvenir.marusei_butter_sand.title=Marusei Butter Sand
-advancements.souvenir.marusei_butter_sand.description="Marusei Butter Sand" is crafting and eaten
-advancements.souvenir.souvenir_tokyo.title=Tokyo
-advancements.souvenir.souvenir_tokyo.description=All Tokyo souvenir eaten
-advancements.souvenir.tokyo_banana.title=Tokyo Banana
-advancements.souvenir.tokyo_banana.description="Tokyo Banana" is crafting and eaten
-
 # Tabs
 itemGroup.japanesefoodrawmaterials=Japanese Food[Raw Materials]
 itemGroup.japanesefoodfruittree=Japanese Food[Fruit Tree]
@@ -39,3 +27,15 @@ item.tokyo_banana.name=Tokyo Banana
 tile.banana_log.name=Banana Log
 tile.banana_leaves.name=Banana Leaves
 tile.banana_sapling.name=Banana Sapling
+
+# Advancements
+advancements.souvenir.root.title=Goal
+advancements.souvenir.root.description=All souvenir eaten
+advancements.souvenir.souvenir_hokkaido.title=Hokkaido
+advancements.souvenir.souvenir_hokkaido.description=All Hokkaido souvenir eaten
+advancements.souvenir.marusei_butter_sand.title=Marusei Butter Sand
+advancements.souvenir.marusei_butter_sand.description="Marusei Butter Sand" is crafting and eaten
+advancements.souvenir.souvenir_tokyo.title=Tokyo
+advancements.souvenir.souvenir_tokyo.description=All Tokyo souvenir eaten
+advancements.souvenir.tokyo_banana.title=Tokyo Banana
+advancements.souvenir.tokyo_banana.description="Tokyo Banana" is crafting and eaten

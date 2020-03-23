@@ -1,17 +1,5 @@
 #日本語言語ファイル
 
-# 進捗
-advancements.souvenir.root.title=ゴール
-advancements.souvenir.root.description=すべてのお土産を食べつくした
-advancements.souvenir.souvenir_hokkaido.title=北海道
-advancements.souvenir.souvenir_hokkaido.description=北海道のお土産を食べつくした
-advancements.souvenir.marusei_butter_sand.title=マルセイバターサンド
-advancements.souvenir.marusei_butter_sand.description="マルセイバターサンド"を作って食べた
-advancements.souvenir.souvenir_tokyo.title=東京
-advancements.souvenir.souvenir_tokyo.description=東京のお土産を食べつくした
-advancements.souvenir.tokyo_banana.title=東京バナ奈
-advancements.souvenir.tokyo_banana.description="東京バナ奈"を作って食べた
-
 # Tabs
 itemGroup.japanesefoodrawmaterials=日本料理MOD[材料]
 itemGroup.japanesefoodfruittree=日本料理MOD[果樹]
@@ -39,4 +27,16 @@ item.tokyo_banana.name=東京バナ奈
 tile.banana_log.name=バナナの原木
 tile.banana_leaves.name=バナナの葉
 tile.banana_sapling.name=バナナの苗木
+
+# 進捗
+advancements.souvenir.root.title=ゴール
+advancements.souvenir.root.description=すべてのお土産を食べつくした
+advancements.souvenir.souvenir_hokkaido.title=北海道
+advancements.souvenir.souvenir_hokkaido.description=北海道のお土産を食べつくした
+advancements.souvenir.marusei_butter_sand.title=マルセイバターサンド
+advancements.souvenir.marusei_butter_sand.description="マルセイバターサンド"を作って食べた
+advancements.souvenir.souvenir_tokyo.title=東京
+advancements.souvenir.souvenir_tokyo.description=東京のお土産を食べつくした
+advancements.souvenir.tokyo_banana.title=東京バナ奈
+advancements.souvenir.tokyo_banana.description="東京バナ奈"を作って食べた
 
