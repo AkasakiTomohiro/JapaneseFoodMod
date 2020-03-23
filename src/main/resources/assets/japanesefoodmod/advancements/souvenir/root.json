@@ -122,6 +122,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_souka_senbei": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:souka_senbei",
+          "count": 1
+        }
+      }
+    },
+    "eaten_hato_sable": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:hato_sable",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -160,6 +178,12 @@
     ],
     [
       "eaten_peanuts_monaka"
+    ],
+    [
+      "eaten_souka_senbei"
+    ],
+    [
+      "eaten_hato_sable"
     ]
   ]
 }

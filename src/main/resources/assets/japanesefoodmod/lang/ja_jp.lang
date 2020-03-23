@@ -20,8 +20,8 @@ item.koin_monaka.name=古印最中
 item.tabigarasu.name=旅ガラス
 item.peanuts_monaka.name=ぴーなっつ最中
 item.souka_senbei.name=草加せんべい
-item.hato_sable.name=鳩サブレー
 item.tokyo_banana.name=東京バナ奈
+item.hato_sable.name=鳩サブレー
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -87,8 +87,18 @@ advancements.souvenir.souvenir_chiba.description=千葉のお土産を食べつ�
 advancements.souvenir.peanuts_monaka.title=ぴーなっつ最中
 advancements.souvenir.peanuts_monaka.description="ぴーなっつ最中"を作って食べた
 
+advancements.souvenir.souvenir_saitama.title=埼玉
+advancements.souvenir.souvenir_saitama.description=埼玉のお土産を食べつくした
+advancements.souvenir.souka_senbei.title=草加せんべい
+advancements.souvenir.souka_senbei.description="草加せんべい"を作って食べた
+
 advancements.souvenir.souvenir_tokyo.title=東京
 advancements.souvenir.souvenir_tokyo.description=東京のお土産を食べつくした
 advancements.souvenir.tokyo_banana.title=東京バナ奈
 advancements.souvenir.tokyo_banana.description="東京バナ奈"を作って食べた
+
+advancements.souvenir.souvenir_kanagawa.title=神奈川
+advancements.souvenir.souvenir_kanagawa.description=神奈川のお土産を食べつくした
+advancements.souvenir.hato_sable.title=鳩サブレー
+advancements.souvenir.hato_sable.description="鳩サブレー"を作って食べた
 

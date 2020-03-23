@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:hato_sable"
+        },
+        "title": {
+            "translate": "advancements.souvenir.hato_sable.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.hato_sable.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/14-kanagawa/souvenir_kanagawa",
+    "criteria": {
+        "craft_hato_sable": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:hato_sable"
+                    }
+                ]
+            }
+        },
+        "eaten_hato_sable": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:hato_sable",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_hato_sable"
+        ],
+        [
+            "eaten_hato_sable"
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:souka_senbei"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souka_senbei.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souka_senbei.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/12-saitama/souvenir_saitama",
+    "criteria": {
+        "craft_souka_senbei": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:souka_senbei"
+                    }
+                ]
+            }
+        },
+        "eaten_souka_senbei": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:souka_senbei",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_souka_senbei"
+        ],
+        [
+            "eaten_souka_senbei"
+        ]
+    ]
+}
