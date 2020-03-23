@@ -6,8 +6,12 @@ itemGroup.japanesefoodfruittree=日本料理MOD[果樹]
 itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
 
 # Items
+
+## Raw Materials
 item.banana.name=バナナ
 item.soy_seeds.name=大豆
+
+## Souvenirs
 item.marusei_butter_sand.name=マルセイバターサンド
 item.kinin_tsugaru_duke.name=金印つがる漬
 item.le_desere.name=ル・デゼール
@@ -28,6 +32,11 @@ item.yuuzenkoromo.name=友禅ころも
 item.kikyoshingenmoti.name=桔梗信玄餅
 item.unagipie.name=うなぎパイ
 item.nozawanaduke.name=野沢菜漬
+item.kisimenpie.name=きしめんパイ
+item.okiagarimonaka.name=起き上り最中
+item.habutaemoti.name=羽二重餅
+item.itokirimoti.name=糸切り餅
+item.akahukumoti.name=赤福餅
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -137,3 +146,28 @@ advancements.souvenir.souvenir_nagano.title=長野
 advancements.souvenir.souvenir_nagano.description=長野のお土産を食べつくした
 advancements.souvenir.nozawanaduke.title=野沢菜漬
 advancements.souvenir.nozawanaduke.description="野沢菜漬"を作って食べた
+
+advancements.souvenir.souvenir_aichi.title=愛知
+advancements.souvenir.souvenir_aichi.description=愛知のお土産を食べつくした
+advancements.souvenir.kisimenpie.title=きしめんパイ
+advancements.souvenir.kisimenpie.description="きしめんパイ"を作って食べた
+
+advancements.souvenir.souvenir_gifu.title=岐阜
+advancements.souvenir.souvenir_gifu.description=岐阜のお土産を食べつくした
+advancements.souvenir.okiagarimonaka.title=起き上り最中
+advancements.souvenir.okiagarimonaka.description="起き上り最中"を作って食べた
+
+advancements.souvenir.souvenir_fukui.title=福井
+advancements.souvenir.souvenir_fukui.description=福井のお土産を食べつくした
+advancements.souvenir.habutaemoti.title=羽二重餅
+advancements.souvenir.habutaemoti.description="羽二重餅"を作って食べた
+
+advancements.souvenir.souvenir_shiga.title=滋賀
+advancements.souvenir.souvenir_shiga.description=滋賀のお土産を食べつくした
+advancements.souvenir.itokirimoti.title=糸切り餅
+advancements.souvenir.itokirimoti.description="糸切り餅"を作って食べた
+
+advancements.souvenir.souvenir_mie.title=三重
+advancements.souvenir.souvenir_mie.description=三重のお土産を食べつくした
+advancements.souvenir.akahukumoti.title=赤福餅
+advancements.souvenir.akahukumoti.description="赤福餅"を作って食べた

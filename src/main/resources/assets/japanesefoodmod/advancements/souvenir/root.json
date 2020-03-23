@@ -194,6 +194,51 @@
           "count": 1
         }
       }
+    },
+    "eaten_kisimenpie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kisimenpie",
+          "count": 1
+        }
+      }
+    },
+    "eaten_okiagarimonaka": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:okiagarimonaka",
+          "count": 1
+        }
+      }
+    },
+    "eaten_habutaemoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:habutaemoti",
+          "count": 1
+        }
+      }
+    },
+    "eaten_itokirimoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:itokirimoti",
+          "count": 1
+        }
+      }
+    },
+    "eaten_akahukumoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:akahukumoti",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -256,6 +301,21 @@
     ],
     [
       "eaten_nozawanaduke"
+    ],
+    [
+      "eaten_kisimenpie"
+    ],
+    [
+      "eaten_okiagarimonaka"
+    ],
+    [
+      "eaten_habutaemoti"
+    ],
+    [
+      "eaten_itokirimoti"
+    ],
+    [
+      "eaten_akahukumoti"
     ]
   ]
 }

@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class JapaneseFoodSouvenir {
     public static CreativeTabs creativeTab = new SouvenirCreativeTab();
+
     // 食べ物
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);
     public static final JapaneseFood KININ_TSUGARU_DUKE = new SouvenirFood("kinin_tsugaru_duke", 1, 0.1F);
@@ -31,6 +32,11 @@ public class JapaneseFoodSouvenir {
     public static final JapaneseFood KIKYOSHINGENMOTI = new SouvenirFood("kikyoshingenmoti", 1, 0.6F);
     public static final JapaneseFood UNAGIPIE = new SouvenirFood("unagipie", 1, 0.6F);
     public static final JapaneseFood NOZAWANADUKE = new SouvenirFood("nozawanaduke", 1, 0.6F);
+    public static final JapaneseFood KISIMENPIE = new SouvenirFood("kisimenpie", 2, 0.8F);
+    public static final JapaneseFood OKIAGARIMONAKA = new SouvenirFood("okiagarimonaka", 2, 0.5F);
+    public static final JapaneseFood HABUTAEMOTI = new SouvenirFood("habutaemoti", 1, 1.0F);
+    public static final JapaneseFood ITOKIRIMOTI = new SouvenirFood("itokirimoti", 1, 0.6F);
+    public static final JapaneseFood AKAHUKUMOTI = new SouvenirFood("akahukumoti", 1, 0.7F);
 
     public static void registerModels(ModelRegistryEvent event) {
     }

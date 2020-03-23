@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:habutaemoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_fukui.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_fukui.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_habutaemoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:habutaemoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_habutaemoti"
+        ]
+    ]
+}

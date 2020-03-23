@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:itokirimoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.itokirimoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.itokirimoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/24-shiga/souvenir_shiga",
+    "criteria": {
+        "craft_itokirimoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:itokirimoti"
+                    }
+                ]
+            }
+        },
+        "eaten_itokirimoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:itokirimoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_itokirimoti"
+        ],
+        [
+            "eaten_itokirimoti"
+        ]
+    ]
+}

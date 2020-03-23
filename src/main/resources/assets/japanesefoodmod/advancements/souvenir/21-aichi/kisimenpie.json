@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kisimenpie"
+        },
+        "title": {
+            "translate": "advancements.souvenir.kisimenpie.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.kisimenpie.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/21-aichi/souvenir_aichi",
+    "criteria": {
+        "craft_kisimenpie": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:kisimenpie"
+                    }
+                ]
+            }
+        },
+        "eaten_kisimenpie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kisimenpie",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_kisimenpie"
+        ],
+        [
+            "eaten_kisimenpie"
+        ]
+    ]
+}

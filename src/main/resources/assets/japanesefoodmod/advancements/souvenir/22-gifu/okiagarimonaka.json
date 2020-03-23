@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:okiagarimonaka"
+        },
+        "title": {
+            "translate": "advancements.souvenir.okiagarimonaka.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.okiagarimonaka.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/22-gifu/souvenir_gifu",
+    "criteria": {
+        "craft_okiagarimonaka": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:okiagarimonaka"
+                    }
+                ]
+            }
+        },
+        "eaten_okiagarimonaka": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:okiagarimonaka",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_okiagarimonaka"
+        ],
+        [
+            "eaten_okiagarimonaka"
+        ]
+    ]
+}

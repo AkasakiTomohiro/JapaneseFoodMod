@@ -6,8 +6,12 @@ itemGroup.japanesefoodfruittree=Japanese Food[Fruit Tree]
 itemGroup.japanesefoodsouvenir=Japanese Food[Souvenir]
 
 # Items
+
+## Raw Materials
 item.banana.name=Banana
 item.soy_seeds.name=Soy
+
+## Souvenirs
 item.marusei_butter_sand.name=Marusei Butter Sand
 item.kinin_tsugaru_duke.name=Kinin Tsugaru Duke
 item.le_desere.name=Le Desere
@@ -28,6 +32,11 @@ item.yuuzenkoromo.name=Yuuzenkoromo
 item.kikyoshingenmoti.name=Kikyoshingenmoti
 item.unagipie.name=Unagipie
 item.nozawanaduke.name=Nozawanaduke
+item.kisimenpie.name=Kisimenpie
+item.okiagarimonaka.name=Okiagarimonaka
+item.habutaemoti.name=Habutaemoti
+item.itokirimoti.name=Itokirimoti
+item.akahukumoti.name=Akahukumoti
 
 # Block
 tile.banana_log.name=Banana Log
@@ -137,3 +146,28 @@ advancements.souvenir.souvenir_nagano.title=Nagano
 advancements.souvenir.souvenir_nagano.description=All Nagano souvenir eaten
 advancements.souvenir.nozawanaduke.title=Nozawanaduke
 advancements.souvenir.nozawanaduke.description="Nozawanaduke" is crafting and eaten
+
+advancements.souvenir.souvenir_aichi.title=Aichi
+advancements.souvenir.souvenir_aichi.description=All Aichi souvenir eaten
+advancements.souvenir.kisimenpie.title=Kisimenpie
+advancements.souvenir.kisimenpie.description="Kisimenpie" is crafting and eaten
+
+advancements.souvenir.souvenir_gifu.title=Gifu
+advancements.souvenir.souvenir_gifu.description=All Gifu souvenir eaten
+advancements.souvenir.okiagarimonaka.title=Okiagarimonaka
+advancements.souvenir.okiagarimonaka.description="Okiagarimonaka" is crafting and eaten
+
+advancements.souvenir.souvenir_fukui.title=Fukui
+advancements.souvenir.souvenir_fukui.description=All Fukui souvenir eaten
+advancements.souvenir.habutaemoti.title=Habutaemoti
+advancements.souvenir.habutaemoti.description="Habutaemoti" is crafting and eaten
+
+advancements.souvenir.souvenir_shiga.title=Shiga
+advancements.souvenir.souvenir_shiga.description=All Shiga souvenir eaten
+advancements.souvenir.itokirimoti.title=Itokirimoti
+advancements.souvenir.itokirimoti.description="Itokirimoti" is crafting and eaten
+
+advancements.souvenir.souvenir_mie.title=Mie
+advancements.souvenir.souvenir_mie.description=All Mie souvenir eaten
+advancements.souvenir.akahukumoti.title=Akahukumoti
+advancements.souvenir.akahukumoti.description="Akahukumoti" is crafting and eaten

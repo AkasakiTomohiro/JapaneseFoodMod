@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:habutaemoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.habutaemoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.habutaemoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/23-fukui/souvenir_fukui",
+    "criteria": {
+        "craft_habutaemoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:habutaemoti"
+                    }
+                ]
+            }
+        },
+        "eaten_habutaemoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:habutaemoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_habutaemoti"
+        ],
+        [
+            "eaten_habutaemoti"
+        ]
+    ]
+}

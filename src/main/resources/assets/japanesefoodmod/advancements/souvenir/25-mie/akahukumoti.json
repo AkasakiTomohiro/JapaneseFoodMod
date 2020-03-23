@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:akahukumoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.akahukumoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.akahukumoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/25-mie/souvenir_mie",
+    "criteria": {
+        "craft_akahukumoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:akahukumoti"
+                    }
+                ]
+            }
+        },
+        "eaten_akahukumoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:akahukumoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_akahukumoti"
+        ],
+        [
+            "eaten_akahukumoti"
+        ]
+    ]
+}
