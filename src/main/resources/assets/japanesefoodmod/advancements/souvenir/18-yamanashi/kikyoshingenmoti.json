@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kikyoshingenmoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.kikyoshingenmoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.kikyoshingenmoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/18-yamanashi/souvenir_yamanashi",
+    "criteria": {
+        "craft_kikyoshingenmoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:kikyoshingenmoti"
+                    }
+                ]
+            }
+        },
+        "eaten_kikyoshingenmoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kikyoshingenmoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_kikyoshingenmoti"
+        ],
+        [
+            "eaten_kikyoshingenmoti"
+        ]
+    ]
+}

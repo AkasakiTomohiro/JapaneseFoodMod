@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:yuuzenkoromo"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_ishikawa.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_ishikawa.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_yuuzenkoromo": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:yuuzenkoromo",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_yuuzenkoromo"
+        ]
+    ]
+}

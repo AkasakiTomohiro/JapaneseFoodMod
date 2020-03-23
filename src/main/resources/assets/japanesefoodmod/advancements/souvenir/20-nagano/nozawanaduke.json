@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:nozawanaduke"
+        },
+        "title": {
+            "translate": "advancements.souvenir.nozawanaduke.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.nozawanaduke.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/20-nagano/souvenir_nagano",
+    "criteria": {
+        "craft_nozawanaduke": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:nozawanaduke"
+                    }
+                ]
+            }
+        },
+        "eaten_nozawanaduke": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:nozawanaduke",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_nozawanaduke"
+        ],
+        [
+            "eaten_nozawanaduke"
+        ]
+    ]
+}

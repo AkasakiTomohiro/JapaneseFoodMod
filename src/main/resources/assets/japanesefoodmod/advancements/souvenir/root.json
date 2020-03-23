@@ -158,6 +158,42 @@
           "count": 1
         }
       }
+    },
+    "eaten_yuuzenkoromo": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:yuuzenkoromo",
+          "count": 1
+        }
+      }
+    },
+    "eaten_kikyoshingenmoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kikyoshingenmoti",
+          "count": 1
+        }
+      }
+    },
+    "eaten_unagipie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:unagipie",
+          "count": 1
+        }
+      }
+    },
+    "eaten_nozawanaduke": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:nozawanaduke",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -208,6 +244,18 @@
     ],
     [
       "eaten_kanokomoti"
+    ],
+    [
+      "eaten_yuuzenkoromo"
+    ],
+    [
+      "eaten_kikyoshingenmoti"
+    ],
+    [
+      "eaten_unagipie"
+    ],
+    [
+      "eaten_nozawanaduke"
     ]
   ]
 }

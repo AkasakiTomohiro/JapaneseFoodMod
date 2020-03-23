@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:unagipie"
+        },
+        "title": {
+            "translate": "advancements.souvenir.unagipie.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.unagipie.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/19-shizuoka/souvenir_shizuoka",
+    "criteria": {
+        "craft_unagipie": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:unagipie"
+                    }
+                ]
+            }
+        },
+        "eaten_unagipie": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:unagipie",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_unagipie"
+        ],
+        [
+            "eaten_unagipie"
+        ]
+    ]
+}

@@ -24,6 +24,10 @@ item.hato_sable.name=Hato Sable
 item.tokyo_banana.name=Tokyo Banana
 item.sasadango.name=Sasadango
 item.kanokomoti.name=Kanokomoti
+item.yuuzenkoromo.name=Yuuzenkoromo
+item.kikyoshingenmoti.name=Kikyoshingenmoti
+item.unagipie.name=Unagipie
+item.nozawanaduke.name=Nozawanaduke
 
 # Block
 tile.banana_log.name=Banana Log
@@ -113,3 +117,23 @@ advancements.souvenir.souvenir_toyama.title=Toyama
 advancements.souvenir.souvenir_toyama.description=All Toyama souvenir eaten
 advancements.souvenir.kanokomoti.title=Kanokomoti
 advancements.souvenir.kanokomoti.description="Kanokomoti" is crafting and eaten
+
+advancements.souvenir.souvenir_ishikawa.title=Ishikawa
+advancements.souvenir.souvenir_ishikawa.description=All Ishikawa souvenir eaten
+advancements.souvenir.yuuzenkoromo.title=Yuuzenkoromo
+advancements.souvenir.yuuzenkoromo.description="Yuuzenkoromo" is crafting and eaten
+
+advancements.souvenir.souvenir_yamanashi.title=Yamanashi
+advancements.souvenir.souvenir_yamanashi.description=All Yamanashi souvenir eaten
+advancements.souvenir.kikyoshingenmoti.title=Kikyoshingenmoti
+advancements.souvenir.kikyoshingenmoti.description="Kikyoshingenmoti" is crafting and eaten
+
+advancements.souvenir.souvenir_shizuoka.title=Shizuoka
+advancements.souvenir.souvenir_shizuoka.description=All Shizuoka souvenir eaten
+advancements.souvenir.unagipie.title=Unagipie
+advancements.souvenir.unagipie.description="Unagipie" is crafting and eaten
+
+advancements.souvenir.souvenir_nagano.title=Nagano
+advancements.souvenir.souvenir_nagano.description=All Nagano souvenir eaten
+advancements.souvenir.nozawanaduke.title=Nozawanaduke
+advancements.souvenir.nozawanaduke.description="Nozawanaduke" is crafting and eaten

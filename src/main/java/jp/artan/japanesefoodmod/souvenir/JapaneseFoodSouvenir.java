@@ -27,6 +27,10 @@ public class JapaneseFoodSouvenir {
     public static final JapaneseFood HATO_SABLE = new SouvenirFood("hato_sable", 2, 1.0F);
     public static final JapaneseFood SASADANGO = new SouvenirFood("sasadango", 2, 1.2F);
     public static final JapaneseFood KANOKOMOTI = new SouvenirFood("kanokomoti", 1, 0.6F);
+    public static final JapaneseFood YUUZENKOROMO = new SouvenirFood("yuuzenkoromo", 1, 0.6F);
+    public static final JapaneseFood KIKYOSHINGENMOTI = new SouvenirFood("kikyoshingenmoti", 1, 0.6F);
+    public static final JapaneseFood UNAGIPIE = new SouvenirFood("unagipie", 1, 0.6F);
+    public static final JapaneseFood NOZAWANADUKE = new SouvenirFood("nozawanaduke", 1, 0.6F);
 
     public static void registerModels(ModelRegistryEvent event) {
     }

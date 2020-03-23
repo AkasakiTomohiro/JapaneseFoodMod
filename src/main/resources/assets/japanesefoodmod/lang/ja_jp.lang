@@ -24,6 +24,10 @@ item.tokyo_banana.name=東京バナ奈
 item.hato_sable.name=鳩サブレー
 item.sasadango.name=笹だんご
 item.kanokomoti.name=鹿の子餅
+item.yuuzenkoromo.name=友禅ころも
+item.kikyoshingenmoti.name=桔梗信玄餅
+item.unagipie.name=うなぎパイ
+item.nozawanaduke.name=野沢菜漬
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -114,3 +118,22 @@ advancements.souvenir.souvenir_toyama.description=富山のお土産を食べつ
 advancements.souvenir.kanokomoti.title=鹿の子餅
 advancements.souvenir.kanokomoti.description="鹿の子餅"を作って食べた
 
+advancements.souvenir.souvenir_ishikawa.title=石川
+advancements.souvenir.souvenir_ishikawa.description=石川のお土産を食べつくした
+advancements.souvenir.yuuzenkoromo.title=友禅ころも
+advancements.souvenir.yuuzenkoromo.description="友禅ころも"を作って食べた
+
+advancements.souvenir.souvenir_yamanashi.title=山梨
+advancements.souvenir.souvenir_yamanashi.description=山梨のお土産を食べつくした
+advancements.souvenir.kikyoshingenmoti.title=桔梗信玄餅
+advancements.souvenir.kikyoshingenmoti.description="桔梗信玄餅"を作って食べた
+
+advancements.souvenir.souvenir_shizuoka.title=静岡
+advancements.souvenir.souvenir_shizuoka.description=静岡のお土産を食べつくした
+advancements.souvenir.unagipie.title=うなぎパイ
+advancements.souvenir.unagipie.description="うなぎパイ"を作って食べた
+
+advancements.souvenir.souvenir_nagano.title=長野
+advancements.souvenir.souvenir_nagano.description=長野のお土産を食べつくした
+advancements.souvenir.nozawanaduke.title=野沢菜漬
+advancements.souvenir.nozawanaduke.description="野沢菜漬"を作って食べた
