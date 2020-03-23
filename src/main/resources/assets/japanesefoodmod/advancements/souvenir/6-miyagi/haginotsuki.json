@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:haginotsuki"
+    },
+    "title": {
+      "translate": "advancements.souvenir.haginotsuki.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.haginotsuki.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/6-miyagi/souvenir_miyagi",
+  "criteria": {
+    "craft_haginotsuki": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:haginotsuki"
+          }
+        ]
+      }
+    },
+    "eaten_haginotsuki": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:haginotsuki",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_haginotsuki"
+    ],
+    [
+      "eaten_haginotsuki"
+    ]
+  ]
+}

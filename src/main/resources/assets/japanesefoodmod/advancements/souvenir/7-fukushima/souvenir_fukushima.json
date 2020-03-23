@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kaden_yubeshi"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_fukushima.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_fukushima.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_kaden_yubeshi": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kaden_yubeshi",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_kaden_yubeshi"
+        ]
+    ]
+}

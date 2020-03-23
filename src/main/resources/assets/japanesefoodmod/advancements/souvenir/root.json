@@ -68,6 +68,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_haginotsuki": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:haginotsuki",
+          "count": 1
+        }
+      }
+    },
+    "eaten_kaden_yubeshi": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kaden_yubeshi",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -88,6 +106,12 @@
     ],
     [
       "eaten_kokyo"
+    ],
+    [
+      "eaten_haginotsuki"
+    ],
+    [
+      "eaten_kaden_yubeshi"
     ]
   ]
 }
