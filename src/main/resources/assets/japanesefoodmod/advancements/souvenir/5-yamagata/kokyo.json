@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:kokyo"
+    },
+    "title": {
+      "translate": "advancements.souvenir.kokyo.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.kokyo.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/5-yamagata/souvenir_yamagata",
+  "criteria": {
+    "craft_kokyo": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:kokyo"
+          }
+        ]
+      }
+    },
+    "eaten_kokyo": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kokyo",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_kokyo"
+    ],
+    [
+      "eaten_kokyo"
+    ]
+  ]
+}

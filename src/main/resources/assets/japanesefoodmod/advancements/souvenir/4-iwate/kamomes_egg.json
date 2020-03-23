@@ -1,0 +1,43 @@
+{
+  "display": {
+    "icon": {
+      "item": "japanesefoodmod:kamomes_egg"
+    },
+    "title": {
+      "translate": "advancements.souvenir.kamomes_egg.title"
+    },
+    "description": {
+      "translate": "advancements.souvenir.kamomes_egg.description"
+    }
+  },
+  "parent": "japanesefoodmod:souvenir/4-iwate/souvenir_iwate",
+  "criteria": {
+    "craft_kamomes_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "japanesefoodmod:kamomes_egg"
+          }
+        ]
+      }
+    },
+    "eaten_kamomes_egg": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kamomes_egg",
+          "count": 1
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "craft_kamomes_egg"
+    ],
+    [
+      "eaten_kamomes_egg"
+    ]
+  ]
+}

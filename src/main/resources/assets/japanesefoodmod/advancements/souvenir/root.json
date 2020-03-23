@@ -50,6 +50,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_kamomes_egg": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kamomes_egg",
+          "count": 1
+        }
+      }
+    },
+    "eaten_kokyo": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kokyo",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -64,6 +82,12 @@
     ],
     [
       "eaten_le_desere"
+    ],
+    [
+      "eaten_kamomes_egg"
+    ],
+    [
+      "eaten_kokyo"
     ]
   ]
 }
