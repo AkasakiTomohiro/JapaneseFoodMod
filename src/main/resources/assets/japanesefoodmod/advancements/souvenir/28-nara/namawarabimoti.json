@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:namawarabimoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.namawarabimoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.namawarabimoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/28-nara/souvenir_nara",
+    "criteria": {
+        "craft_namawarabimoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:namawarabimoti"
+                    }
+                ]
+            }
+        },
+        "eaten_namawarabimoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:namawarabimoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_namawarabimoti"
+        ],
+        [
+            "eaten_namawarabimoti"
+        ]
+    ]
+}

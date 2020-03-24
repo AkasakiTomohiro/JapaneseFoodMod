@@ -239,6 +239,33 @@
           "count": 1
         }
       }
+    },
+    "eaten_ajarimoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:ajarimoti",
+          "count": 1
+        }
+      }
+    },
+    "eaten_551butaman": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:551butaman",
+          "count": 1
+        }
+      }
+    },
+    "eaten_namawarabimoti": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:namawarabimoti",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -316,6 +343,15 @@
     ],
     [
       "eaten_akahukumoti"
+    ],
+    [
+      "eaten_ajarimoti"
+    ],
+    [
+      "eaten_551butaman"
+    ],
+    [
+      "eaten_namawarabimoti"
     ]
   ]
 }

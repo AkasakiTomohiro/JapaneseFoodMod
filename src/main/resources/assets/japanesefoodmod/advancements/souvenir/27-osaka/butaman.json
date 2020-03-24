@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:551butaman"
+        },
+        "title": {
+            "translate": "advancements.souvenir.551butaman.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.551butaman.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/27-osaka/souvenir_osaka",
+    "criteria": {
+        "craft_551butaman": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:551butaman"
+                    }
+                ]
+            }
+        },
+        "eaten_551butaman": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:551butaman",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_551butaman"
+        ],
+        [
+            "eaten_551butaman"
+        ]
+    ]
+}

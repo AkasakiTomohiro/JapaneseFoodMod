@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:ajarimoti"
+        },
+        "title": {
+            "translate": "advancements.souvenir.ajarimoti.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.ajarimoti.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/26-kyoto/souvenir_kyoto",
+    "criteria": {
+        "craft_ajarimoti": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:ajarimoti"
+                    }
+                ]
+            }
+        },
+        "eaten_ajarimoti": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:ajarimoti",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_ajarimoti"
+        ],
+        [
+            "eaten_ajarimoti"
+        ]
+    ]
+}

@@ -37,6 +37,11 @@ item.okiagarimonaka.name=Okiagarimonaka
 item.habutaemoti.name=Habutaemoti
 item.itokirimoti.name=Itokirimoti
 item.akahukumoti.name=Akahukumoti
+item.ajarimoti.name=Ajarimoti
+item.551butaman.name=551 Butaman
+item.namawarabimoti.name=Namawarabimoti
+item.kinzanjimiso.name=Kinzanjimiso
+item.gaufres.name=Gaufres
 
 # Block
 tile.banana_log.name=Banana Log
@@ -45,129 +50,144 @@ tile.banana_sapling.name=Banana Sapling
 
 # Advancements
 advancements.souvenir.root.title=Goal
-advancements.souvenir.root.description=All souvenir eaten
+advancements.souvenir.root.description=You ate all souvenir
 
 advancements.souvenir.souvenir_hokkaido.title=Hokkaido
-advancements.souvenir.souvenir_hokkaido.description=All Hokkaido souvenir eaten
+advancements.souvenir.souvenir_hokkaido.description=You ate all Hokkaido souvenir
 advancements.souvenir.marusei_butter_sand.title=Marusei Butter Sand
-advancements.souvenir.marusei_butter_sand.description="Marusei Butter Sand" is crafting and eaten
+advancements.souvenir.marusei_butter_sand.description=You made abd ate "Marusei Butter Sand"
 
 advancements.souvenir.souvenir_aomori.title=Aomori
-advancements.souvenir.souvenir_aomori.description=All Aomori souvenir eaten
+advancements.souvenir.souvenir_aomori.description=You ate all Aomori souvenir
 advancements.souvenir.kinin_tsugaru_duke.title=Kinin Tsugaru Duke
-advancements.souvenir.kinin_tsugaru_duke.description="Kinin Tsugaru Duke" is crafting and eaten
+advancements.souvenir.kinin_tsugaru_duke.description=You made abd ate "Kinin Tsugaru Duke"
 
 advancements.souvenir.souvenir_akita.title=Akita
-advancements.souvenir.souvenir_akita.description=All Akita souvenir eaten
+advancements.souvenir.souvenir_akita.description=You ate all Akita souvenir
 advancements.souvenir.le_desere.title=Le Desere
-advancements.souvenir.le_desere.description="Le Desere" is crafting and eaten
+advancements.souvenir.le_desere.description=You made abd ate "Le Desere"
 
 advancements.souvenir.souvenir_iwate.title=Iwate
-advancements.souvenir.souvenir_iwate.description=All Iwate souvenir eaten
+advancements.souvenir.souvenir_iwate.description=You ate all Iwate souvenir
 advancements.souvenir.kamomes_egg.title=Kamome Egg
-advancements.souvenir.kamomes_egg.description="Kamome Egg" is crafting and eaten
+advancements.souvenir.kamomes_egg.description=You made abd ate "Kamome Egg"
 
 advancements.souvenir.souvenir_yamagata.title=Yamagata
-advancements.souvenir.souvenir_yamagata.description=All Yamagata souvenir eaten
+advancements.souvenir.souvenir_yamagata.description=You ate all Yamagata souvenir
 advancements.souvenir.kokyo.title=Kokyo
-advancements.souvenir.kokyo.description="Kokyo" is crafting and eaten
+advancements.souvenir.kokyo.description=You made abd ate "Kokyo"
 
 advancements.souvenir.souvenir_miyagi.title=Miyagi
-advancements.souvenir.souvenir_miyagi.description=All Miyagi souvenir eaten
+advancements.souvenir.souvenir_miyagi.description=You ate all Miyagi souvenir
 advancements.souvenir.haginotsuki.title=Haginotsuki
-advancements.souvenir.haginotsuki.description="Haginotsuki" is crafting and eaten
+advancements.souvenir.haginotsuki.description=You made abd ate "Haginotsuki"
 
 advancements.souvenir.souvenir_fukushima.title=Fukushima
-advancements.souvenir.souvenir_fukushima.description=All Fukushima souvenir eaten
+advancements.souvenir.souvenir_fukushima.description=You ate all Fukushima souvenir
 advancements.souvenir.kaden_yubeshi.title=Kaden Yubeshi
-advancements.souvenir.kaden_yubeshi.description="Kaden Yubeshi" is crafting and eaten
+advancements.souvenir.kaden_yubeshi.description=You made abd ate "Kaden Yubeshi"
 
 advancements.souvenir.souvenir_ibaraki.title=Ibaraki
-advancements.souvenir.souvenir_ibaraki.description=All Ibaraki souvenir eaten
+advancements.souvenir.souvenir_ibaraki.description=You ate all Ibaraki souvenir
 advancements.souvenir.yoshiwaradentyu.title=Yoshiwaradentyu
-advancements.souvenir.yoshiwaradentyu.description="Yoshiwaradentyu" is crafting and eaten
+advancements.souvenir.yoshiwaradentyu.description=You made abd ate "Yoshiwaradentyu"
 
 advancements.souvenir.souvenir_tochigi.title=Tochigi
-advancements.souvenir.souvenir_tochigi.description=All Tochigi souvenir eaten
+advancements.souvenir.souvenir_tochigi.description=You ate all Tochigi souvenir
 advancements.souvenir.koin_monaka.title=Koin Monaka
-advancements.souvenir.koin_monaka.description="Koin Monaka" is crafting and eaten
+advancements.souvenir.koin_monaka.description=You made abd ate "Koin Monaka"
 
 advancements.souvenir.souvenir_gunma.title=Gunma
-advancements.souvenir.souvenir_gunma.description=All Gunma souvenir eaten
+advancements.souvenir.souvenir_gunma.description=You ate all Gunma souvenir
 advancements.souvenir.tabigarasu.title=Tabigarasu
-advancements.souvenir.tabigarasu.description="Tabigarasu" is crafting and eaten
+advancements.souvenir.tabigarasu.description=You made abd ate "Tabigarasu"
 
 advancements.souvenir.souvenir_chiba.title=Chiba
-advancements.souvenir.souvenir_chiba.description=All Chiba souvenir eaten
+advancements.souvenir.souvenir_chiba.description=You ate all Chiba souvenir
 advancements.souvenir.peanuts_monaka.title=Peanuts Monaka
-advancements.souvenir.peanuts_monaka.description="Peanuts Monaka" is crafting and eaten
+advancements.souvenir.peanuts_monaka.description=You made abd ate "Peanuts Monaka"
 
 advancements.souvenir.souvenir_saitama.title=Saitama
-advancements.souvenir.souvenir_saitama.description=All Saitama souvenir eaten
+advancements.souvenir.souvenir_saitama.description=You ate all Saitama souvenir
 advancements.souvenir.souka_senbei.title=Souka Senbei
-advancements.souvenir.souka_senbei.description="Souka Senbei" is crafting and eaten
+advancements.souvenir.souka_senbei.description=You made abd ate "Souka Senbei"
 
 advancements.souvenir.souvenir_tokyo.title=Tokyo
-advancements.souvenir.souvenir_tokyo.description=All Tokyo souvenir eaten
+advancements.souvenir.souvenir_tokyo.description=You ate all Tokyo souvenir
 advancements.souvenir.tokyo_banana.title=Tokyo Banana
-advancements.souvenir.tokyo_banana.description="Tokyo Banana" is crafting and eaten
+advancements.souvenir.tokyo_banana.description=You made abd ate "Tokyo Banana"
 
 advancements.souvenir.souvenir_kanagawa.title=Kanagawa
-advancements.souvenir.souvenir_kanagawa.description=All Kanagawa souvenir eaten
+advancements.souvenir.souvenir_kanagawa.description=You ate all Kanagawa souvenir
 advancements.souvenir.hato_sable.title=Hato Sable
-advancements.souvenir.hato_sable.description="Hato Sable" is crafting and eaten
+advancements.souvenir.hato_sable.description=You made abd ate "Hato Sable"
 
 advancements.souvenir.souvenir_niigata.title=Niigata
-advancements.souvenir.souvenir_niigata.description=All Niigata souvenir eaten
+advancements.souvenir.souvenir_niigata.description=You ate all Niigata souvenir
 advancements.souvenir.sasadango.title=Sasadango
-advancements.souvenir.sasadango.description="Sasadango" is crafting and eaten
+advancements.souvenir.sasadango.description=You made abd ate "Sasadango"
 
 advancements.souvenir.souvenir_toyama.title=Toyama
-advancements.souvenir.souvenir_toyama.description=All Toyama souvenir eaten
+advancements.souvenir.souvenir_toyama.description=You ate all Toyama souvenir
 advancements.souvenir.kanokomoti.title=Kanokomoti
-advancements.souvenir.kanokomoti.description="Kanokomoti" is crafting and eaten
+advancements.souvenir.kanokomoti.description=You made abd ate "Kanokomoti"
 
 advancements.souvenir.souvenir_ishikawa.title=Ishikawa
-advancements.souvenir.souvenir_ishikawa.description=All Ishikawa souvenir eaten
+advancements.souvenir.souvenir_ishikawa.description=You ate all Ishikawa souvenir
 advancements.souvenir.yuuzenkoromo.title=Yuuzenkoromo
-advancements.souvenir.yuuzenkoromo.description="Yuuzenkoromo" is crafting and eaten
+advancements.souvenir.yuuzenkoromo.description=You made abd ate "Yuuzenkoromo"
 
 advancements.souvenir.souvenir_yamanashi.title=Yamanashi
-advancements.souvenir.souvenir_yamanashi.description=All Yamanashi souvenir eaten
+advancements.souvenir.souvenir_yamanashi.description=You ate all Yamanashi souvenir
 advancements.souvenir.kikyoshingenmoti.title=Kikyoshingenmoti
-advancements.souvenir.kikyoshingenmoti.description="Kikyoshingenmoti" is crafting and eaten
+advancements.souvenir.kikyoshingenmoti.description=You made abd ate "Kikyoshingenmoti"
 
 advancements.souvenir.souvenir_shizuoka.title=Shizuoka
-advancements.souvenir.souvenir_shizuoka.description=All Shizuoka souvenir eaten
+advancements.souvenir.souvenir_shizuoka.description=You ate all Shizuoka souvenir
 advancements.souvenir.unagipie.title=Unagipie
-advancements.souvenir.unagipie.description="Unagipie" is crafting and eaten
+advancements.souvenir.unagipie.description=You made abd ate "Unagipie"
 
 advancements.souvenir.souvenir_nagano.title=Nagano
-advancements.souvenir.souvenir_nagano.description=All Nagano souvenir eaten
+advancements.souvenir.souvenir_nagano.description=You ate all Nagano souvenir
 advancements.souvenir.nozawanaduke.title=Nozawanaduke
-advancements.souvenir.nozawanaduke.description="Nozawanaduke" is crafting and eaten
+advancements.souvenir.nozawanaduke.description=You made abd ate "Nozawanaduke"
 
 advancements.souvenir.souvenir_aichi.title=Aichi
-advancements.souvenir.souvenir_aichi.description=All Aichi souvenir eaten
+advancements.souvenir.souvenir_aichi.description=You ate all Aichi souvenir
 advancements.souvenir.kisimenpie.title=Kisimenpie
-advancements.souvenir.kisimenpie.description="Kisimenpie" is crafting and eaten
+advancements.souvenir.kisimenpie.description=You made abd ate "Kisimenpie"
 
 advancements.souvenir.souvenir_gifu.title=Gifu
-advancements.souvenir.souvenir_gifu.description=All Gifu souvenir eaten
+advancements.souvenir.souvenir_gifu.description=You ate all Gifu souvenir
 advancements.souvenir.okiagarimonaka.title=Okiagarimonaka
-advancements.souvenir.okiagarimonaka.description="Okiagarimonaka" is crafting and eaten
+advancements.souvenir.okiagarimonaka.description=You made abd ate "Okiagarimonaka"
 
 advancements.souvenir.souvenir_fukui.title=Fukui
-advancements.souvenir.souvenir_fukui.description=All Fukui souvenir eaten
+advancements.souvenir.souvenir_fukui.description=You ate all Fukui souvenir
 advancements.souvenir.habutaemoti.title=Habutaemoti
-advancements.souvenir.habutaemoti.description="Habutaemoti" is crafting and eaten
+advancements.souvenir.habutaemoti.description=You made abd ate "Habutaemoti"
 
 advancements.souvenir.souvenir_shiga.title=Shiga
-advancements.souvenir.souvenir_shiga.description=All Shiga souvenir eaten
+advancements.souvenir.souvenir_shiga.description=You ate all Shiga souvenir
 advancements.souvenir.itokirimoti.title=Itokirimoti
-advancements.souvenir.itokirimoti.description="Itokirimoti" is crafting and eaten
+advancements.souvenir.itokirimoti.description=You made abd ate "Itokirimoti"
 
 advancements.souvenir.souvenir_mie.title=Mie
-advancements.souvenir.souvenir_mie.description=All Mie souvenir eaten
+advancements.souvenir.souvenir_mie.description=You ate all Mie souvenir
 advancements.souvenir.akahukumoti.title=Akahukumoti
-advancements.souvenir.akahukumoti.description="Akahukumoti" is crafting and eaten
+advancements.souvenir.akahukumoti.description=You made abd ate "Akahukumoti"
+
+advancements.souvenir.souvenir_kyoto.title=Kyoto
+advancements.souvenir.souvenir_kyoto.description=You ate all Kyoto souvenir
+advancements.souvenir.ajarimoti.title=Ajarimoti
+advancements.souvenir.ajarimoti.description=You made abd ate "Ajarimoti"
+
+advancements.souvenir.souvenir_osaka.title=Osaka
+advancements.souvenir.souvenir_osaka.description=You ate all Osaka souvenir
+advancements.souvenir.551butaman.title=551 Butaman
+advancements.souvenir.551butaman.description=You made abd ate "551 Butaman"
+
+advancements.souvenir.souvenir_nara.title=Nara
+advancements.souvenir.souvenir_nara.description=You ate all Nara souvenir
+advancements.souvenir.namawarabimoti.title=Namawarabimoti
+advancements.souvenir.namawarabimoti.description=You made abd ate "Namawarabimoti"

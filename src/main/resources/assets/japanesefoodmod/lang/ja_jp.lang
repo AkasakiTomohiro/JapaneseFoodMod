@@ -37,6 +37,11 @@ item.okiagarimonaka.name=起き上り最中
 item.habutaemoti.name=羽二重餅
 item.itokirimoti.name=糸切り餅
 item.akahukumoti.name=赤福餅
+item.ajarimoti.name=阿闍梨餅
+item.551butaman.name=551豚まん
+item.namawarabimoti.name=生わらび餅
+item.kinzanjimiso.name=金山寺味噌
+item.gaufres.name=ゴーフル
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -171,3 +176,18 @@ advancements.souvenir.souvenir_mie.title=三重
 advancements.souvenir.souvenir_mie.description=三重のお土産を食べつくした
 advancements.souvenir.akahukumoti.title=赤福餅
 advancements.souvenir.akahukumoti.description="赤福餅"を作って食べた
+
+advancements.souvenir.souvenir_kyoto.title=京都
+advancements.souvenir.souvenir_kyoto.description=京都のお土産を食べつくした
+advancements.souvenir.ajarimoti.title=阿闍梨餅
+advancements.souvenir.ajarimoti.description="阿闍梨餅"を作って食べた
+
+advancements.souvenir.souvenir_osaka.title=大阪
+advancements.souvenir.souvenir_osaka.description=大阪のお土産を食べつくした
+advancements.souvenir.551butaman.title=豚まん
+advancements.souvenir.551butaman.description="豚まん"を作って食べた
+
+advancements.souvenir.souvenir_nara.title=奈良
+advancements.souvenir.souvenir_nara.description=奈良のお土産を食べつくした
+advancements.souvenir.namawarabimoti.title=生わらび餅
+advancements.souvenir.namawarabimoti.description="生わらび餅"を作って食べた
