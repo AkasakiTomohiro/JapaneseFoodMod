@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kinzanjimiso"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_wakayama.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_wakayama.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_kinzanjimiso": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kinzanjimiso",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_kinzanjimiso"
+        ]
+    ]
+}

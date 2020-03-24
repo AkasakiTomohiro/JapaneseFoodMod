@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:gaufres"
+        },
+        "title": {
+            "translate": "advancements.souvenir.gaufres.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.gaufres.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/30-hyogo/souvenir_hyogo",
+    "criteria": {
+        "craft_gaufres": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:gaufres"
+                    }
+                ]
+            }
+        },
+        "eaten_gaufres": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:gaufres",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_gaufres"
+        ],
+        [
+            "eaten_gaufres"
+        ]
+    ]
+}

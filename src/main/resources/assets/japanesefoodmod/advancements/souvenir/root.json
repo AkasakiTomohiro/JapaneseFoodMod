@@ -266,6 +266,24 @@
           "count": 1
         }
       }
+    },
+    "eaten_kinzanjimiso": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kinzanjimiso",
+          "count": 1
+        }
+      }
+    },
+    "eaten_gaufres": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:gaufres",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -352,6 +370,12 @@
     ],
     [
       "eaten_namawarabimoti"
+    ],
+    [
+      "eaten_kinzanjimiso"
+    ],
+    [
+      "eaten_gaufres"
     ]
   ]
 }

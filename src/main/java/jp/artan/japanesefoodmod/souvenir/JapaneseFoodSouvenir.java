@@ -40,8 +40,8 @@ public class JapaneseFoodSouvenir {
     public static final JapaneseFood AJARIMOTI = new SouvenirFood("ajarimoti", 1, 0.6F);
     public static final JapaneseFood BUTAMAN = new SouvenirFood("551butaman", 3, 3.0F);
     public static final JapaneseFood NAMAWARABIMOTI = new SouvenirFood("namawarabimoti", 1, 0.6F);
-//    public static final JapaneseFood KINZANJIMISO = new SouvenirFood("kinzanjimiso", 1, 0.7F);
-//    public static final JapaneseFood GAUFRES = new SouvenirFood("gaufres", 1, 0.7F);
+    public static final JapaneseFood KINZANJIMISO = new SouvenirFood("kinzanjimiso", 1, 0.1F);
+    public static final JapaneseFood GAUFRES = new SouvenirFood("gaufres", 1, 0.5F);
 
     public static void registerModels(ModelRegistryEvent event) {
     }
