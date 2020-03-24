@@ -52,7 +52,7 @@ tile.banana_sapling.name=バナナの苗木
 advancements.souvenir.root.title=ゴール
 advancements.souvenir.root.description=すべてのお土産を食べつくした
 
-advancements.souvenir.souvenir_hokkaido.title=北海道
+advancements.souvenir.souvenir_hokkaido.title=試されすぎた大地
 advancements.souvenir.souvenir_hokkaido.description=北海道のお土産を食べつくした
 advancements.souvenir.marusei_butter_sand.title=マルセイバターサンド
 advancements.souvenir.marusei_butter_sand.description="マルセイバターサンド"を作って食べた
@@ -97,22 +97,22 @@ advancements.souvenir.souvenir_tochigi.description=栃木のお土産を食べ�
 advancements.souvenir.koin_monaka.title=古印最中
 advancements.souvenir.koin_monaka.description="古印最中"を作って食べた
 
-advancements.souvenir.souvenir_gunma.title=群馬
+advancements.souvenir.souvenir_gunma.title=秘境からの帰還
 advancements.souvenir.souvenir_gunma.description=群馬のお土産を食べつくした
 advancements.souvenir.tabigarasu.title=旅ガラス
 advancements.souvenir.tabigarasu.description="旅ガラス"を作って食べた
 
-advancements.souvenir.souvenir_chiba.title=千葉
+advancements.souvenir.souvenir_chiba.title=奪われし者
 advancements.souvenir.souvenir_chiba.description=千葉のお土産を食べつくした
 advancements.souvenir.peanuts_monaka.title=ぴーなっつ最中
 advancements.souvenir.peanuts_monaka.description="ぴーなっつ最中"を作って食べた
 
-advancements.souvenir.souvenir_saitama.title=埼玉
+advancements.souvenir.souvenir_saitama.title=飛ぼう
 advancements.souvenir.souvenir_saitama.description=埼玉のお土産を食べつくした
 advancements.souvenir.souka_senbei.title=草加せんべい
 advancements.souvenir.souka_senbei.description="草加せんべい"を作って食べた
 
-advancements.souvenir.souvenir_tokyo.title=東京
+advancements.souvenir.souvenir_tokyo.title=ここは首都
 advancements.souvenir.souvenir_tokyo.description=東京のお土産を食べつくした
 advancements.souvenir.tokyo_banana.title=東京バナ奈
 advancements.souvenir.tokyo_banana.description="東京バナ奈"を作って食べた
@@ -142,7 +142,7 @@ advancements.souvenir.souvenir_yamanashi.description=山梨のお土産を食べ
 advancements.souvenir.kikyoshingenmoti.title=桔梗信玄餅
 advancements.souvenir.kikyoshingenmoti.description="桔梗信玄餅"を作って食べた
 
-advancements.souvenir.souvenir_shizuoka.title=静岡
+advancements.souvenir.souvenir_shizuoka.title=三国志
 advancements.souvenir.souvenir_shizuoka.description=静岡のお土産を食べつくした
 advancements.souvenir.unagipie.title=うなぎパイ
 advancements.souvenir.unagipie.description="うなぎパイ"を作って食べた
@@ -172,22 +172,22 @@ advancements.souvenir.souvenir_shiga.description=滋賀のお土産を食べつ�
 advancements.souvenir.itokirimoti.title=糸切り餅
 advancements.souvenir.itokirimoti.description="糸切り餅"を作って食べた
 
-advancements.souvenir.souvenir_mie.title=三重
+advancements.souvenir.souvenir_mie.title=出身は名古屋です
 advancements.souvenir.souvenir_mie.description=三重のお土産を食べつくした
 advancements.souvenir.akahukumoti.title=赤福餅
 advancements.souvenir.akahukumoti.description="赤福餅"を作って食べた
 
-advancements.souvenir.souvenir_kyoto.title=京都
+advancements.souvenir.souvenir_kyoto.title=世が世なら日本の首都だった
 advancements.souvenir.souvenir_kyoto.description=京都のお土産を食べつくした
 advancements.souvenir.ajarimoti.title=阿闍梨餅
 advancements.souvenir.ajarimoti.description="阿闍梨餅"を作って食べた
 
-advancements.souvenir.souvenir_osaka.title=大阪
+advancements.souvenir.souvenir_osaka.title=天下の台所
 advancements.souvenir.souvenir_osaka.description=大阪のお土産を食べつくした
 advancements.souvenir.551butaman.title=豚まん
 advancements.souvenir.551butaman.description="豚まん"を作って食べた
 
-advancements.souvenir.souvenir_nara.title=奈良
+advancements.souvenir.souvenir_nara.title=大仏はお好き？
 advancements.souvenir.souvenir_nara.description=奈良のお土産を食べつくした
 advancements.souvenir.namawarabimoti.title=生わらび餅
 advancements.souvenir.namawarabimoti.description="生わらび餅"を作って食べた
