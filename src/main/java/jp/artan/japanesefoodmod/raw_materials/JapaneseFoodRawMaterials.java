@@ -11,9 +11,11 @@ import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class JapaneseFoodRawMaterials {
     // クリエイティブタブ
@@ -43,7 +45,7 @@ public class JapaneseFoodRawMaterials {
      */
     public static void init(FMLInitializationEvent event) {
         // 精錬レシピ登録
-//        GameRegistry.addSmelting(FISH, new ItemStack(FISH_BAKED, 1), 0.4F);
+        GameRegistry.addSmelting(GRAPE.fruit, new ItemStack(RAISIN, 1), 0.4F);
 
         // 鉱石辞書登録
         BANANA.registerOreDictionaryEntries();
