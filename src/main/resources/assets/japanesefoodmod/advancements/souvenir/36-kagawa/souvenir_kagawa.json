@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:syouyumame"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_kagawa.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_kagawa.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_syouyumame": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:syouyumame",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_syouyumame"
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:tosameika_kanzashi"
+        },
+        "title": {
+            "translate": "advancements.souvenir.tosameika_kanzashi.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.tosameika_kanzashi.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/37-kochi/souvenir_kochi",
+    "criteria": {
+        "craft_tosameika_kanzashi": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:tosameika_kanzashi"
+                    }
+                ]
+            }
+        },
+        "eaten_tosameika_kanzashi": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:tosameika_kanzashi",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_tosameika_kanzashi"
+        ],
+        [
+            "eaten_tosameika_kanzashi"
+        ]
+    ]
+}

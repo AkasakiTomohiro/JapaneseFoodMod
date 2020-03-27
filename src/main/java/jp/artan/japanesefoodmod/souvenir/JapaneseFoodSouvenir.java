@@ -42,6 +42,13 @@ public class JapaneseFoodSouvenir {
     public static final JapaneseFood NAMAWARABIMOTI = new SouvenirFood("namawarabimoti", 1, 0.6F);
     public static final JapaneseFood KINZANJIMISO = new SouvenirFood("kinzanjimiso", 1, 0.1F);
     public static final JapaneseFood GAUFRES = new SouvenirFood("gaufres", 1, 0.5F);
+    public static final JapaneseFood MOMIJIMANJU = new SouvenirFood("momijimanju", 2, 1.0F);
+    public static final JapaneseFood OTEMANJU = new SouvenirFood("otemanju", 1, 0.6F);
+    public static final JapaneseFood INABA_NO_SHIROUSHAGI = new SouvenirFood("inaba_no_shiroushagi", 1, 0.5F);
+    public static final JapaneseFood WAKAKUSA = new SouvenirFood("wakakusa", 2, 1.0F);
+    public static final JapaneseFood MEIKA_SHITATUDUMI = new SouvenirFood("meika_shitatudumi", 1, 1.0F);
+    public static final JapaneseFood SYOUYUMAME = new SouvenirFood("syouyumame", 1, 0.1F);
+    public static final JapaneseFood TOSAMEIKA_KANZASHI = new SouvenirFood("tosameika_kanzashi", 1, 1.0F);
 
     public static void registerModels(ModelRegistryEvent event) {
     }

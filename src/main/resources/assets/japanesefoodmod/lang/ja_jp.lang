@@ -53,6 +53,13 @@ item.551butaman.name=551豚まん
 item.namawarabimoti.name=生わらび餅
 item.kinzanjimiso.name=金山寺味噌
 item.gaufres.name=ゴーフル
+item.momijimanju.name=もみじまんじゅう
+item.otemanju.name=大手まんぢゅう
+item.inaba_no_shiroushagi.name=因幡の白うさぎ
+item.wakakusa.name=若草
+item.meika_shitatudumi.name=名菓舌鼓
+item.syouyumame.name=しょうゆ豆
+item.tosameika_kanzashi.name=土佐名菓　かんざし
 
 # 進捗
 advancements.souvenir.root.title=ゴール
@@ -207,3 +214,39 @@ advancements.souvenir.souvenir_hyogo.title=兵庫
 advancements.souvenir.souvenir_hyogo.description=兵庫のお土産を食べつくした
 advancements.souvenir.gaufres.title=ゴーフル
 advancements.souvenir.gaufres.description="ゴーフル"を作って食べた
+
+advancements.souvenir.souvenir_hiroshima.title=広島
+advancements.souvenir.souvenir_hiroshima.description=広島のお土産を食べつくした
+advancements.souvenir.momijimanju.title=もみじまんじゅう
+advancements.souvenir.momijimanju.description="もみじまんじゅう"を作って食べた
+
+advancements.souvenir.souvenir_okayama.title=岡山
+advancements.souvenir.souvenir_okayama.description=岡山のお土産を食べつくした
+advancements.souvenir.otemanju.title=大手まんぢゅう
+advancements.souvenir.otemanju.description="大手まんぢゅう"を作って食べた
+
+advancements.souvenir.souvenir_tottori.title=鳥取
+advancements.souvenir.souvenir_tottori.description=鳥取のお土産を食べつくした
+advancements.souvenir.inaba_no_shiroushagi.title=因幡の白うさぎ
+advancements.souvenir.inaba_no_shiroushagi.description="因幡の白うさぎ"を作って食べた
+
+advancements.souvenir.souvenir_shimane.title=島根
+advancements.souvenir.souvenir_shimane.description=島根のお土産を食べつくした
+advancements.souvenir.wakakusa.title=若草
+advancements.souvenir.wakakusa.description="若草"を作って食べた
+
+advancements.souvenir.souvenir_yamaguchi.title=山口
+advancements.souvenir.souvenir_yamaguchi.description=山口のお土産を食べつくした
+advancements.souvenir.meika_shitatudumi.title=名菓舌鼓
+advancements.souvenir.meika_shitatudumi.description="名菓舌鼓"を作って食べた
+
+advancements.souvenir.souvenir_kagawa.title=香川
+advancements.souvenir.souvenir_kagawa.description=香川のお土産を食べつくした
+advancements.souvenir.syouyumame.title=しょうゆ豆
+advancements.souvenir.syouyumame.description="しょうゆ豆"を作って食べた
+
+advancements.souvenir.souvenir_kochi.title=高知
+advancements.souvenir.souvenir_kochi.description=高知のお土産を食べつくした
+advancements.souvenir.tosameika_kanzashi.title=土佐名菓　かんざし
+advancements.souvenir.tosameika_kanzashi.description="土佐名菓　かんざし"を作って食べた
+

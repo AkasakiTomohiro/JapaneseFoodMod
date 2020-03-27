@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:momijimanju"
+        },
+        "title": {
+            "translate": "advancements.souvenir.momijimanju.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.momijimanju.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/31-hiroshima/souvenir_hiroshima",
+    "criteria": {
+        "craft_momijimanju": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:momijimanju"
+                    }
+                ]
+            }
+        },
+        "eaten_momijimanju": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:momijimanju",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_momijimanju"
+        ],
+        [
+            "eaten_momijimanju"
+        ]
+    ]
+}

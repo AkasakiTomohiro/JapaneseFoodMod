@@ -284,6 +284,69 @@
           "count": 1
         }
       }
+    },
+    "eaten_momijimanju": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:momijimanju",
+          "count": 1
+        }
+      }
+    },
+    "eaten_otemanju": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:otemanju",
+          "count": 1
+        }
+      }
+    },
+    "eaten_inaba_no_shiroushagi": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:inaba_no_shiroushagi",
+          "count": 1
+        }
+      }
+    },
+    "eaten_wakakusa": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:wakakusa",
+          "count": 1
+        }
+      }
+    },
+    "eaten_meika_shitatudumi": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:meika_shitatudumi",
+          "count": 1
+        }
+      }
+    },
+    "eaten_syouyumame": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:syouyumame",
+          "count": 1
+        }
+      }
+    },
+    "eaten_tosameika_kanzashi": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:tosameika_kanzashi",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
@@ -376,6 +439,27 @@
     ],
     [
       "eaten_gaufres"
+    ],
+    [
+      "eaten_momijimanju"
+    ],
+    [
+      "eaten_otemanju"
+    ],
+    [
+      "eaten_inaba_no_shiroushagi"
+    ],
+    [
+      "eaten_wakakusa"
+    ],
+    [
+      "eaten_meika_shitatudumi"
+    ],
+    [
+      "eaten_syouyumame"
+    ],
+    [
+      "eaten_tosameika_kanzashi"
     ]
   ]
 }

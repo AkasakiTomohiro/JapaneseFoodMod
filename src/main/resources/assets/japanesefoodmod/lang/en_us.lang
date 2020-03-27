@@ -53,6 +53,13 @@ item.551butaman.name=551 Butaman
 item.namawarabimoti.name=Namawarabimoti
 item.kinzanjimiso.name=Kinzanjimiso
 item.gaufres.name=Gaufres
+item.momijimanju.name=Momijimanju
+item.otemanju.name=Otemanju
+item.inaba_no_shiroushagi.name=Inaba No Shiroushagi
+item.wakakusa.name=Wakakusa
+item.meika_shitatudumi.name=Meika Shitatudumi
+item.syouyumame.name=Syouyumame
+item.tosameika_kanzashi.name=Tosameika Kanzashi
 
 # Advancements
 advancements.souvenir.root.title=Goal
@@ -207,3 +214,38 @@ advancements.souvenir.souvenir_hyogo.title=Hyogo
 advancements.souvenir.souvenir_hyogo.description=You ate all Hyogo souvenir
 advancements.souvenir.gaufres.title=Gaufres
 advancements.souvenir.gaufres.description=You made abd ate "Gaufres"
+
+advancements.souvenir.souvenir_hiroshima.title=Hiroshima
+advancements.souvenir.souvenir_hiroshima.description=You ate all Hiroshima souvenir
+advancements.souvenir.momijimanju.title=Momijimanju
+advancements.souvenir.momijimanju.description=You made abd ate "Momijimanju"
+
+advancements.souvenir.souvenir_okayama.title=Okayama
+advancements.souvenir.souvenir_okayama.description=You ate all Okayama souvenir
+advancements.souvenir.otemanju.title=Otemanju
+advancements.souvenir.otemanju.description=You made abd ate "Otemanju"
+
+advancements.souvenir.souvenir_tottori.title=Tottori
+advancements.souvenir.souvenir_tottori.description=You ate all Tottori souvenir
+advancements.souvenir.inaba_no_shiroushagi.title=Inaba No Shiroushagi
+advancements.souvenir.inaba_no_shiroushagi.description=You made abd ate "Inaba No Shiroushagi"
+
+advancements.souvenir.souvenir_shimane.title=Shimane
+advancements.souvenir.souvenir_shimane.description=You ate all Shimane souvenir
+advancements.souvenir.wakakusa.title=Wakakusa
+advancements.souvenir.wakakusa.description=You made abd ate "Wakakusa"
+
+advancements.souvenir.souvenir_yamaguchi.title=Yamaguchi
+advancements.souvenir.souvenir_yamaguchi.description=You ate all Yamaguchi souvenir
+advancements.souvenir.meika_shitatudumi.title=Meika Shitatudumi
+advancements.souvenir.meika_shitatudumi.description=You made abd ate "Meika Shitatudumi"
+
+advancements.souvenir.souvenir_kagawa.title=Kagawa
+advancements.souvenir.souvenir_kagawa.description=You ate all Kagawa souvenir
+advancements.souvenir.syouyumame.title=Syouyumame
+advancements.souvenir.syouyumame.description=You made abd ate "Syouyumame"
+
+advancements.souvenir.souvenir_kochi.title=Kochi
+advancements.souvenir.souvenir_kochi.description=You ate all Kochi souvenir
+advancements.souvenir.tosameika_kanzashi.title=Tosameika Kanzashi
+advancements.souvenir.tosameika_kanzashi.description=You made abd ate "Tosameika Kanzashi"

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:wakakusa"
+        },
+        "title": {
+            "translate": "advancements.souvenir.wakakusa.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.wakakusa.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/34-shimane/souvenir_shimane",
+    "criteria": {
+        "craft_wakakusa": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:wakakusa"
+                    }
+                ]
+            }
+        },
+        "eaten_wakakusa": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:wakakusa",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_wakakusa"
+        ],
+        [
+            "eaten_wakakusa"
+        ]
+    ]
+}

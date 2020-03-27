@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:meika_shitatudumi"
+        },
+        "title": {
+            "translate": "advancements.souvenir.meika_shitatudumi.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.meika_shitatudumi.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/35-yamaguchi/souvenir_yamaguchi",
+    "criteria": {
+        "craft_meika_shitatudumi": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:meika_shitatudumi"
+                    }
+                ]
+            }
+        },
+        "eaten_meika_shitatudumi": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:meika_shitatudumi",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_meika_shitatudumi"
+        ],
+        [
+            "eaten_meika_shitatudumi"
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:inaba_no_shiroushagi"
+        },
+        "title": {
+            "translate": "advancements.souvenir.inaba_no_shiroushagi.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.inaba_no_shiroushagi.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/33-tottori/souvenir_tottori",
+    "criteria": {
+        "craft_inaba_no_shiroushagi": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:inaba_no_shiroushagi"
+                    }
+                ]
+            }
+        },
+        "eaten_inaba_no_shiroushagi": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:inaba_no_shiroushagi",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_inaba_no_shiroushagi"
+        ],
+        [
+            "eaten_inaba_no_shiroushagi"
+        ]
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:otemanju"
+        },
+        "title": {
+            "translate": "advancements.souvenir.otemanju.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.otemanju.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/32-okayama/souvenir_okayama",
+    "criteria": {
+        "craft_otemanju": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:otemanju"
+                    }
+                ]
+            }
+        },
+        "eaten_otemanju": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:otemanju",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_otemanju"
+        ],
+        [
+            "eaten_otemanju"
+        ]
+    ]
+}
