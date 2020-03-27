@@ -11,7 +11,7 @@ public class SouvenirCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(JapaneseFoodSouvenir.TokyoBanana);
+        return new ItemStack(JapaneseFoodSouvenir.TOKYO_BANANA);
     }
 
 }

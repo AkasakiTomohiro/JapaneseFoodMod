@@ -24,7 +24,7 @@ public class JapaneseFoodSouvenir {
     public static final JapaneseFood TABIGARASU = new SouvenirFood("tabigarasu", 1, 0.2F);
     public static final JapaneseFood PEANUTS_MONAKA = new SouvenirFood("peanuts_monaka", 1, 1.0F);
     public static final JapaneseFood SOUKA_SENBEI = new SouvenirFood("souka_senbei", 2, 1.0F);
-    public static final JapaneseFood TokyoBanana = new SouvenirFood("tokyo_banana", 2, 0.5F);
+    public static final JapaneseFood TOKYO_BANANA = new SouvenirFood("tokyo_banana", 2, 0.5F);
     public static final JapaneseFood HATO_SABLE = new SouvenirFood("hato_sable", 2, 1.0F);
     public static final JapaneseFood SASADANGO = new SouvenirFood("sasadango", 2, 1.2F);
     public static final JapaneseFood KANOKOMOTI = new SouvenirFood("kanokomoti", 1, 0.6F);
