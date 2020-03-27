@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "japanesefoodmod:blocks/grape_log_top",
+    "side": "japanesefoodmod:blocks/grape_log_side"
+  }
+}

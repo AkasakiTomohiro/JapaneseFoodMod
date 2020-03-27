@@ -10,6 +10,17 @@ itemGroup.japanesefoodsouvenir=Japanese Food[Souvenir]
 ## Raw Materials
 item.banana.name=Banana
 item.soy_seeds.name=Soy
+item.grape.name=Grape
+item.raisin.name=Raisin
+item.butter.name=Butter
+
+# Block
+tile.banana_log.name=Banana Log
+tile.banana_leaves.name=Banana Leaves
+tile.banana_sapling.name=Banana Sapling
+tile.grape_log.name=Grape Log
+tile.grape_leaves.name=Grape Leaves
+tile.grape_sapling.name=Grape Sapling
 
 ## Souvenirs
 item.marusei_butter_sand.name=Marusei Butter Sand
@@ -42,11 +53,6 @@ item.551butaman.name=551 Butaman
 item.namawarabimoti.name=Namawarabimoti
 item.kinzanjimiso.name=Kinzanjimiso
 item.gaufres.name=Gaufres
-
-# Block
-tile.banana_log.name=Banana Log
-tile.banana_leaves.name=Banana Leaves
-tile.banana_sapling.name=Banana Sapling
 
 # Advancements
 advancements.souvenir.root.title=Goal

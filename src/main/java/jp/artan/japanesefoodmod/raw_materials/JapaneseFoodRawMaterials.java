@@ -1,12 +1,15 @@
 package jp.artan.japanesefoodmod.raw_materials;
 
 import jp.artan.japanesefoodmod.common.crop.SameCropAsSeed;
+import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
+import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 import jp.artan.japanesefoodmod.raw_materials.tabs.FruitTreeCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.tabs.RawMaterialsCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
+import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -19,11 +22,16 @@ public class JapaneseFoodRawMaterials {
 
     // 果樹
     public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.3F, new BananaTreeSupplier());
+    public static final FruitTree GRAPE = new RawMaterialsFruitTree("grape", 1, 0.3F, new GrapeTreeSupplier());
 
     // 作物
     public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.1F);
 
     // 魚
+
+    // 加工品
+    public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);
+    public static final JapaneseFood RAISIN = new RawMaterialFood("raisin", 1, 0.2F);
 
     public static void preInit(FMLPreInitializationEvent event) {
     }

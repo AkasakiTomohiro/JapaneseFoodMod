@@ -1,0 +1,20 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "axis=y": {
+      "model": "japanesefoodmod:grape_log"
+    },
+    "axis=z": {
+      "model": "japanesefoodmod:grape_log",
+      "x": 90
+    },
+    "axis=x": {
+      "model": "japanesefoodmod:grape_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=none": {
+      "model": "japanesefoodmod:grape_log"
+    }
+  }
+}

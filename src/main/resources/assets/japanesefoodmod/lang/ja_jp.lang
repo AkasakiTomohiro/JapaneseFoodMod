@@ -10,6 +10,17 @@ itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
 ## Raw Materials
 item.banana.name=バナナ
 item.soy_seeds.name=大豆
+item.grape.name=ぶどう
+item.raisin.name=レーズン
+item.butter.name=バター
+
+# Block
+tile.banana_log.name=バナナの原木
+tile.banana_leaves.name=バナナの葉
+tile.banana_sapling.name=バナナの苗木
+tile.grape_log.name=ぶどうの原木
+tile.grape_leaves.name=ぶどうの葉
+tile.grape_sapling.name=ぶどうの苗木
 
 ## Souvenirs
 item.marusei_butter_sand.name=マルセイバターサンド
@@ -42,11 +53,6 @@ item.551butaman.name=551豚まん
 item.namawarabimoti.name=生わらび餅
 item.kinzanjimiso.name=金山寺味噌
 item.gaufres.name=ゴーフル
-
-# Block
-tile.banana_log.name=バナナの原木
-tile.banana_leaves.name=バナナの葉
-tile.banana_sapling.name=バナナの苗木
 
 # 進捗
 advancements.souvenir.root.title=ゴール

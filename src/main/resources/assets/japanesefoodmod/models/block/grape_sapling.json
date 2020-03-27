@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "japanesefoodmod:blocks/grape_sapling"
+  }
+}
