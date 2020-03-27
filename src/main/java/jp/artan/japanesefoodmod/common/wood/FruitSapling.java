@@ -39,11 +39,11 @@ import java.util.Random;
  *      tile.${name}_sapling.name=XXXXX
  * ./lang/ja_JP.lang　言語設定
  *      tile.${name}_sapling.name=XXXXX
- * ./models/block/${name}_sapling.json
+ * ./models/block/trees/${name}_sapling.json
  *      ブロックのテクスチャ情報を規定
  * ./models/item/${name}_sapling.json
  *      ブロックの情報を記述
- * ./textures/block/${name}_sapling.png
+ * ./textures/block/trees/${name}_sapling.png
  *      テクスチャ
  */
 public abstract class FruitSapling extends BlockBush implements IGrowable, IBlockRegisterEvent {

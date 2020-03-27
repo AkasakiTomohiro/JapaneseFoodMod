@@ -38,11 +38,11 @@ import java.util.Random;
  *      tile.${name}_leaves.name=XXXXX
  * ./lang/ja_JP.lang　言語設定
  *      tile.${name}_leaves.name=XXXXX
- * ./models/block/${name}_leaves.json
+ * ./models/block/trees/${name}_leaves.json
  *      ブロックのテクスチャ情報を規定
  * ./models/item/${name}_leaves.json
  *      ブロックの情報を記述
- * ./textures/block/${name}_leaves.png
+ * ./textures/block/trees/${name}_leaves.png
  *      テクスチャ
  */
 public abstract class FruitLeaves extends BlockLeaves implements IBlockRegisterEvent {

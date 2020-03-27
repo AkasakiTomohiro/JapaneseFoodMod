@@ -32,12 +32,12 @@ import net.minecraftforge.event.RegistryEvent;
  *      tile.${name}_log.name=XXXXX
  * ./lang/ja_JP.lang　言語設定
  *      tile.${name}_log.name=XXXXX
- * ./models/block/${name}_log.json
+ * ./models/block/trees/${name}_log.json
  *      ブロックの側面と上下のテクスチャ情報を規定
  * ./models/item/${name}_log.json
  *      ブロックの情報を記述
- * ./textures/block/${name}_log_side.png
- * ./textures/block/${name}_log_top.png
+ * ./textures/block/trees/${name}_log_side.png
+ * ./textures/block/trees/${name}_log_top.png
  *      テクスチャ
  */
 public abstract class FruitLog extends BlockLog implements IBlockRegisterEvent {

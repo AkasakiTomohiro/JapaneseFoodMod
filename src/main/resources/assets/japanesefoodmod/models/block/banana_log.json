@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_column",
-  "textures": {
-    "end": "japanesefoodmod:blocks/banana_log_top",
-    "side": "japanesefoodmod:blocks/banana_log_side"
-  }
-}

@@ -22,21 +22,21 @@ import net.minecraftforge.oredict.OreDictionary;
  *      tile.${name}_log.name=XXXXX
  *      tile.${name}_leaves.name=XXXXX
  *      tile.${name}_sapling.name=XXXXX
- * ./models/block/${name}_log.json
- * ./models/block/${name}_leaves.json
- * ./models/block/${name}_sapling.json
- * ./models/block/fruits/${name}_fruit_block_${Age(0~7)}.json
+ * ./models/blocktrees//${name}_log.json
+ * ./models/block/trees/${name}_leaves.json
+ * ./models/block/trees/${name}_sapling.json
+ * ./models/block/fruits/${name}_fruit_block_${Age(0~2)}.json
  *      ブロックの側面と上下のテクスチャ情報を規定
  * ./models/item/${name}.json
  * ./models/item/${name}_log.json
  * ./models/item/${name}_leaves.json
  * ./models/item/${name}_sapling.json
  *      ブロックの情報を記述
- * ./textures/block/${name}_log_side.png
- * ./textures/block/${name}_log_top.png
- * ./textures/block/${name}_leaves.png
- * ./textures/block/${name}_sapling.png
- * ./textures/block/fruits/${name}_fruit_block_${Age(0~7)}.png
+ * ./textures/block/trees/${name}_log_side.png
+ * ./textures/block/trees/${name}_log_top.png
+ * ./textures/block/trees/${name}_leaves.png
+ * ./textures/block/trees/${name}_sapling.png
+ * ./textures/block/fruits/${name}_fruit_block_${Age(0~2)}.png
  * ./textures/item/${name}.png
  *      テクスチャ
  */

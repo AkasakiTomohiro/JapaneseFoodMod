@@ -1,7 +1,7 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "japanesefoodmod:grape_leaves",
+    "model": "japanesefoodmod:trees/grape_leaves",
     "uvlock": true
   },
   "variants": {

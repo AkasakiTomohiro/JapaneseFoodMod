@@ -39,9 +39,9 @@ import java.util.Random;
  * @apiNote
  * ./blockstates/${name}_fruit_block.json
  *      ブロックの設置向きの回転角度を記述
- * ./models/block/fruits/${name}_fruit_block_${Age(0~7)}.json
+ * ./models/block/fruits/${name}_fruit_block_${Age(0~2)}.json
  *      ブロックのテクスチャ情報を規定
- * ./textures/block/fruits/${name}_fruit_block_${Age(0~7)}.png
+ * ./textures/block/fruits/${name}_fruit_block_${Age(0~2)}.png
  *      テクスチャ
  */
 public abstract class FruitBlock extends Block implements IGrowable, IBlockRegisterEvent, IShearable {
