@@ -49,6 +49,7 @@ public class JapaneseFoodRawMaterials {
 
         // 鉱石辞書登録
         BANANA.registerOreDictionaryEntries();
+        GRAPE.registerOreDictionaryEntries();
     }
 
     public static void postInit(FMLPostInitializationEvent event) {
