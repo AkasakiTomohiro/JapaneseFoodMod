@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:kasutadon"
+        },
+        "title": {
+            "translate": "advancements.souvenir.kasutadon.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.kasutadon.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/46-kagoshima/souvenir_kagoshima",
+    "criteria": {
+        "craft_kasutadon": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:kasutadon"
+                    }
+                ]
+            }
+        },
+        "eaten_kasutadon": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:kasutadon",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_kasutadon"
+        ],
+        [
+            "eaten_kasutadon"
+        ]
+    ]
+}

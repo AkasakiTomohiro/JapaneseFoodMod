@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:marugoto_mikandaihuku"
+        },
+        "title": {
+            "translate": "advancements.souvenir.marugoto_mikandaihuku.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.marugoto_mikandaihuku.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/38-ehime/souvenir_ehime",
+    "criteria": {
+        "craft_marugoto_mikandaihuku": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:marugoto_mikandaihuku"
+                    }
+                ]
+            }
+        },
+        "eaten_marugoto_mikandaihuku": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:marugoto_mikandaihuku",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_marugoto_mikandaihuku"
+        ],
+        [
+            "eaten_marugoto_mikandaihuku"
+        ]
+    ]
+}

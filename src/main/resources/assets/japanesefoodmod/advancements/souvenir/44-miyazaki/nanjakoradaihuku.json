@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:nanjakoradaihuku"
+        },
+        "title": {
+            "translate": "advancements.souvenir.nanjakoradaihuku.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.nanjakoradaihuku.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/44-miyazaki/souvenir_miyazaki",
+    "criteria": {
+        "craft_nanjakoradaihuku": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:nanjakoradaihuku"
+                    }
+                ]
+            }
+        },
+        "eaten_nanjakoradaihuku": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:nanjakoradaihuku",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_nanjakoradaihuku"
+        ],
+        [
+            "eaten_nanjakoradaihuku"
+        ]
+    ]
+}

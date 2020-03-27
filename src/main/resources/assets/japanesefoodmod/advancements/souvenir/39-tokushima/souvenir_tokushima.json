@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:taketikuwa"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_tokushima.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_tokushima.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_taketikuwa": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:taketikuwa",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_taketikuwa"
+        ]
+    ]
+}

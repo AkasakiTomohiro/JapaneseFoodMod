@@ -347,9 +347,120 @@
           "count": 1
         }
       }
+    },
+    "eaten_marugoto_mikandaihuku": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:marugoto_mikandaihuku",
+          "count": 1
+        }
+      }
+    },
+    "eaten_taketikuwa": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:taketikuwa",
+          "count": 1
+        }
+      }
+    },
+    "eaten_hakata_torimon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:hakata_torimon",
+          "count": 1
+        }
+      }
+    },
+    "eaten_nanbangashi_xavier": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:nanbangashi_xavier",
+          "count": 1
+        }
+      }
+    },
+    "eaten_ikasyumai": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:ikasyumai",
+          "count": 1
+        }
+      }
+    },
+    "eaten_nagasaki_kakunimanju": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:nagasaki_kakunimanju",
+          "count": 1
+        }
+      }
+    },
+    "eaten_nanjakoradaihuku": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:nanjakoradaihuku",
+          "count": 1
+        }
+      }
+    },
+    "eaten_homarenojindaiko": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:homarenojindaiko",
+          "count": 1
+        }
+      }
+    },
+    "eaten_kasutadon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:kasutadon",
+          "count": 1
+        }
+      }
+    },
+    "eaten_beniimotart": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "item": "japanesefoodmod:beniimotart",
+          "count": 1
+        }
+      }
     }
   },
   "requirements": [
+    [
+      "eaten_beniimotart"
+    ],
+    [
+      "eaten_kasutadon"
+    ],
+    [
+      "eaten_nagasaki_kakunimanju"
+    ],
+    [
+      "eaten_homarenojindaiko"
+    ],
+    [
+      "eaten_nanjakoradaihuku"
+    ],
+    [
+      "eaten_ikasyumai"
+    ],
+    [
+      "eaten_nanbangashi_xavier"
+    ],
     [
       "eaten_marusei_butter_sand"
     ],
@@ -460,6 +571,15 @@
     ],
     [
       "eaten_tosameika_kanzashi"
+    ],
+    [
+      "eaten_marugoto_mikandaihuku"
+    ],
+    [
+      "eaten_taketikuwa"
+    ],
+    [
+      "eaten_hakata_torimon"
     ]
   ]
 }

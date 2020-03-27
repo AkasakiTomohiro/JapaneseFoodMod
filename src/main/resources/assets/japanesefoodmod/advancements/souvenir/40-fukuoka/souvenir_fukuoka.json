@@ -1,0 +1,31 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:hakata_torimon"
+        },
+        "title": {
+            "translate": "advancements.souvenir.souvenir_fukuoka.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.souvenir_fukuoka.description"
+        },
+        "frame": "challenge"
+    },
+    "parent": "japanesefoodmod:souvenir/root",
+    "criteria": {
+        "eaten_hakata_torimon": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:hakata_torimon",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "eaten_hakata_torimon"
+        ]
+    ]
+}

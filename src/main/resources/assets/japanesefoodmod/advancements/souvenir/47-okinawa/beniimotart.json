@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:beniimotart"
+        },
+        "title": {
+            "translate": "advancements.souvenir.beniimotart.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.beniimotart.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/47-okinawa/souvenir_okinawa",
+    "criteria": {
+        "craft_beniimotart": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:beniimotart"
+                    }
+                ]
+            }
+        },
+        "eaten_beniimotart": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:beniimotart",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_beniimotart"
+        ],
+        [
+            "eaten_beniimotart"
+        ]
+    ]
+}

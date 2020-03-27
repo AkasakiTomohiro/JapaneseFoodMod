@@ -59,7 +59,17 @@ item.inaba_no_shiroushagi.name=因幡の白うさぎ
 item.wakakusa.name=若草
 item.meika_shitatudumi.name=名菓舌鼓
 item.syouyumame.name=しょうゆ豆
-item.tosameika_kanzashi.name=土佐名菓　かんざし
+item.tosameika_kanzashi.name=土佐名菓 かんざし
+item.marugoto_mikandaihuku.name=まるごとみかん大福
+item.taketikuwa.name=竹ちくわ
+item.hakata_torimon.name=博多通りもん
+item.nanbangashi_xavier.name=南蛮菓子ざびえる
+item.ikasyumai.name=萬坊「いかしゅうまい」
+item.nagasaki_kakunimanju.name=長崎角煮まんじゅう
+item.nanjakoradaihuku.name=なんじゃこら大福
+item.homarenojindaiko.name=誉の陣太鼓
+item.kasutadon.name=かすたどん
+item.beniimotart.name=紅芋タルト
 
 # 進捗
 advancements.souvenir.root.title=ゴール
@@ -247,6 +257,55 @@ advancements.souvenir.syouyumame.description="しょうゆ豆"を作って食べ
 
 advancements.souvenir.souvenir_kochi.title=高知
 advancements.souvenir.souvenir_kochi.description=高知のお土産を食べつくした
-advancements.souvenir.tosameika_kanzashi.title=土佐名菓　かんざし
-advancements.souvenir.tosameika_kanzashi.description="土佐名菓　かんざし"を作って食べた
+advancements.souvenir.tosameika_kanzashi.title=土佐名菓 かんざし
+advancements.souvenir.tosameika_kanzashi.description="土佐名菓 かんざし"を作って食べた
 
+advancements.souvenir.souvenir_ehime.title=愛媛
+advancements.souvenir.souvenir_ehime.description=愛媛のお土産を食べつくした
+advancements.souvenir.marugoto_mikandaihuku.title=まるごとみかん大福
+advancements.souvenir.marugoto_mikandaihuku.description="まるごとみかん大福"を作って食べた
+
+advancements.souvenir.souvenir_tokushima.title=徳島
+advancements.souvenir.souvenir_tokushima.description=徳島のお土産を食べつくした
+advancements.souvenir.taketikuwa.title=竹ちくわ
+advancements.souvenir.taketikuwa.description="竹ちくわ"を作って食べた
+
+advancements.souvenir.souvenir_fukuoka.title=福岡
+advancements.souvenir.souvenir_fukuoka.description=福岡のお土産を食べつくした
+advancements.souvenir.hakata_torimon.title=博多通りもん
+advancements.souvenir.hakata_torimon.description="博多通りもん"を作って食べた
+
+advancements.souvenir.souvenir_oita.title=大分
+advancements.souvenir.souvenir_oita.description=大分のお土産を食べつくした
+advancements.souvenir.nanbangashi_xavier.title=南蛮菓子ざびえる
+advancements.souvenir.nanbangashi_xavier.description="南蛮菓子ざびえる"を作って食べた
+
+advancements.souvenir.souvenir_saga.title=佐賀
+advancements.souvenir.souvenir_saga.description=佐賀のお土産を食べつくした
+advancements.souvenir.ikasyumai.title=萬坊「いかしゅうまい」
+advancements.souvenir.ikasyumai.description="萬坊「いかしゅうまい」"を作って食べた
+
+advancements.souvenir.souvenir_nagasaki.title=長崎
+advancements.souvenir.souvenir_nagasaki.description=長崎のお土産を食べつくした
+advancements.souvenir.nagasaki_kakunimanju.title=長崎角煮まんじゅう
+advancements.souvenir.nagasaki_kakunimanju.description="長崎角煮まんじゅう"を作って食べた
+
+advancements.souvenir.souvenir_miyazaki.title=宮崎
+advancements.souvenir.souvenir_miyazaki.description=宮崎のお土産を食べつくした
+advancements.souvenir.nanjakoradaihuku.title=なんじゃこら大福
+advancements.souvenir.nanjakoradaihuku.description="なんじゃこら大福"を作って食べた
+
+advancements.souvenir.souvenir_kumamoto.title=熊本
+advancements.souvenir.souvenir_kumamoto.description=熊本のお土産を食べつくした
+advancements.souvenir.homarenojindaiko.title=誉の陣太鼓
+advancements.souvenir.homarenojindaiko.description="誉の陣太鼓"を作って食べた
+
+advancements.souvenir.souvenir_kagoshima.title=鹿児島
+advancements.souvenir.souvenir_kagoshima.description=鹿児島のお土産を食べつくした
+advancements.souvenir.kasutadon.title=かすたどん
+advancements.souvenir.kasutadon.description="かすたどん"を作って食べた
+
+advancements.souvenir.souvenir_okinawa.title=沖縄
+advancements.souvenir.souvenir_okinawa.description=沖縄のお土産を食べつくした
+advancements.souvenir.beniimotart.title=紅芋タルト
+advancements.souvenir.beniimotart.description="紅芋タルト"を作って食べた

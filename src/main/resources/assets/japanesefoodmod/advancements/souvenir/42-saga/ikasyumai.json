@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:ikasyumai"
+        },
+        "title": {
+            "translate": "advancements.souvenir.ikasyumai.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.ikasyumai.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/42-saga/souvenir_saga",
+    "criteria": {
+        "craft_ikasyumai": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:ikasyumai"
+                    }
+                ]
+            }
+        },
+        "eaten_ikasyumai": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:ikasyumai",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_ikasyumai"
+        ],
+        [
+            "eaten_ikasyumai"
+        ]
+    ]
+}

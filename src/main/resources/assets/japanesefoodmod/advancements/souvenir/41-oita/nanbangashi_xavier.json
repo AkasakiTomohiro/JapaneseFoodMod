@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:nanbangashi_xavier"
+        },
+        "title": {
+            "translate": "advancements.souvenir.nanbangashi_xavier.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.nanbangashi_xavier.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/41-oita/souvenir_oita",
+    "criteria": {
+        "craft_nanbangashi_xavier": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:nanbangashi_xavier"
+                    }
+                ]
+            }
+        },
+        "eaten_nanbangashi_xavier": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:nanbangashi_xavier",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_nanbangashi_xavier"
+        ],
+        [
+            "eaten_nanbangashi_xavier"
+        ]
+    ]
+}

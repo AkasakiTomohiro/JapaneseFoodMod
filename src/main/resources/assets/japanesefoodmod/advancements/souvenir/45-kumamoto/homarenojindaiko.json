@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:homarenojindaiko"
+        },
+        "title": {
+            "translate": "advancements.souvenir.homarenojindaiko.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.homarenojindaiko.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/45-kumamoto/souvenir_kumamoto",
+    "criteria": {
+        "craft_homarenojindaiko": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:homarenojindaiko"
+                    }
+                ]
+            }
+        },
+        "eaten_homarenojindaiko": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:homarenojindaiko",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_homarenojindaiko"
+        ],
+        [
+            "eaten_homarenojindaiko"
+        ]
+    ]
+}

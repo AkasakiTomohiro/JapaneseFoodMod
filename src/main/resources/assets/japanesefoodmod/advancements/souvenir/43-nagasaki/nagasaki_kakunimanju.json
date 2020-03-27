@@ -1,0 +1,43 @@
+{
+    "display": {
+        "icon": {
+            "item": "japanesefoodmod:nagasaki_kakunimanju"
+        },
+        "title": {
+            "translate": "advancements.souvenir.nagasaki_kakunimanju.title"
+        },
+        "description": {
+            "translate": "advancements.souvenir.nagasaki_kakunimanju.description"
+        }
+    },
+    "parent": "japanesefoodmod:souvenir/43-nagasaki/souvenir_nagasaki",
+    "criteria": {
+        "craft_nagasaki_kakunimanju": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "japanesefoodmod:nagasaki_kakunimanju"
+                    }
+                ]
+            }
+        },
+        "eaten_nagasaki_kakunimanju": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "japanesefoodmod:nagasaki_kakunimanju",
+                    "count": 1
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "craft_nagasaki_kakunimanju"
+        ],
+        [
+            "eaten_nagasaki_kakunimanju"
+        ]
+    ]
+}

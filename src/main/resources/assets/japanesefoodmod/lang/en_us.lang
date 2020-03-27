@@ -60,6 +60,16 @@ item.wakakusa.name=Wakakusa
 item.meika_shitatudumi.name=Meika Shitatudumi
 item.syouyumame.name=Syouyumame
 item.tosameika_kanzashi.name=Tosameika Kanzashi
+item.marugoto_mikandaihuku.name=Marugoto Mikandaihuku
+item.taketikuwa.name=Taketikuwa
+item.hakata_torimon.name=Hakata Torimon
+item.nanbangashi_xavier.name=Nanbangashi Xavier
+item.ikasyumai.name=Ikasyumai
+item.nagasaki_kakunimanju.name=Nagasaki Kakunimanju
+item.nanjakoradaihuku.name=Nanjakoradaihuku
+item.homarenojindaiko.name=Homarenojindaiko
+item.kasutadon.name=Kasutadon
+item.beniimotart.name=Beniimotart
 
 # Advancements
 advancements.souvenir.root.title=Goal
@@ -249,3 +259,53 @@ advancements.souvenir.souvenir_kochi.title=Kochi
 advancements.souvenir.souvenir_kochi.description=You ate all Kochi souvenir
 advancements.souvenir.tosameika_kanzashi.title=Tosameika Kanzashi
 advancements.souvenir.tosameika_kanzashi.description=You made abd ate "Tosameika Kanzashi"
+
+advancements.souvenir.souvenir_ehime.title=Ehime
+advancements.souvenir.souvenir_ehime.description=You ate all Ehime souvenir
+advancements.souvenir.marugoto_mikandaihuku.title=Marugoto Mikandaihuku
+advancements.souvenir.marugoto_mikandaihuku.description=You made abd ate "Marugoto Mikandaihuku"
+
+advancements.souvenir.souvenir_tokushima.title=Tokushima
+advancements.souvenir.souvenir_tokushima.description=You ate all Tokushima souvenir
+advancements.souvenir.taketikuwa.title=Taketikuwa
+advancements.souvenir.taketikuwa.description=You made abd ate "Taketikuwa"
+
+advancements.souvenir.souvenir_fukuoka.title=Fukuoka
+advancements.souvenir.souvenir_fukuoka.description=You ate all Fukuoka souvenir
+advancements.souvenir.hakata_torimon.title=Hakata Torimon
+advancements.souvenir.hakata_torimon.description=You made abd ate "Hakata Torimon"
+
+advancements.souvenir.souvenir_oita.title=Oita
+advancements.souvenir.souvenir_oita.description=You ate all Oita souvenir
+advancements.souvenir.nanbangashi_xavier.title=Nanbangashi Xavier
+advancements.souvenir.nanbangashi_xavier.description=You made abd ate "Nanbangashi Xavier"
+
+advancements.souvenir.souvenir_saga.title=Saga
+advancements.souvenir.souvenir_saga.description=You ate all Saga souvenir
+advancements.souvenir.ikasyumai.title=Ikasyumai
+advancements.souvenir.ikasyumai.description=You made abd ate "Ikasyumai"
+
+advancements.souvenir.souvenir_nagasaki.title=Nagasaki
+advancements.souvenir.souvenir_nagasaki.description=You ate all Nagasaki souvenir
+advancements.souvenir.nagasaki_kakunimanju.title=Nagasaki Kakunimanju
+advancements.souvenir.nagasaki_kakunimanju.description=You made abd ate "Nagasaki Kakunimanju"
+
+advancements.souvenir.souvenir_miyazaki.title=Miyazaki
+advancements.souvenir.souvenir_miyazaki.description=You ate all Miyazaki souvenir
+advancements.souvenir.nanjakoradaihuku.title=Nanjakoradaihuku
+advancements.souvenir.nanjakoradaihuku.description=You made abd ate "Nanjakoradaihuku"
+
+advancements.souvenir.souvenir_kumamoto.title=Kumamoto
+advancements.souvenir.souvenir_kumamoto.description=You ate all Kumamoto souvenir
+advancements.souvenir.homarenojindaiko.title=Homarenojindaiko
+advancements.souvenir.homarenojindaiko.description=You made abd ate "Homarenojindaiko"
+
+advancements.souvenir.souvenir_kagoshima.title=Kagoshima
+advancements.souvenir.souvenir_kagoshima.description=You ate all Kagoshima souvenir
+advancements.souvenir.kasutadon.title=Kasutadon
+advancements.souvenir.kasutadon.description=You made abd ate "Kasutadon"
+
+advancements.souvenir.souvenir_okinawa.title=Okinawa
+advancements.souvenir.souvenir_okinawa.description=You ate all Okinawa souvenir
+advancements.souvenir.beniimotart.title=Beniimotart
+advancements.souvenir.beniimotart.description=You made abd ate "Beniimotart"
