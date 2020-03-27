@@ -17,11 +17,11 @@ import net.minecraftforge.event.RegistryEvent;
  * @apiNote
  * ./blockstates/${name}_plant.json
  *      成長段階に合わせたブロックの情報を記述（０～７の８段階）
- * ./models/block/${name}_plant_${Age(0~7)}.json
+ * ./models/block/plants/${name}_plant_${Age(0~7)}.json
  *      成長段階に合わせたブロックのテクスチャ情報を記述
  * ./models/item/${name}_plant.json
  *      ブロックの情報を記述
- * ./textures/block/${name}_plant_${Age(0~7)}.png
+ * ./textures/block/plants/${name}_plant_${Age(0~7)}.png
  *      ブロックの情報を記述
  */
 public abstract class JapaneseFoodPlant extends BlockCrops implements IBlockRegisterEvent {
