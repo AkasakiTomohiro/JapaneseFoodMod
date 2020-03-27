@@ -1,7 +1,7 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "japanesefoodmod:banana_leaves",
+    "model": "japanesefoodmod:trees/banana_leaves",
     "uvlock": true
   },
   "variants": {
