@@ -34,6 +34,7 @@ public class JapaneseFoodRawMaterials {
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);
     public static final JapaneseFood RAISIN = new RawMaterialFood("raisin", 1, 0.2F);
+    public static final JapaneseFood SALT = new RawMaterialFood("salt", 0, 0.1F);
 
     public static void preInit(FMLPreInitializationEvent event) {
     }

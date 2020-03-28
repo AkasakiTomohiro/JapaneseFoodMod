@@ -13,6 +13,7 @@ item.soy_seeds.name=Soy
 item.grape.name=Grape
 item.raisin.name=Raisin
 item.butter.name=Butter
+item.salt.name=Salt
 
 # Block
 tile.banana_log.name=Banana Log

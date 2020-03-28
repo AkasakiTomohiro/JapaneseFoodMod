@@ -13,6 +13,7 @@ item.soy_seeds.name=大豆
 item.grape.name=ぶどう
 item.raisin.name=レーズン
 item.butter.name=バター
+item.salt.name=塩
 
 # Block
 tile.banana_log.name=バナナの原木
