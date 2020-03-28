@@ -5,7 +5,7 @@ import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
 import jp.artan.japanesefoodmod.common.potion.CommonPotion;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
-import jp.artan.japanesefoodmod.common.world.WorldGenCustomTrees;
+import jp.artan.japanesefoodmod.common.world.tree.WorldGenCustomTrees;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 import net.minecraft.block.Block;
@@ -30,8 +30,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-
-import java.util.Random;
 
 @Mod.EventBusSubscriber(modid = JapaneseFoodMod.MODID)
 public abstract class CommonProxy {

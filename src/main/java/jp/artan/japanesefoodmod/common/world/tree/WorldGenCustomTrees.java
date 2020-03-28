@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.common.world;
+package jp.artan.japanesefoodmod.common.world.tree;
 
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;

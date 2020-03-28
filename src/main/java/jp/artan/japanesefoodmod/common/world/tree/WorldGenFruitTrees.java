@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.common.world;
+package jp.artan.japanesefoodmod.common.world.tree;
 
 import java.util.Random;
 

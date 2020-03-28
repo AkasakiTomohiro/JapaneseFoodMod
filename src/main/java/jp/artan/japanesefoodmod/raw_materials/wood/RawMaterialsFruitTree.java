@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.raw_materials.wood;
 
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
-import jp.artan.japanesefoodmod.common.world.WorldGenSupplier;
+import jp.artan.japanesefoodmod.common.world.tree.WorldGenSupplier;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 
 public class RawMaterialsFruitTree extends FruitTree {

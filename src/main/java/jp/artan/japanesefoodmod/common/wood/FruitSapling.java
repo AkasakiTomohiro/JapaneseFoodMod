@@ -3,7 +3,7 @@ package jp.artan.japanesefoodmod.common.wood;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
-import jp.artan.japanesefoodmod.common.world.WorldGenSupplier;
+import jp.artan.japanesefoodmod.common.world.tree.WorldGenSupplier;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
