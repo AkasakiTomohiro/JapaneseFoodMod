@@ -50,7 +50,7 @@ public abstract class FruitSapling extends BlockBush implements IGrowable, IBloc
     public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
     protected static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
     private final String name;
-    private final WorldGenSupplier supplier;
+    public final WorldGenSupplier supplier;
 
     public FruitSapling(String name, WorldGenSupplier supplier) {
         super();

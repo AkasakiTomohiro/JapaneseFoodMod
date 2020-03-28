@@ -4,9 +4,8 @@ import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
 import jp.artan.japanesefoodmod.common.potion.CommonPotion;
-import jp.artan.japanesefoodmod.common.potion.JapanesePotion;
-import jp.artan.japanesefoodmod.common.potion.JapanesePotionType;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
+import jp.artan.japanesefoodmod.common.world.WorldGenCustomTrees;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 import net.minecraft.block.Block;
@@ -23,12 +22,16 @@ import net.minecraft.world.storage.loot.LootTableList;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.terraingen.DecorateBiomeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.EntityEntry;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+
+import java.util.Random;
 
 @Mod.EventBusSubscriber(modid = JapaneseFoodMod.MODID)
 public abstract class CommonProxy {
@@ -37,6 +40,8 @@ public abstract class CommonProxy {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
         JapaneseFoodRawMaterials.preInit(event);
         JapaneseFoodSouvenir.preInit(event);
+
+        GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
     }
 
     public void init(FMLInitializationEvent event) {
@@ -91,6 +96,17 @@ public abstract class CommonProxy {
     @SubscribeEvent
     public void registerBiome(RegistryEvent.Register<Biome> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBiome");
+    }
+
+    @SubscribeEvent
+    public void decorateBiome(DecorateBiomeEvent.Decorate event) {
+//        World world = event.getWorld();
+//        Biome biome = world.getBiomeForCoordsBody(event.getPos());
+//        Random rand = event.getRand();
+//        if(event.getType() == DecorateBiomeEvent.Decorate.EventType.TREE) {
+//            if(biome == Biomes.PLAINS) {
+//            }
+//        }
     }
 
     @SubscribeEvent

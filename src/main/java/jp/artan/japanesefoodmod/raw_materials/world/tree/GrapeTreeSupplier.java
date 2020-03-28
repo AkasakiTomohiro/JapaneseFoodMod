@@ -7,8 +7,10 @@ import jp.artan.japanesefoodmod.common.world.WorldGenFruitTrees;
 import jp.artan.japanesefoodmod.common.world.WorldGenSupplier;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.init.Biomes;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.Biome;
 
 import java.util.Random;
 
@@ -16,6 +18,10 @@ public class GrapeTreeSupplier extends WorldGenSupplier {
     private FruitLog log;
     private FruitLeaves leaves;
     private FruitBlock fruitBlock;
+
+    public GrapeTreeSupplier() {
+        super(100);
+    }
 
     @Override
     public WorldGenFruitTrees getWorldGenerate(boolean parShouldNotify) {
@@ -26,6 +32,11 @@ public class GrapeTreeSupplier extends WorldGenSupplier {
         this.log = log;
         this.leaves = leaves;
         this.fruitBlock = fruitBlock;
+    }
+
+    @Override
+    public boolean getEnableBiome(Biome biome) {
+        return biome == Biomes.PLAINS;
     }
 
 }
