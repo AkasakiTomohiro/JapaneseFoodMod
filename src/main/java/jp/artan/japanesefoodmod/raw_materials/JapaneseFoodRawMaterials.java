@@ -8,10 +8,12 @@ import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
 import jp.artan.japanesefoodmod.raw_materials.tabs.FruitTreeCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.tabs.RawMaterialsCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
+import jp.artan.japanesefoodmod.raw_materials.world.biome.FruitForestBiome;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -21,6 +23,9 @@ public class JapaneseFoodRawMaterials {
     // クリエイティブタブ
     public static CreativeTabs rawMaterialsCreativeTab = new RawMaterialsCreativeTab();
     public static CreativeTabs fruitTreeCreativeTab = new FruitTreeCreativeTab();
+
+    // バイオーム
+    public static final Biome FRUIT_FOREST_BIOME = new FruitForestBiome();
 
     // 果樹
     public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.3F, new BananaTreeSupplier());

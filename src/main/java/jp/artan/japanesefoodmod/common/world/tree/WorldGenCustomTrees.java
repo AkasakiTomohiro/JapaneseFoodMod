@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -36,12 +37,13 @@ public class WorldGenCustomTrees implements IWorldGenerator {
         int z = (chunkZ * 16) + random.nextInt(15);
         int y = calculateGenerationHeight(world, x, z, fruitTree.sapling.supplier.topBlock);
         BlockPos pos = new BlockPos(x,y,z);
+        Biome biome = world.provider.getBiomeForCoords(pos);
 
         if(world.getWorldType() != WorldType.FLAT)
         {
-            if(fruitTree.sapling.supplier.getEnableBiome(world.provider.getBiomeForCoords(pos)))
+            if(fruitTree.sapling.supplier.getEnableBiome(biome))
             {
-                if(random.nextInt(fruitTree.sapling.supplier.genChance) == 0)
+                if(random.nextInt(fruitTree.sapling.supplier.getGenChance(biome)) == 0)
                 {
                     generator.generate(world, random, pos);
                 }

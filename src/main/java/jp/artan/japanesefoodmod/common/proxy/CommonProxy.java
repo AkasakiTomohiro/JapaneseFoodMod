@@ -94,6 +94,7 @@ public abstract class CommonProxy {
     @SubscribeEvent
     public void registerBiome(RegistryEvent.Register<Biome> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBiome");
+        Init.BIOMES.forEach(f -> event.getRegistry().register(f));
     }
 
     @SubscribeEvent
