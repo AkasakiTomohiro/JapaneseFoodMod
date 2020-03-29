@@ -37,7 +37,7 @@ public class BananaTreeSupplier extends WorldGenSupplier {
 
     @Override
     public boolean getEnableBiome(Biome biome) {
-        return biome == JapaneseFoodRawMaterials.FRUIT_FOREST_BIOME || biome == Biomes.JUNGLE || biome == Biomes.JUNGLE_HILLS || biome == Biomes.JUNGLE_EDGE;
+        return biome == Biomes.JUNGLE || biome == Biomes.JUNGLE_HILLS || biome == Biomes.JUNGLE_EDGE;
     }
 }
 

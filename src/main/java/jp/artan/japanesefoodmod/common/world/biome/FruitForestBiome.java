@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.raw_materials.world.biome;
+package jp.artan.japanesefoodmod.common.world.biome;
 
 import jp.artan.japanesefoodmod.common.Init;
 import jp.artan.japanesefoodmod.common.world.biome.CustomBiome;

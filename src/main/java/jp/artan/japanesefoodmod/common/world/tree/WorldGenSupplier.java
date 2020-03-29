@@ -34,7 +34,7 @@ public abstract class WorldGenSupplier {
     public abstract void setIBlockState(FruitLog log, FruitLeaves leaves, FruitBlock fruitBlock);
 
     public int getGenChance(Biome biome) {
-        return biome == JapaneseFoodRawMaterials.FRUIT_FOREST_BIOME ? 3 : this.genChance;
+        return this.genChance;
     }
 
     /**

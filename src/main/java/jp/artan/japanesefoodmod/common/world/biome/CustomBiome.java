@@ -2,13 +2,18 @@ package jp.artan.japanesefoodmod.common.world.biome;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.Init;
+import jp.artan.japanesefoodmod.common.food.JapaneseFood;
+import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
+import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.common.BiomeDictionary;
 import net.minecraftforge.common.BiomeDictionary.Type;
 import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
+
+import java.util.Random;
 
 public class CustomBiome extends Biome {
     protected final String name;
@@ -54,4 +59,16 @@ public class CustomBiome extends Biome {
 
         return getModdedBiomeDecorator(biomeDecorator);
     }
+
+    @Override
+    public WorldGenAbstractTree getRandomTreeFeature(Random rand)
+    {
+        switch (rand.nextInt(2)) {
+            case 1:
+                return JapaneseFoodRawMaterials.GRAPE.sapling.supplier.getWorldGenerate(false);
+            default:
+                return JapaneseFoodRawMaterials.BANANA.sapling.supplier.getWorldGenerate(false);
+        }
+    }
+
 }

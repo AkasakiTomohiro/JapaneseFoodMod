@@ -1,6 +1,10 @@
 package jp.artan.japanesefoodmod;
 
 import jp.artan.japanesefoodmod.common.proxy.CommonProxy;
+import jp.artan.japanesefoodmod.common.world.biome.FruitForestBiome;
+import jp.artan.japanesefoodmod.common.world.type.WorldTypeFruitsForest;
+import net.minecraft.world.WorldType;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -21,6 +25,10 @@ public class JapaneseFoodMod {
 
     public static final String CLIENT_PROXY = "jp.artan." + MODID + ".common.proxy.ClientProxy";
     public static final String SERVER_PROXY = "jp.artan." + MODID + ".common.proxy.ServerProxy";
+
+    // バイオーム
+    public static final Biome FRUIT_FOREST_BIOME = new FruitForestBiome();
+    public static final WorldType FRUITS_FOREST_WORLD_TYPE = new WorldTypeFruitsForest();
 
     @SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
     public static CommonProxy proxy;

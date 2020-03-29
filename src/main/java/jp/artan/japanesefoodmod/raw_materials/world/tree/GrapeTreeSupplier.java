@@ -37,7 +37,7 @@ public class GrapeTreeSupplier extends WorldGenSupplier {
 
     @Override
     public boolean getEnableBiome(Biome biome) {
-        return biome == JapaneseFoodRawMaterials.FRUIT_FOREST_BIOME || biome == Biomes.PLAINS;
+        return biome == Biomes.PLAINS;
     }
 
 }
