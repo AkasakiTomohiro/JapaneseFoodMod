@@ -20,8 +20,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class JapaneseFoodRawMaterials {
     // クリエイティブタブ
-    public static CreativeTabs rawMaterialsCreativeTab = new RawMaterialsCreativeTab();
-    public static CreativeTabs fruitTreeCreativeTab = new FruitTreeCreativeTab();
 
     // ツール
     public static final CustomTool GROUND_WOOD = new CustomTool("ground_wood");

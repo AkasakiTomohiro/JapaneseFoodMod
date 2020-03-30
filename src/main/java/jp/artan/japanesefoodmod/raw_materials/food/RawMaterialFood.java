@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod.raw_materials.food;
 
+import jp.artan.japanesefoodmod.init.CreativeTabsInit;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 
@@ -14,6 +15,6 @@ public class RawMaterialFood extends JapaneseFood {
      */
     public RawMaterialFood(String name, int amount, float saturation) {
         super(name, amount, saturation);
-        this.setCreativeTab(JapaneseFoodRawMaterials.rawMaterialsCreativeTab);
+        this.setCreativeTab(CreativeTabsInit.rawMaterialsCreativeTab);
     }
 }
