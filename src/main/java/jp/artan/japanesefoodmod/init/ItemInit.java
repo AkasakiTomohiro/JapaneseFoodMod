@@ -25,6 +25,8 @@ public class ItemInit {
     public static final IntermediateMaterial COCOA_BUTTER = new IntermediateMaterial("cocoa_butter");
     public static final IntermediateMaterial ALMOND_POWDER = new IntermediateMaterial("almond_powder");
     public static final IntermediateMaterial SALT = new IntermediateMaterial("salt");
+    public static final IntermediateMaterial ALCOHOL = new IntermediateMaterial("alcohol");
+    public static final IntermediateMaterial SOY_SAUCE = new IntermediateMaterial("soy_sauce");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);

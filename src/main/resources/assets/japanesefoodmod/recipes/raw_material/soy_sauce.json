@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:salt"
+    },
+    {
+      "item": "japanesefoodmod:soy_seeds"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:soy_sauce",
+    "count": 4
+  }
+}

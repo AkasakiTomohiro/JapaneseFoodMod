@@ -30,6 +30,8 @@ item.squid.name=Squid
 item.dried_squid.name=Dried Squid
 item.radish.name=Radish
 item.radish_seeds.name=Radish Seed
+item.alcohol.name=Alcohol
+item.soy_sauce.name=Soy Sauce
 
 # Block
 tile.banana_log.name=Banana Log
