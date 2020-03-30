@@ -28,6 +28,8 @@ item.clupea_pallasii.name=ニシン
 item.clupea_pallasii_baked.name=焼きニシン
 item.squid.name=イカ
 item.dried_squid.name=するめ
+item.radish.name=大根
+item.radish_seeds.name=大根の種
 
 # Block
 tile.banana_log.name=バナナの原木

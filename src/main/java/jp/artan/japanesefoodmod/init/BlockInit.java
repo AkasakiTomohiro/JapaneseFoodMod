@@ -1,9 +1,11 @@
 package jp.artan.japanesefoodmod.init;
 
+import jp.artan.japanesefoodmod.common.crop.CropsWithSeeds;
 import jp.artan.japanesefoodmod.common.crop.SameCropAsSeed;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
+import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropsWithSeeds;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.AlmondTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
@@ -22,4 +24,5 @@ public class BlockInit {
 
     // 作物
     public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.1F);
+    public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
 }
