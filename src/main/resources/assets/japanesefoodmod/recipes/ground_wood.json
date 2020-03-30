@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "group": "japanesefoodmod",
   "pattern": [
+    " Z ",
     "X X",
     " Y "
   ],
@@ -12,6 +13,9 @@
     },
     "Y": {
       "item": "minecraft:cobblestone"
+    },
+    "Z": {
+      "item": "minecraft:stick"
     }
   },
   "result": {

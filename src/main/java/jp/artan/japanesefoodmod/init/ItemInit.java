@@ -1,6 +1,7 @@
 package jp.artan.japanesefoodmod.init;
 
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.common.food.IntermediateMaterial;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.tool.CustomTool;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
@@ -16,6 +17,9 @@ public class ItemInit {
     public static final CustomTool GROUND_WOOD = new CustomTool("ground_wood");
 
     // 魚
+
+    // 中間素材
+    public static final IntermediateMaterial COCOA_BUTTER = new IntermediateMaterial("cocoa_butter");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);

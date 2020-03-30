@@ -18,6 +18,7 @@ item.grape.name=Grape
 item.raisin.name=Raisin
 item.butter.name=Butter
 item.salt.name=Salt
+item.cocoa_butter.name=Cocoa Butter
 
 # Block
 tile.banana_log.name=Banana Log

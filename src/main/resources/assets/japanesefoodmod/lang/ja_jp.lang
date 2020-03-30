@@ -18,6 +18,7 @@ item.grape.name=ぶどう
 item.raisin.name=レーズン
 item.butter.name=バター
 item.salt.name=塩
+item.cocoa_butter.name=ココアバター
 
 # Block
 tile.banana_log.name=バナナの原木
