@@ -4,8 +4,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import static jp.artan.japanesefoodmod.init.BlockInit.BANANA;
-import static jp.artan.japanesefoodmod.init.BlockInit.GRAPE;
+import static jp.artan.japanesefoodmod.init.BlockInit.*;
 import static jp.artan.japanesefoodmod.init.ItemInit.RAISIN;
 
 public class RecipeInit {
@@ -18,5 +17,6 @@ public class RecipeInit {
         // 鉱石辞書登録
         BANANA.registerOreDictionaryEntries();
         GRAPE.registerOreDictionaryEntries();
+        ALMOND.registerOreDictionaryEntries();
     }
 }

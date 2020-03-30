@@ -1,0 +1,6 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "japanesefoodmod:blocks/trees/almond_leaves"
+  }
+}

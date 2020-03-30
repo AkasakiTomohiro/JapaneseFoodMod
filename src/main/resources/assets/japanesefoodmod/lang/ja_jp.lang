@@ -19,6 +19,7 @@ item.raisin.name=レーズン
 item.butter.name=バター
 item.salt.name=塩
 item.cocoa_butter.name=ココアバター
+item.almond.name=アーモンド
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -27,6 +28,9 @@ tile.banana_sapling.name=バナナの苗木
 tile.grape_log.name=ぶどうの原木
 tile.grape_leaves.name=ぶどうの葉
 tile.grape_sapling.name=ぶどうの苗木
+tile.almond_log.name=アーモンドの原木
+tile.almond_leaves.name=アーモンドの葉
+tile.almond_sapling.name=アーモンドの苗木
 
 ## Souvenirs
 item.marusei_butter_sand.name=マルセイバターサンド

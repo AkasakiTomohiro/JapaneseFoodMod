@@ -1,0 +1,6 @@
+{
+	"parent":"block/cross",
+	"textures": {
+		"cross": "japanesefoodmod:blocks/fruits/almond_fruit_block_1"
+	}
+}

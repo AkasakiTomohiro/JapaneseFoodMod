@@ -19,6 +19,7 @@ item.raisin.name=Raisin
 item.butter.name=Butter
 item.salt.name=Salt
 item.cocoa_butter.name=Cocoa Butter
+item.almond.name=Almond
 
 # Block
 tile.banana_log.name=Banana Log
@@ -27,6 +28,9 @@ tile.banana_sapling.name=Banana Sapling
 tile.grape_log.name=Grape Log
 tile.grape_leaves.name=Grape Leaves
 tile.grape_sapling.name=Grape Sapling
+tile.almond_log.name=Almond Log
+tile.almond_leaves.name=Almond Leaves
+tile.almond_sapling.name=Almond Sapling
 
 ## Souvenirs
 item.marusei_butter_sand.name=Marusei Butter Sand

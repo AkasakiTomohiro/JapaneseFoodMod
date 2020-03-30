@@ -13,8 +13,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.Random;
 
-import static jp.artan.japanesefoodmod.init.BlockInit.BANANA;
-import static jp.artan.japanesefoodmod.init.BlockInit.GRAPE;
+import static jp.artan.japanesefoodmod.init.BlockInit.*;
 
 public class CustomBiome extends Biome {
     protected final String name;
@@ -39,8 +38,7 @@ public class CustomBiome extends Biome {
     }
 
     @Override
-    public BiomeDecorator createBiomeDecorator()
-    {
+    public BiomeDecorator createBiomeDecorator() {
         BiomeDecorator biomeDecorator = new CustomBiomeDecorator();
 
         biomeDecorator.waterlilyPerChunk = 0;
@@ -62,11 +60,12 @@ public class CustomBiome extends Biome {
     }
 
     @Override
-    public WorldGenAbstractTree getRandomTreeFeature(Random rand)
-    {
-        switch (rand.nextInt(2)) {
+    public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
+        switch (rand.nextInt(3)) {
             case 1:
                 return GRAPE.sapling.supplier.getWorldGenerate(false);
+            case 0:
+                return ALMOND.sapling.supplier.getWorldGenerate(false);
             default:
                 return BANANA.sapling.supplier.getWorldGenerate(false);
         }
