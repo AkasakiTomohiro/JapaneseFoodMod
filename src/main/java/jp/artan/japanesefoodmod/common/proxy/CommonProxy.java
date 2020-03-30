@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
+import jp.artan.japanesefoodmod.init.BlockInit;
 import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
@@ -7,7 +8,7 @@ import jp.artan.japanesefoodmod.common.potion.CommonPotion;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenCustomTrees;
 import jp.artan.japanesefoodmod.init.ItemInit;
-import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
+import jp.artan.japanesefoodmod.init.RecipeInit;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
@@ -36,37 +37,33 @@ public abstract class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
-        ItemInit.preInit(event);
-        JapaneseFoodSouvenir.preInit(event);
 
         GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
     }
 
     public void init(FMLInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.init");
-        ItemInit.init(event);
-        JapaneseFoodSouvenir.init(event);
+        RecipeInit.smelting(event);
+        RecipeInit.registerOreDictionaryEntries(event);
 
         RightClickHarvesting.instance.register();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.postInit");
-        ItemInit.postInit(event);
-        JapaneseFoodSouvenir.postInit(event);
     }
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerItems");
         ItemInit.ITEMS.forEach(f -> f.registerItem(event));
-        Init.BLOCKS.forEach(f -> f.registerItemBlocks(event));
+        BlockInit.BLOCKS.forEach(f -> f.registerItemBlocks(event));
     }
 
     @SubscribeEvent
     public void registerBlocks(RegistryEvent.Register<Block> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBlocks");
-        Init.BLOCKS.forEach(f -> f.registerBlock(event));
+        BlockInit.BLOCKS.forEach(f -> f.registerBlock(event));
     }
 
     @SubscribeEvent

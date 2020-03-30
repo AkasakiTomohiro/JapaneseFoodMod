@@ -2,7 +2,6 @@ package jp.artan.japanesefoodmod.souvenir.food;
 
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.init.CreativeTabsInit;
-import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 
 public class SouvenirFood extends JapaneseFood {
 

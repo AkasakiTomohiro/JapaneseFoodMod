@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.wood;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.init.Init;
+import jp.artan.japanesefoodmod.init.BlockInit;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenSupplier;
 import net.minecraft.block.Block;
@@ -61,7 +61,7 @@ public abstract class FruitSapling extends BlockBush implements IGrowable, IBloc
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
         this.supplier = supplier;
 
-        Init.BLOCKS.add(this);
+        BlockInit.BLOCKS.add(this);
     }
 
     @Override

@@ -1,6 +1,6 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
-import jp.artan.japanesefoodmod.init.Init;
+import jp.artan.japanesefoodmod.init.BlockInit;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.init.ItemInit;
@@ -29,7 +29,7 @@ public class ClientProxy extends CommonProxy {
         JapaneseFoodMod.logger.info("ClientProxy.registerModels");
 
         ItemInit.ITEMS.forEach(f -> f.registerModel(event));
-        Init.BLOCKS.forEach(f -> f.registerModel(event));
+        BlockInit.BLOCKS.forEach(f -> f.registerModel(event));
     }
 
     public void setGraphicsLevel(FruitLeaves leaves){

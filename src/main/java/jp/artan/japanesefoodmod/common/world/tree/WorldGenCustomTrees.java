@@ -14,6 +14,9 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
+import static jp.artan.japanesefoodmod.init.BlockInit.BANANA;
+import static jp.artan.japanesefoodmod.init.BlockInit.GRAPE;
+
 public class WorldGenCustomTrees implements IWorldGenerator {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
@@ -21,8 +24,8 @@ public class WorldGenCustomTrees implements IWorldGenerator {
             case -1:
                 break;
             case 0:
-                runGenerator(ItemInit.BANANA, world, random, chunkX, chunkZ);
-                runGenerator(ItemInit.GRAPE, world, random, chunkX, chunkZ);
+                runGenerator(BANANA, world, random, chunkX, chunkZ);
+                runGenerator(GRAPE, world, random, chunkX, chunkZ);
                 break;
             case 1:
                 break;

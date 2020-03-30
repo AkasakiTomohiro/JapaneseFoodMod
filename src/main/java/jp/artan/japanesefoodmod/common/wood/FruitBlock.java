@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.wood;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.init.Init;
+import jp.artan.japanesefoodmod.init.BlockInit;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.IGrowable;
@@ -60,7 +60,7 @@ public abstract class FruitBlock extends Block implements IGrowable, IBlockRegis
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
 
-        Init.BLOCKS.add(this);
+        BlockInit.BLOCKS.add(this);
     }
 
     @Override

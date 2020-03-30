@@ -1,8 +1,9 @@
 package jp.artan.japanesefoodmod.init.tabs;
 
-import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+
+import static jp.artan.japanesefoodmod.init.BlockInit.BANANA;
 
 public class FruitTreeCreativeTab extends CreativeTabs {
 
@@ -12,7 +13,7 @@ public class FruitTreeCreativeTab extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ItemInit.BANANA.log);
+        return new ItemStack(BANANA.log);
     }
 
 }

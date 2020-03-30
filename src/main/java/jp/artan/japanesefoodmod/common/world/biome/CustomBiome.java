@@ -2,7 +2,6 @@ package jp.artan.japanesefoodmod.common.world.biome;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.init.Init;
-import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
@@ -13,6 +12,9 @@ import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 import java.util.Random;
+
+import static jp.artan.japanesefoodmod.init.BlockInit.BANANA;
+import static jp.artan.japanesefoodmod.init.BlockInit.GRAPE;
 
 public class CustomBiome extends Biome {
     protected final String name;
@@ -64,9 +66,9 @@ public class CustomBiome extends Biome {
     {
         switch (rand.nextInt(2)) {
             case 1:
-                return ItemInit.GRAPE.sapling.supplier.getWorldGenerate(false);
+                return GRAPE.sapling.supplier.getWorldGenerate(false);
             default:
-                return ItemInit.BANANA.sapling.supplier.getWorldGenerate(false);
+                return BANANA.sapling.supplier.getWorldGenerate(false);
         }
     }
 
