@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:butter"
+    },
+    {
+      "item": "japanesefoodmod:rum_raisin"
+    },
+    {
+      "item": "japanesefoodmod:cocoa_butter"
+    },
+    {
+      "item": "japanesefoodmod:almond_powder"
+    },
+    {
+      "item": "japanesefoodmod:salt"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:tokyo_banana",
+    "count": 1
+  }
+}
