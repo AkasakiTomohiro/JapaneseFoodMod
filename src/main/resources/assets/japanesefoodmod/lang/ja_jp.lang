@@ -23,6 +23,9 @@ item.almond.name=アーモンド
 item.almond_powder.name=アーモンド粉末
 item.rum.name=ラム酒
 item.rum_raisin.name=ラムレーズン
+item.herring_roe.name=数の子
+item.clupea_pallasii.name=ニシン
+item.clupea_pallasii_baked.name=焼きニシン
 
 # Block
 tile.banana_log.name=バナナの原木

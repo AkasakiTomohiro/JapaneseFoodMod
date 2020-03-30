@@ -23,6 +23,9 @@ item.almond.name=Almond
 item.almond_powder.name=Almond Powder
 item.rum.name=Rum
 item.rum_raisin.name=Rum Raisin
+item.herring_roe.name=Herring Roe
+item.clupea_pallasii.name=Clupea Pallasii
+item.clupea_pallasii_baked.name=Clupea Pallasii Baked
 
 # Block
 tile.banana_log.name=Banana Log

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:clupea_pallasii"
+    },
+    {
+      "item": "japanesefoodmod:salt"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:herring_roe",
+    "count": 2
+  }
+}
