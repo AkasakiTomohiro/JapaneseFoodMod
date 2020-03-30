@@ -2,6 +2,7 @@ package jp.artan.japanesefoodmod.common.food;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.init.CreativeTabsInit;
 import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -17,6 +18,7 @@ public class IntermediateMaterial extends Item implements IItemRegisterEvent {
         this.name = name;
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
+        this.setCreativeTab(CreativeTabsInit.rawMaterialsCreativeTab);
 
         ItemInit.ITEMS.add(this);
     }

@@ -20,6 +20,7 @@ item.butter.name=バター
 item.salt.name=塩
 item.cocoa_butter.name=ココアバター
 item.almond.name=アーモンド
+item.almond_powder.name=アーモンド粉末
 
 # Block
 tile.banana_log.name=バナナの原木

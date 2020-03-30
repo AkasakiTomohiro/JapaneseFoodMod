@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:almond"
+    },
+    {
+      "item": "japanesefoodmod:ground_wood"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:almond_powder",
+    "count": 4
+  }
+}

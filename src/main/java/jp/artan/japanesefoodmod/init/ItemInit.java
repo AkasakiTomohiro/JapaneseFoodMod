@@ -20,6 +20,7 @@ public class ItemInit {
 
     // 中間素材
     public static final IntermediateMaterial COCOA_BUTTER = new IntermediateMaterial("cocoa_butter");
+    public static final IntermediateMaterial ALMOND_POWDER = new IntermediateMaterial("almond_powder");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);

@@ -20,6 +20,7 @@ item.butter.name=Butter
 item.salt.name=Salt
 item.cocoa_butter.name=Cocoa Butter
 item.almond.name=Almond
+item.almond_powder.name=Almond Powder
 
 # Block
 tile.banana_log.name=Banana Log
