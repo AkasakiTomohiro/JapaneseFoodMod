@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:herring_roe"
+    },
+    {
+      "item": "japanesefoodmod:radish"
+    },
+    {
+      "item": "japanesefoodmod:dried_squid"
+    },
+    {
+      "item": "japanesefoodmod:laminariaceae"
+    },
+    {
+      "item": "japanesefoodmod:soy_sauce"
+    },
+    {
+      "item": "japanesefoodmod:alcohol"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:kinin_tsugaru_duke",
+    "count": 1
+  }
+}
