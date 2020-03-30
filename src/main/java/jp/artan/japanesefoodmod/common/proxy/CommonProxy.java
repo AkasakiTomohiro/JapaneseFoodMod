@@ -6,7 +6,7 @@ import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
 import jp.artan.japanesefoodmod.common.potion.CommonPotion;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenCustomTrees;
-import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
@@ -36,7 +36,7 @@ public abstract class CommonProxy {
 
     public void preInit(FMLPreInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
-        JapaneseFoodRawMaterials.preInit(event);
+        ItemInit.preInit(event);
         JapaneseFoodSouvenir.preInit(event);
 
         GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
@@ -44,7 +44,7 @@ public abstract class CommonProxy {
 
     public void init(FMLInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.init");
-        JapaneseFoodRawMaterials.init(event);
+        ItemInit.init(event);
         JapaneseFoodSouvenir.init(event);
 
         RightClickHarvesting.instance.register();
@@ -52,14 +52,14 @@ public abstract class CommonProxy {
 
     public void postInit(FMLPostInitializationEvent event) {
         JapaneseFoodMod.logger.info("CommonProxy.postInit");
-        JapaneseFoodRawMaterials.postInit(event);
+        ItemInit.postInit(event);
         JapaneseFoodSouvenir.postInit(event);
     }
 
     @SubscribeEvent
     public void registerItems(RegistryEvent.Register<Item> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerItems");
-        Init.ITEMS.forEach(f -> f.registerItem(event));
+        ItemInit.ITEMS.forEach(f -> f.registerItem(event));
         Init.BLOCKS.forEach(f -> f.registerItemBlocks(event));
     }
 

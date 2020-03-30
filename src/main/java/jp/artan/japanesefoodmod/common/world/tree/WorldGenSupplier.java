@@ -3,7 +3,6 @@ package jp.artan.japanesefoodmod.common.world.tree;
 import jp.artan.japanesefoodmod.common.wood.FruitBlock;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.wood.FruitLog;
-import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.world.biome.Biome;

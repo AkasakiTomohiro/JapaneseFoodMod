@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.world.tree;
 
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
-import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -21,8 +21,8 @@ public class WorldGenCustomTrees implements IWorldGenerator {
             case -1:
                 break;
             case 0:
-                runGenerator(JapaneseFoodRawMaterials.BANANA, world, random, chunkX, chunkZ);
-                runGenerator(JapaneseFoodRawMaterials.GRAPE, world, random, chunkX, chunkZ);
+                runGenerator(ItemInit.BANANA, world, random, chunkX, chunkZ);
+                runGenerator(ItemInit.GRAPE, world, random, chunkX, chunkZ);
                 break;
             case 1:
                 break;

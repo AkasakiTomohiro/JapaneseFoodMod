@@ -1,9 +1,9 @@
 package jp.artan.japanesefoodmod.common.tool;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.init.CreativeTabsInit;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
@@ -35,7 +35,7 @@ public class CustomTool extends Item implements IItemRegisterEvent {
         this.setMaxStackSize(1);
         this.setContainerItem(this);
 
-        Init.ITEMS.add(this);
+        ItemInit.ITEMS.add(this);
     }
 
     /**

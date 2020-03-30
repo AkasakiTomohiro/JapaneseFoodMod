@@ -1,8 +1,8 @@
 package jp.artan.japanesefoodmod.common.food;
 
-import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.MobEffects;
@@ -45,7 +45,7 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
         this.setUnlocalizedName(this.Name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
 
-        Init.ITEMS.add(this);
+        ItemInit.ITEMS.add(this);
     }
 
     @Override

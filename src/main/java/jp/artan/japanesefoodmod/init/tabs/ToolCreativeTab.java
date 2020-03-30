@@ -1,6 +1,6 @@
 package jp.artan.japanesefoodmod.init.tabs;
 
-import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
@@ -12,7 +12,7 @@ public class ToolCreativeTab  extends CreativeTabs {
 
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(JapaneseFoodRawMaterials.GROUND_WOOD);
+        return new ItemStack(ItemInit.GROUND_WOOD);
     }
 
 }

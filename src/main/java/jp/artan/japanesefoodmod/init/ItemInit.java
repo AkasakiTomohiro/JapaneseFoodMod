@@ -1,25 +1,26 @@
-package jp.artan.japanesefoodmod.raw_materials;
+package jp.artan.japanesefoodmod.init;
 
 import jp.artan.japanesefoodmod.common.crop.SameCropAsSeed;
+import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.tool.CustomTool;
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFood;
-import jp.artan.japanesefoodmod.init.tabs.FruitTreeCreativeTab;
-import jp.artan.japanesefoodmod.init.tabs.RawMaterialsCreativeTab;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-public class JapaneseFoodRawMaterials {
-    // クリエイティブタブ
+import java.util.ArrayList;
+import java.util.List;
+
+public class ItemInit {
+    public static List<IItemRegisterEvent> ITEMS = new ArrayList<IItemRegisterEvent>();
 
     // ツール
     public static final CustomTool GROUND_WOOD = new CustomTool("ground_wood");
@@ -41,11 +42,6 @@ public class JapaneseFoodRawMaterials {
     public static void preInit(FMLPreInitializationEvent event) {
     }
 
-    /**
-     * 清廉レシピを登録
-     * 
-     * @param event
-     */
     public static void init(FMLInitializationEvent event) {
         // 精錬レシピ登録
         GameRegistry.addSmelting(GRAPE.fruit, new ItemStack(RAISIN, 1), 0.4F);

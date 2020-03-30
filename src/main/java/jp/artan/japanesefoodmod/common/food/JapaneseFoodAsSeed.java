@@ -1,8 +1,8 @@
 package jp.artan.japanesefoodmod.common.food;
 
-import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.entity.player.EntityPlayer;
@@ -54,7 +54,7 @@ public abstract class JapaneseFoodAsSeed extends ItemFood implements IPlantable,
         this.setRegistryName(JapaneseFoodMod.MODID, this.Name);
         this.Plant = plant;
 
-        Init.ITEMS.add(this);
+        ItemInit.ITEMS.add(this);
     }
 
     @Override

@@ -5,7 +5,6 @@ import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.wood.FruitLog;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenFruitTrees;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenSupplier;
-import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.block.BlockLog;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Biomes;
