@@ -21,6 +21,8 @@ item.salt.name=塩
 item.cocoa_butter.name=ココアバター
 item.almond.name=アーモンド
 item.almond_powder.name=アーモンド粉末
+item.rum.name=ラム酒
+item.rum_raisin.name=ラムレーズン
 
 # Block
 tile.banana_log.name=バナナの原木

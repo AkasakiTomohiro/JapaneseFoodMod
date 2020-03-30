@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:reeds"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:rum",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "japanesefoodmod:rum"
+    },
+    {
+      "item": "japanesefoodmod:raisin"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:rum_raisin",
+    "count": 1
+  }
+}

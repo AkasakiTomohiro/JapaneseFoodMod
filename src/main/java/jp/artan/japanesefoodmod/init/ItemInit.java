@@ -21,11 +21,13 @@ public class ItemInit {
     // 中間素材
     public static final IntermediateMaterial COCOA_BUTTER = new IntermediateMaterial("cocoa_butter");
     public static final IntermediateMaterial ALMOND_POWDER = new IntermediateMaterial("almond_powder");
+    public static final IntermediateMaterial SALT = new IntermediateMaterial("salt");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);
     public static final JapaneseFood RAISIN = new RawMaterialFood("raisin", 1, 0.2F);
-    public static final JapaneseFood SALT = new RawMaterialFood("salt", 0, 0.1F);
+    public static final JapaneseFood RUM = new RawMaterialFood("rum", 1, 0.1F);
+    public static final JapaneseFood RUM_RAISIN = new RawMaterialFood("rum_raisin", 1, 0.2F);
 
     // お土産
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);
