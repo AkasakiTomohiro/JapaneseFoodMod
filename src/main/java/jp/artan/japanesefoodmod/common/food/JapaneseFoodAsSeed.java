@@ -1,6 +1,6 @@
 package jp.artan.japanesefoodmod.common.food;
 
-import jp.artan.japanesefoodmod.common.Init;
+import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.block.state.IBlockState;

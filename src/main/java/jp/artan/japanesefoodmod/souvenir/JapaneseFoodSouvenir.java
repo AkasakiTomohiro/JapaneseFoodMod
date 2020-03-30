@@ -1,6 +1,7 @@
 package jp.artan.japanesefoodmod.souvenir;
 
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
+import jp.artan.japanesefoodmod.init.tabs.SouvenirCreativeTab;
 import jp.artan.japanesefoodmod.souvenir.food.SouvenirFood;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.client.event.ModelRegistryEvent;

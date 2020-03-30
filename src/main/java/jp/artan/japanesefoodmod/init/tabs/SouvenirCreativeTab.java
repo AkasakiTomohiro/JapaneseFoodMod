@@ -1,5 +1,6 @@
-package jp.artan.japanesefoodmod.souvenir;
+package jp.artan.japanesefoodmod.init.tabs;
 
+import jp.artan.japanesefoodmod.souvenir.JapaneseFoodSouvenir;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 

@@ -1,6 +1,6 @@
 package jp.artan.japanesefoodmod.common.food;
 
-import jp.artan.japanesefoodmod.common.Init;
+import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.IItemRegisterEvent;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -54,7 +54,7 @@ public abstract class JapaneseFood extends ItemFood implements IItemRegisterEven
         //     player.addPotionEffect(new PotionEffect(MobEffects.SPEED, 1200, 3));
         // }
 
-        // player.addPotionEffect(new PotionEffect(MobEffects.LUCK, 1200, 3));
+         player.addPotionEffect(new PotionEffect(MobEffects.LUCK, 1200, 3));
     }
 
     /**

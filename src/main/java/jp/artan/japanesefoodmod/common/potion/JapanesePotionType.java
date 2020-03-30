@@ -3,7 +3,7 @@ package jp.artan.japanesefoodmod.common.potion;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import net.minecraft.potion.PotionType;
 
-import static jp.artan.japanesefoodmod.common.Init.POTION_TYPES;
+import static jp.artan.japanesefoodmod.init.Init.POTION_TYPES;
 
 public class JapanesePotionType extends PotionType {
     private final String name;

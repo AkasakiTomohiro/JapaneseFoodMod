@@ -1,7 +1,6 @@
 package jp.artan.japanesefoodmod.common.world.biome;
 
-import jp.artan.japanesefoodmod.common.Init;
-import jp.artan.japanesefoodmod.common.world.biome.CustomBiome;
+import jp.artan.japanesefoodmod.init.Init;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.common.BiomeManager.BiomeType;
 import net.minecraftforge.common.BiomeDictionary.Type;

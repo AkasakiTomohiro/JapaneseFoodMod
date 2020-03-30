@@ -4,8 +4,12 @@
 itemGroup.japanesefoodrawmaterials=Japanese Food[Raw Materials]
 itemGroup.japanesefoodfruittree=Japanese Food[Fruit Tree]
 itemGroup.japanesefoodsouvenir=Japanese Food[Souvenir]
+itemGroup.japanesefoodtool=Japanese Food[Tool]
 
 # Items
+
+## Tool
+item.ground_wood.name=Ground Wood
 
 ## Raw Materials
 item.banana.name=Banana

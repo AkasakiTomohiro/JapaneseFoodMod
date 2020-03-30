@@ -4,8 +4,12 @@
 itemGroup.japanesefoodrawmaterials=日本料理MOD[材料]
 itemGroup.japanesefoodfruittree=日本料理MOD[果樹]
 itemGroup.japanesefoodsouvenir=日本料理MOD[お土産]
+itemGroup.japanesefoodtool=日本料理MOD[ツール]
 
 # Items
+
+## Tool
+item.ground_wood.name=すり鉢とすりこ木
 
 ## Raw Materials
 item.banana.name=バナナ

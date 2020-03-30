@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.wood;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.common.Init;
+import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.common.event.IBlockRegisterEvent;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockLog;

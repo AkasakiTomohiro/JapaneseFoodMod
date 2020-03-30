@@ -1,8 +1,7 @@
 package jp.artan.japanesefoodmod.common.world.biome;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.common.Init;
-import jp.artan.japanesefoodmod.common.food.JapaneseFood;
+import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;

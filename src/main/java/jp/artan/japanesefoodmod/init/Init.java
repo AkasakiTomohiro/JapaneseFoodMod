@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.common;
+package jp.artan.japanesefoodmod.init;
 
 import java.util.ArrayList;
 import java.util.List;

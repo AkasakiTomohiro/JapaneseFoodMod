@@ -14,4 +14,5 @@ public class WorldTypeFruitsForest extends WorldType {
     {
         return new BiomeProviderFruitsForest();
     }
+
 }

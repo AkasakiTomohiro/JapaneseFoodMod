@@ -1,4 +1,4 @@
-package jp.artan.japanesefoodmod.raw_materials.tabs;
+package jp.artan.japanesefoodmod.init.tabs;
 
 import jp.artan.japanesefoodmod.raw_materials.JapaneseFoodRawMaterials;
 import net.minecraft.creativetab.CreativeTabs;
