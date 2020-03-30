@@ -19,6 +19,7 @@ public class ItemInit {
     // 魚
     public static final JapaneseFood CLUEA_PALLASII = new RawMaterialFood("clupea_pallasii", 1, 1.0F);
     public static final JapaneseFood CLUEA_PALLASII_BAKED = new RawMaterialFood("clupea_pallasii_baked", 1, 1.5F);
+    public static final JapaneseFood SQUID = new RawMaterialFood("squid", 1, 0.4F);
 
     // 中間素材
     public static final IntermediateMaterial COCOA_BUTTER = new IntermediateMaterial("cocoa_butter");
@@ -31,6 +32,7 @@ public class ItemInit {
     public static final JapaneseFood RUM = new RawMaterialFood("rum", 1, 0.1F);
     public static final JapaneseFood RUM_RAISIN = new RawMaterialFood("rum_raisin", 1, 0.2F);
     public static final JapaneseFood HERRING_ROE = new RawMaterialFood("herring_roe", 1, 0.2F);
+    public static final JapaneseFood DRIED_SQUID = new RawMaterialFood("dried_squid", 1, 0.6F);
 
     // お土産
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);

@@ -26,6 +26,8 @@ item.rum_raisin.name=Rum Raisin
 item.herring_roe.name=Herring Roe
 item.clupea_pallasii.name=Clupea Pallasii
 item.clupea_pallasii_baked.name=Clupea Pallasii Baked
+item.squid.name=Squid
+item.dried_squid.name=Dried Squid
 
 # Block
 tile.banana_log.name=Banana Log

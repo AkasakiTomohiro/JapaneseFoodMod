@@ -26,6 +26,8 @@ item.rum_raisin.name=ラムレーズン
 item.herring_roe.name=数の子
 item.clupea_pallasii.name=ニシン
 item.clupea_pallasii_baked.name=焼きニシン
+item.squid.name=イカ
+item.dried_squid.name=するめ
 
 # Block
 tile.banana_log.name=バナナの原木
