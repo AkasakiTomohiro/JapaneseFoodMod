@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 3
+    },
+    {
+      "item": "japanesefoodmod:juglans"
+    },
+    {
+      "item": "japanesefoodmod:soy_seeds"
+    }
+  ],
+  "result": {
+    "item": "japanesefoodmod:le_desere",
+    "count": 1
+  }
+}
