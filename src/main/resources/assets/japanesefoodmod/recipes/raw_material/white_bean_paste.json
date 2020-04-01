@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "japanesefoodmod",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    [
+      {
+        "item": "japanesefoodmod:white_red_beans_seeds"
+      },
+      {
+        "item": "japanesefoodmod:white_green_beans_seeds"
+      }
+    ]
+  ],
+  "result": {
+    "item": "japanesefoodmod:white_bean_paste",
+    "count": 4
+  }
+}
