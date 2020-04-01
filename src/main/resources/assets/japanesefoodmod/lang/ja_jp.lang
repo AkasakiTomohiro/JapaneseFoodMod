@@ -32,6 +32,7 @@ item.radish.name=大根
 item.radish_seeds.name=大根の種
 item.alcohol.name=酒精
 item.soy_sauce.name=醤油
+item.laminariaceae.name=昆布
 
 # Block
 tile.banana_log.name=バナナの原木

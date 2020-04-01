@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "japanesefoodmod:blocks/seaweed/laminariaceae_seaweed_block"
+  }
+}

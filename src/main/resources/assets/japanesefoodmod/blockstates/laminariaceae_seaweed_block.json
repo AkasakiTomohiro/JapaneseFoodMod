@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "japanesefoodmod:seaweed/laminariaceae_seaweed_block",
+    "uvlock": true
+  },
+  "variants": {
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ],
+    "stage=0": [
+      {}
+    ],
+    "stage=1": [
+      {}
+    ]
+  }
+}

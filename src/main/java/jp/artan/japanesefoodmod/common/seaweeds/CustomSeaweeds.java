@@ -3,6 +3,40 @@ package jp.artan.japanesefoodmod.common.seaweeds;
 import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import jp.artan.japanesefoodmod.common.world.seaweed.WorldGenSeaweed;
 
+/**
+ * 原木ブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_sapling.json
+ *      ブロックの設置向きの回転角度を記述
+ * ./lang/en_us.lang　言語設定
+ *      tile.${name}_sapling.name=XXXXX
+ * ./lang/ja_JP.lang　言語設定
+ *      tile.${name}_sapling.name=XXXXX
+ * ./models/block/trees/${name}_sapling.json
+ *      ブロックのテクスチャ情報を規定
+ * ./models/item/${name}_sapling.json
+ *      ブロックの情報を記述
+ * ./textures/block/trees/${name}_sapling.png
+ *      テクスチャ
+ */
+/**
+ * 海藻ブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_seaweed_block.json
+ *      ブロックの設置向きの回転角度を記述
+ * ./lang/en_us.lang　言語設定
+ *      tile.${name}.name=XXXXX
+ * ./lang/ja_JP.lang　言語設定
+ *      tile.${name}.name=XXXXX
+ * ./models/block/seaweed/${name}_seaweed_block.json
+ *      ブロックのテクスチャ情報を規定
+ * ./models/item/${name}.json
+ *      アイテムのテクスチャ情報を規定
+ * ./textures/blocks/seaweed/${name}_seaweed_block.png
+ *      テクスチャ
+ * ./textures/items/${name}.png
+ *      テクスチャ
+ */
 public abstract class CustomSeaweeds {
 
     public final CustomSeaweedBlock block;

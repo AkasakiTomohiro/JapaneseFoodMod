@@ -31,6 +31,16 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 海藻ブロックを作成するクラス
+ * @apiNote
+ * ./blockstates/${name}_seaweed_block.json
+ *      ブロックの設置向きの回転角度を記述
+ * ./models/block/seaweed/${name}_seaweed_block.json
+ *      ブロックのテクスチャ情報を規定
+ * ./textures/block/seaweed/${name}_seaweed_block.png
+ *      テクスチャ
+ */
 public abstract class CustomSeaweedBlock extends Block implements IBlockRegisterEvent, IShearable {
     private final String name;
     private JapaneseFood item;
