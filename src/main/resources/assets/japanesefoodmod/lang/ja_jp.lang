@@ -33,6 +33,7 @@ item.radish_seeds.name=大根の種
 item.alcohol.name=酒精
 item.soy_sauce.name=醤油
 item.laminariaceae.name=昆布
+item.juglans.name=クルミ
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -44,6 +45,9 @@ tile.grape_sapling.name=ぶどうの苗木
 tile.almond_log.name=アーモンドの原木
 tile.almond_leaves.name=アーモンドの葉
 tile.almond_sapling.name=アーモンドの苗木
+tile.juglans_log.name=クルミの原木
+tile.juglans_leaves.name=クルミの葉
+tile.juglans_sapling.name=クルミの苗木
 
 ## Souvenirs
 item.marusei_butter_sand.name=マルセイバターサンド

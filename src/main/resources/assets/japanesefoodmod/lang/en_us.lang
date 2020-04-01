@@ -33,6 +33,7 @@ item.radish_seeds.name=Radish Seed
 item.alcohol.name=Alcohol
 item.soy_sauce.name=Soy Sauce
 item.laminariaceae.name=Laminariaceae
+item.juglans.name=Juglans
 
 # Block
 tile.banana_log.name=Banana Log
@@ -44,6 +45,9 @@ tile.grape_sapling.name=Grape Sapling
 tile.almond_log.name=Almond Log
 tile.almond_leaves.name=Almond Leaves
 tile.almond_sapling.name=Almond Sapling
+tile.juglans_log.name=Juglans Log
+tile.juglans_leaves.name=Juglans Leaves
+tile.juglans_sapling.name=Juglans Sapling
 
 ## Souvenirs
 item.marusei_butter_sand.name=Marusei Butter Sand
