@@ -1,7 +1,7 @@
 package jp.artan.japanesefoodmod.common.world.biome;
 
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
-import jp.artan.japanesefoodmod.init.Init;
+import jp.artan.japanesefoodmod.init.BiomeInit;
 import net.minecraft.block.Block;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.BiomeDecorator;
@@ -34,7 +34,7 @@ public class CustomBiome extends Biome {
         BiomeManager.addSpawnBiome(this);
         BiomeManager.addStrongholdBiome(this);
 
-        Init.BIOMES.add(this);
+        BiomeInit.BIOMES.add(this);
     }
 
     @Override

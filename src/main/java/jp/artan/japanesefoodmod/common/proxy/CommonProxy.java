@@ -1,15 +1,12 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
 import jp.artan.japanesefoodmod.common.world.seaweed.WorldGenCustomSeaweed;
-import jp.artan.japanesefoodmod.init.BlockInit;
-import jp.artan.japanesefoodmod.init.Init;
+import jp.artan.japanesefoodmod.init.*;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.event.clock.RightClickHarvesting;
 import jp.artan.japanesefoodmod.common.potion.CommonPotion;
 import jp.artan.japanesefoodmod.common.wood.FruitLeaves;
 import jp.artan.japanesefoodmod.common.world.tree.WorldGenCustomTrees;
-import jp.artan.japanesefoodmod.init.ItemInit;
-import jp.artan.japanesefoodmod.init.RecipeInit;
 import net.minecraft.block.Block;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
@@ -93,7 +90,7 @@ public abstract class CommonProxy {
     @SubscribeEvent
     public void registerBiome(RegistryEvent.Register<Biome> event) {
         JapaneseFoodMod.logger.info("CommonProxy.registerBiome");
-        Init.BIOMES.forEach(f -> event.getRegistry().register(f));
+        BiomeInit.BIOMES.forEach(f -> event.getRegistry().register(f));
     }
 
     @SubscribeEvent
