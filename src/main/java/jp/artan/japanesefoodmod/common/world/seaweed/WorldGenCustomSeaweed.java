@@ -1,6 +1,5 @@
 package jp.artan.japanesefoodmod.common.world.seaweed;
 
-import jp.artan.japanesefoodmod.JapaneseFoodMod;
 import jp.artan.japanesefoodmod.common.seaweeds.CustomSeaweeds;
 import net.minecraft.block.Block;
 import net.minecraft.util.math.BlockPos;

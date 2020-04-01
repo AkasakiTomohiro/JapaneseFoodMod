@@ -34,7 +34,6 @@ import java.util.List;
 public class CustomSeaweedBlock extends Block implements IBlockRegisterEvent, IShearable {
     private final String name;
     private JapaneseFood item;
-    public static boolean fruitRemoval = false;// This is for Dynamic Trees since the fruits grow back completely
 
     /**
      * なんのブロックの上に木を生成するか
