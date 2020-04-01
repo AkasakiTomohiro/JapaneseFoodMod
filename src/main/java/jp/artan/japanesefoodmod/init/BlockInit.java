@@ -7,11 +7,12 @@ import jp.artan.japanesefoodmod.common.seaweeds.CustomSeaweeds;
 import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropsWithSeeds;
+import jp.artan.japanesefoodmod.raw_materials.seaweed.RawMaterialSeaweed;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
+import jp.artan.japanesefoodmod.raw_materials.world.seaweed.LaminariaceaeGen;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.AlmondTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
-import net.minecraft.init.Blocks;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,5 +30,5 @@ public class BlockInit {
     public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
 
     // 海藻
-    public static final CustomSeaweeds SEAWEEDS = new CustomSeaweeds("laminariaceae", Blocks.GRAVEL, 1);
+    public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 1, new LaminariaceaeGen());
 }

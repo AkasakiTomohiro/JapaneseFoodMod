@@ -10,41 +10,21 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 import java.util.Random;
 
-public class WorldGenSeaweed extends WorldGenAbstractTree {
+public abstract class WorldGenSeaweed extends WorldGenAbstractTree {
     protected final int minTreeHeight;
     protected IBlockState blockStateWood;
 
-    public WorldGenSeaweed(final boolean parShouldNotify, final CustomSeaweedBlock log, final int minTreeHeight) {
+    public WorldGenSeaweed(final boolean parShouldNotify, int minTreeHeight) {
         super(parShouldNotify);
-        this.blockStateWood = log.getDefaultState();
         this.minTreeHeight = minTreeHeight;
     }
 
-    public WorldGenSeaweed(final boolean parShouldNotify, final CustomSeaweedBlock log) {
-        this(parShouldNotify, log, 5);
+    public void setBlockStateWood(CustomSeaweedBlock customSeaweedBlock) {
+        this.blockStateWood = customSeaweedBlock.getDefaultState();
     }
 
-    @Override
-    public boolean generate(World parWorld, Random parRandom, BlockPos parBlockPos) {
-        int minHeight = parRandom.nextInt(Math.max(60 - 1 - 5 - parBlockPos.getY(), 0)) + 5;
-
-        // Check if tree fits in world
-        if (parBlockPos.getY() >= 1 && parBlockPos.getY() + minHeight + 1 <= 60) {
-            IBlockState state = parWorld.getBlockState(parBlockPos.up());
-            if(state.getBlock() == Blocks.WATER) {
-                JapaneseFoodMod.logger.info("##############################");
-                JapaneseFoodMod.logger.info("minHeight: " + minHeight);
-                for(int i = 0; i < minHeight; i++) {
-                    BlockPos blockPos = new BlockPos(parBlockPos.getX(), parBlockPos.getY() + i + 1, parBlockPos.getZ());
-                    setBlockAndNotifyAdequately(parWorld, blockPos, blockStateWood);
-                }
-                return true;
-            } else {
-                return false;
-            }
-        } else {
-            return false;
-        }
+    public WorldGenSeaweed(final boolean parShouldNotify, final CustomSeaweedBlock log) {
+        this(parShouldNotify, 5);
     }
 
     @Override
@@ -54,4 +34,6 @@ public class WorldGenSeaweed extends WorldGenAbstractTree {
         JapaneseFoodMod.logger.info("state.getBlock(): " + state.getBlock().getUnlocalizedName());
         return state.getBlock() == Blocks.GRAVEL;
     }
+
+    public abstract boolean generate(World parWorld, Random parRandom, BlockPos parBlockPos);
 }

@@ -31,14 +31,14 @@ import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomSeaweedBlock extends Block implements IBlockRegisterEvent, IShearable {
+public abstract class CustomSeaweedBlock extends Block implements IBlockRegisterEvent, IShearable {
     private final String name;
     private JapaneseFood item;
 
     /**
      * なんのブロックの上に木を生成するか
      */
-    public final Block topBlock;
+    public final Block topBlock = Blocks.GRAVEL;
 
     /**
      * 生成確立
@@ -46,14 +46,13 @@ public class CustomSeaweedBlock extends Block implements IBlockRegisterEvent, IS
      */
     private final int genChance;
 
-    public CustomSeaweedBlock(String name, Block topBlock, int chance) {
+    public CustomSeaweedBlock(String name, int chance) {
         super(Material.PLANTS);
         this.setTickRandomly(true);
         setSoundType(SoundType.WOOD);
-        this.name = name + "_fruit_block";
+        this.name = name + "_seaweed_block";
         this.setUnlocalizedName(this.name);
         this.setRegistryName(JapaneseFoodMod.MODID, this.name);
-        this.topBlock = topBlock;
         this.genChance = chance;
 
         BlockInit.BLOCKS.add(this);
