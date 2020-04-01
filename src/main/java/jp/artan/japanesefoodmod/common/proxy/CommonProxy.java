@@ -1,5 +1,6 @@
 package jp.artan.japanesefoodmod.common.proxy;
 
+import jp.artan.japanesefoodmod.common.world.seaweed.WorldGenCustomSeaweed;
 import jp.artan.japanesefoodmod.init.BlockInit;
 import jp.artan.japanesefoodmod.init.Init;
 import jp.artan.japanesefoodmod.JapaneseFoodMod;
@@ -39,6 +40,7 @@ public abstract class CommonProxy {
         JapaneseFoodMod.logger.info("CommonProxy.preInit");
 
         GameRegistry.registerWorldGenerator(new WorldGenCustomTrees(), 0);
+        GameRegistry.registerWorldGenerator(new WorldGenCustomSeaweed(), 0);
     }
 
     public void init(FMLInitializationEvent event) {
