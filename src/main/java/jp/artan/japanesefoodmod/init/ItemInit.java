@@ -35,6 +35,8 @@ public class ItemInit {
     public static final JapaneseFood RUM_RAISIN = new RawMaterialFood("rum_raisin", 1, 0.2F);
     public static final JapaneseFood HERRING_ROE = new RawMaterialFood("herring_roe", 1, 0.2F);
     public static final JapaneseFood DRIED_SQUID = new RawMaterialFood("dried_squid", 1, 0.6F);
+    public static final JapaneseFood SYRUP = new RawMaterialFood("syrup", 1, 0.6F);
+    public static final JapaneseFood WHITE_BEAN_PASTE = new RawMaterialFood("white_bean_paste", 1, 0.1F);
 
     // お土産
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);

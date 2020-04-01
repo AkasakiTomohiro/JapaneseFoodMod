@@ -34,6 +34,11 @@ item.alcohol.name=酒精
 item.soy_sauce.name=醤油
 item.laminariaceae.name=昆布
 item.juglans.name=クルミ
+item.red_beans_seeds.name=白いんげん豆
+item.white_green_beans_seeds.name=白小豆
+item.white_red_beans_seeds.name=小豆
+item.syrup.name=水飴
+item.white_bean_paste.name=白餡
 
 # Block
 tile.banana_log.name=バナナの原木

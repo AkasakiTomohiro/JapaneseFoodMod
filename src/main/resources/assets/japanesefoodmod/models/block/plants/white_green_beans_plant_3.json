@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "japanesefoodmod:blocks/plants/white_green_beans_plant_3"
+  }
+}

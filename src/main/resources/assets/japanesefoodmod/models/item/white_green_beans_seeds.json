@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "japanesefoodmod:items/white_green_beans_seeds"
+  }
+}
