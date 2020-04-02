@@ -10,6 +10,8 @@ import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropsWithSeeds
 import jp.artan.japanesefoodmod.raw_materials.seaweed.RawMaterialSeaweed;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.seaweed.LaminariaceaeGen;
+import jp.artan.japanesefoodmod.raw_materials.world.seaweed.OgonoriGen;
+import jp.artan.japanesefoodmod.raw_materials.world.seaweed.TengsaGen;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.AlmondTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
 import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
@@ -36,6 +38,6 @@ public class BlockInit {
 
     // 海藻
     public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10, new LaminariaceaeGen());
-    public static final CustomSeaweeds TENGSA = new RawMaterialSeaweed("tengsa", 1, 0.1F, 10, new LaminariaceaeGen());
-    public static final CustomSeaweeds OGONORI = new RawMaterialSeaweed("ogonori", 1, 0.1F, 10, new LaminariaceaeGen());
+    public static final CustomSeaweeds TENGSA = new RawMaterialSeaweed("tengsa", 1, 0.1F, 10, new TengsaGen());
+    public static final CustomSeaweeds OGONORI = new RawMaterialSeaweed("ogonori", 1, 0.1F, 10, new OgonoriGen());
 }
