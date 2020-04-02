@@ -39,6 +39,8 @@ item.white_green_beans_seeds.name=White Green Beans Seeds
 item.white_red_beans_seeds.name=White Red Beans Seeds
 item.syrup.name=Syrup
 item.white_bean_paste.name=White Beans Paste
+item.tengsa.name=Tengsa
+item.ogonori.name=Ogonori
 
 # Block
 tile.banana_log.name=Banana Log

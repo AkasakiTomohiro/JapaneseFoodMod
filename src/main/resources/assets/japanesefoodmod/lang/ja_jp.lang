@@ -39,6 +39,8 @@ item.white_green_beans_seeds.name=白いんげん豆
 item.white_red_beans_seeds.name=白小豆
 item.syrup.name=水飴
 item.white_bean_paste.name=白餡
+item.tengsa.name=テングサ
+item.ogonori.name=オゴノリ
 
 # Block
 tile.banana_log.name=バナナの原木

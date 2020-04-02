@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
-import static jp.artan.japanesefoodmod.init.BlockInit.SEAWEEDS;
+import static jp.artan.japanesefoodmod.init.BlockInit.*;
 
 public class WorldGenCustomSeaweed implements IWorldGenerator {
     @Override
@@ -24,6 +24,8 @@ public class WorldGenCustomSeaweed implements IWorldGenerator {
                 break;
             case 0:
                 runGenerator(SEAWEEDS, world, random, chunkX, chunkZ);
+                runGenerator(TENGSA, world, random, chunkX, chunkZ);
+                runGenerator(OGONORI, world, random, chunkX, chunkZ);
                 break;
             case 1:
                 break;

@@ -35,5 +35,7 @@ public class BlockInit {
     public static final SameCropAsSeed RED_BEANS = new RawMaterialSameCropAsSeed("red_beans", 1, 0.2F);
 
     // 海藻
-    public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 1, new LaminariaceaeGen());
+    public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10, new LaminariaceaeGen());
+    public static final CustomSeaweeds TENGSA = new RawMaterialSeaweed("tengsa", 1, 0.1F, 10, new LaminariaceaeGen());
+    public static final CustomSeaweeds OGONORI = new RawMaterialSeaweed("ogonori", 1, 0.1F, 10, new LaminariaceaeGen());
 }
