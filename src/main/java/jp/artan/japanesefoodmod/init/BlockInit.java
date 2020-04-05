@@ -30,12 +30,14 @@ public class BlockInit {
     public static final FruitTree ALMOND = new RawMaterialsFruitTree("almond", 1, 0.2F, new AlmondTreeSupplier());
     public static final FruitTree JUGLANS = new RawMaterialsFruitTree("juglans", 1, 0.2F, new JuglansTreeSupplier());
 
-    // 作物
+    // 作物　種と作物が同じタイプ
     public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.1F);
-    public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
     public static final SameCropAsSeed WHITE_GREEN_BEANS = new RawMaterialSameCropAsSeed("white_green_beans", 1, 0.2F);
     public static final SameCropAsSeed WHITE_RED_BEANS = new RawMaterialSameCropAsSeed("white_red_beans", 1, 0.2F);
     public static final SameCropAsSeed RED_BEANS = new RawMaterialSameCropAsSeed("red_beans", 1, 0.2F);
+    // 作物　種と作物が異なるタイプ
+    public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
+    // 作物　種と作物が異なるタイプの水上作物
     public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameWaterCropsWithSeeds("glutinous_rice", 1, 0.2F);
 
     // 海藻

@@ -1,6 +1,7 @@
 package jp.artan.japanesefoodmod.raw_materials.crop;
 
 import jp.artan.japanesefoodmod.common.crop.SameCropAsSeed;
+import jp.artan.japanesefoodmod.common.food.JapaneseFoodAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialFoodAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.food.RawMaterialPlant;
 
@@ -14,5 +15,9 @@ public class RawMaterialSameCropAsSeed extends SameCropAsSeed {
      */
     public RawMaterialSameCropAsSeed(String name, int amount, float saturation) {
         super(new RawMaterialFoodAsSeed(name, amount, saturation, new RawMaterialPlant(name)));
+    }
+
+    public RawMaterialSameCropAsSeed(JapaneseFoodAsSeed seed) {
+        super(seed);
     }
 }

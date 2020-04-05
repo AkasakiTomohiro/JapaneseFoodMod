@@ -1,9 +1,8 @@
 package jp.artan.japanesefoodmod.raw_materials.crop;
 
-import jp.artan.japanesefoodmod.common.crop.CropsWithSeeds;
 import jp.artan.japanesefoodmod.raw_materials.food.*;
 
-public class RawMaterialSameWaterCropsWithSeeds extends CropsWithSeeds {
+public class RawMaterialSameWaterCropsWithSeeds extends RawMaterialSameCropsWithSeeds {
     /**
      * コンストラクタ
      *
