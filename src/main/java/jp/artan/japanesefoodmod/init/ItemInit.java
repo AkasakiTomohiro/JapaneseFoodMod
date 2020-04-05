@@ -27,6 +27,8 @@ public class ItemInit {
     public static final IntermediateMaterial SALT = new IntermediateMaterial("salt");
     public static final IntermediateMaterial ALCOHOL = new IntermediateMaterial("alcohol");
     public static final IntermediateMaterial SOY_SAUCE = new IntermediateMaterial("soy_sauce");
+    public static final IntermediateMaterial RICE_FLOUR = new IntermediateMaterial("rice_flour");
+    public static final IntermediateMaterial POPPY_SEED = new IntermediateMaterial("poppy_seed");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);
@@ -37,6 +39,8 @@ public class ItemInit {
     public static final JapaneseFood DRIED_SQUID = new RawMaterialFood("dried_squid", 1, 0.6F);
     public static final JapaneseFood SYRUP = new RawMaterialFood("syrup", 1, 0.6F);
     public static final JapaneseFood WHITE_BEAN_PASTE = new RawMaterialFood("white_bean_paste", 1, 0.1F);
+    public static final JapaneseFood AGAR = new RawMaterialFood("agar", 1, 0.1F);
+    public static final JapaneseFood ROASTED_SOYBEAN_FLOUR = new RawMaterialFood("roasted_soybean_flour", 1, 0.1F);
 
     // お土産
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);
