@@ -35,6 +35,7 @@ public class BlockInit {
     public static final SameCropAsSeed WHITE_GREEN_BEANS = new RawMaterialSameCropAsSeed("white_green_beans", 1, 0.2F);
     public static final SameCropAsSeed WHITE_RED_BEANS = new RawMaterialSameCropAsSeed("white_red_beans", 1, 0.2F);
     public static final SameCropAsSeed RED_BEANS = new RawMaterialSameCropAsSeed("red_beans", 1, 0.2F);
+    public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameCropsWithSeeds("glutinous_rice", 1, 0.2F);
 
     // 海藻
     public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10, new LaminariaceaeGen());

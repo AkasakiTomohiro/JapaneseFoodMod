@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "japanesefoodmod:blocks/plants/glutinous_rice_plant_0"
+  }
+}

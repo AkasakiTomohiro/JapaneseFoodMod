@@ -45,6 +45,8 @@ item.agar.name=Agar
 item.rice_flour.name=Rice Flour
 item.poppy_seed.name=Poppy Seed
 item.roasted_soybean_flour.name=Roasted Soybean Flour
+item.glutinous_rice.name=Glutinous Rice
+item.glutinous_rice_seeds.name=Glutinous Rice Seed
 
 # Block
 tile.banana_log.name=Banana Log
