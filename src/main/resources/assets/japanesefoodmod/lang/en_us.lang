@@ -41,6 +41,10 @@ item.syrup.name=Syrup
 item.white_bean_paste.name=White Beans Paste
 item.tengsa.name=Tengsa
 item.ogonori.name=Ogonori
+item.agar.name=Agar
+item.rice_flour.name=Rice Flour
+item.poppy_seed.name=Poppy Seed
+item.roasted_soybean_flour.name=Roasted Soybean Flour
 
 # Block
 tile.banana_log.name=Banana Log

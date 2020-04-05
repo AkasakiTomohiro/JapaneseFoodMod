@@ -41,6 +41,10 @@ item.syrup.name=水飴
 item.white_bean_paste.name=白餡
 item.tengsa.name=テングサ
 item.ogonori.name=オゴノリ
+item.agar.name=寒天
+item.rice_flour.name=上新粉
+item.poppy_seed.name=けしの実
+item.roasted_soybean_flour.name=きな粉
 
 # Block
 tile.banana_log.name=バナナの原木
