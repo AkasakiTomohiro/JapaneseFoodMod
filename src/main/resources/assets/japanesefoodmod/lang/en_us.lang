@@ -48,6 +48,7 @@ item.roasted_soybean_flour.name=Roasted Soybean Flour
 item.glutinous_rice.name=Glutinous Rice
 item.glutinous_rice_seeds.name=Glutinous Rice Seed
 item.edamame.name=Edamame
+item.condensed_milk.name=Condensed Milk
 
 # Block
 tile.banana_log.name=Banana Log

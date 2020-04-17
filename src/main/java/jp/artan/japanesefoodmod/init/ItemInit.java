@@ -29,6 +29,7 @@ public class ItemInit {
     public static final IntermediateMaterial SOY_SAUCE = new IntermediateMaterial("soy_sauce");
     public static final IntermediateMaterial RICE_FLOUR = new IntermediateMaterial("rice_flour");
     public static final IntermediateMaterial POPPY_SEED = new IntermediateMaterial("poppy_seed");
+    public static final IntermediateMaterial CONDENSED_MILK = new IntermediateMaterial("condensed_milk");
 
     // 加工品
     public static final JapaneseFood BUTTER = new RawMaterialFood("butter", 1, 0.3F);
