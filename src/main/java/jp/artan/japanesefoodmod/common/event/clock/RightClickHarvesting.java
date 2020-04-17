@@ -131,7 +131,7 @@ public class RightClickHarvesting {
         IBlockState soilBlockState = world.getBlockState(pos.down());
         if (!soilBlockState.getBlock().canSustainPlant(soilBlockState, world, pos.down(), EnumFacing.UP, crops))
             return false;
-        return crops.isMaxAge(plantBlockState);
+        return crops.isMaxAge(plantBlockState) || ((Integer)plantBlockState.getValue(crops.AGE)).intValue() == crops.getMaxAge() - 1;
     }
 
     private static void harvestCrops(IBlockState blockState, EntityPlayer player, World world, BlockPos blockPos) {

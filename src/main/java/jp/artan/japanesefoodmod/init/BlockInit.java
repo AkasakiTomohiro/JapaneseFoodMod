@@ -8,6 +8,7 @@ import jp.artan.japanesefoodmod.common.wood.FruitTree;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropAsSeed;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameCropsWithSeeds;
 import jp.artan.japanesefoodmod.raw_materials.crop.RawMaterialSameWaterCropsWithSeeds;
+import jp.artan.japanesefoodmod.raw_materials.food.soy.Soy;
 import jp.artan.japanesefoodmod.raw_materials.seaweed.RawMaterialSeaweed;
 import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.seaweed.LaminariaceaeGen;
@@ -31,7 +32,7 @@ public class BlockInit {
     public static final FruitTree JUGLANS = new RawMaterialsFruitTree("juglans", 1, 0.2F, new JuglansTreeSupplier());
 
     // 作物　種と作物が同じタイプ
-    public static final SameCropAsSeed SOY = new RawMaterialSameCropAsSeed("soy", 1, 0.1F);
+    public static final SameCropAsSeed SOY = new Soy();
     public static final SameCropAsSeed WHITE_GREEN_BEANS = new RawMaterialSameCropAsSeed("white_green_beans", 1, 0.2F);
     public static final SameCropAsSeed WHITE_RED_BEANS = new RawMaterialSameCropAsSeed("white_red_beans", 1, 0.2F);
     public static final SameCropAsSeed RED_BEANS = new RawMaterialSameCropAsSeed("red_beans", 1, 0.2F);
