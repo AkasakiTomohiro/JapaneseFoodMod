@@ -47,6 +47,7 @@ item.poppy_seed.name=けしの実
 item.roasted_soybean_flour.name=きな粉
 item.glutinous_rice.name=餅米
 item.glutinous_rice_seeds.name=餅米の種
+item.edamame.name=枝豆
 
 # Block
 tile.banana_log.name=バナナの原木

@@ -2,6 +2,7 @@ package jp.artan.japanesefoodmod.raw_materials.food.soy;
 
 import jp.artan.japanesefoodmod.common.food.JapaneseFoodPlant;
 import jp.artan.japanesefoodmod.init.CreativeTabsInit;
+import jp.artan.japanesefoodmod.init.ItemInit;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -33,8 +34,8 @@ public class SoyPlant extends JapaneseFoodPlant {
                 if (age >= getMaxAge()) {
                     drops.add(new ItemStack(item, 1, this.damageDropped(state)));
                 } else if (age == getMaxAge() - 1) {
-                    drops.add(new ItemStack(Items.APPLE, 1));
-                    drops.add(new ItemStack(Items.APPLE, 1));
+                    drops.add(new ItemStack(ItemInit.EDAMAME, 1));
+                    drops.add(new ItemStack(ItemInit.EDAMAME, 1));
                 }
             }
         }
