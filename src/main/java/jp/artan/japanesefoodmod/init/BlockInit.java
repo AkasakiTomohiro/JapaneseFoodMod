@@ -44,6 +44,12 @@ public class BlockInit {
     public static final SameCropAsSeed CHILI = new RawMaterialSameCropAsSeed("chili", 1, 0.1F);
     public static final SameCropAsSeed TEBOUMAME = new RawMaterialSameCropAsSeed("teboumame", 1, 0.2F);
     public static final SameCropAsSeed ONION = new RawMaterialSameCropAsSeed("onion", 1, 0.1F);
+    public static final SameCropAsSeed BARLEY = new RawMaterialSameCropAsSeed("barley", 1, 1.0F);
+    public static final SameCropAsSeed GINGER = new RawMaterialSameCropAsSeed("ginger", 1, 0.1F);
+    public static final SameCropAsSeed BROAD_BEANS = new RawMaterialSameCropAsSeed("broad_beans", 1, 0.1F);
+    public static final SameCropAsSeed YAM = new RawMaterialSameCropAsSeed("yam", 1, 0.1F);
+    public static final SameCropAsSeed GARLIC = new RawMaterialSameCropAsSeed("garlic", 1, 0.1F);
+    public static final SameCropAsSeed RED_POTATO = new RawMaterialSameCropAsSeed("red_potato", 1, 0.1F);
     // 作物　種と作物が異なるタイプ
     public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
     // 作物　種と作物が異なるタイプの水上作物

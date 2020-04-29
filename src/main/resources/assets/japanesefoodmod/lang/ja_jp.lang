@@ -57,6 +57,12 @@ item.peanuts_seeds.name=落花生
 item.chili_seeds.name=唐辛子
 item.teboumame_seeds.name=手芒豆
 item.onion_seeds.name=玉ねぎ
+item.barley_seeds.name=大麦
+item.ginger_seeds.name=生姜
+item.broad_beans_seeds.name=そら豆
+item.yam_seeds.name=山芋
+item.garlic_seeds.name=にんにく
+item.red_potato_seeds.name=紅芋
 
 # Block
 tile.banana_log.name=バナナの原木

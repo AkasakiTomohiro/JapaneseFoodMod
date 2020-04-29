@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "japanesefoodmod:blocks/garlic_plant"
+  }
+}
