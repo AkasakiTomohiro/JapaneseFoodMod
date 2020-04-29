@@ -63,6 +63,16 @@ item.broad_beans_seeds.name=Broad_beans
 item.yam_seeds.name=Yam
 item.garlic_seeds.name=Garlic
 item.red_potato_seeds.name=Red Potato
+item.nozawana.name=Nozawana
+item.nozawana_seeds.name=Nozawana Seed
+item.eggplant.name=Eggplant
+item.eggplant_seeds.name=Eggplant Seed
+item.shiso.name=Shiso
+item.shiso_seeds.name=Shiso Seed
+item.strawberry.name=Strawberry
+item.strawberry_seeds.name=Strawberry Seed
+item.rice.name=Rice
+item.rice_seeds.name=Rice Seed
 
 # Block
 tile.banana_log.name=Banana Log

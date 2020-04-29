@@ -44,7 +44,6 @@ public class BlockInit {
     public static final SameCropAsSeed CHILI = new RawMaterialSameCropAsSeed("chili", 1, 0.1F);
     public static final SameCropAsSeed TEBOUMAME = new RawMaterialSameCropAsSeed("teboumame", 1, 0.2F);
     public static final SameCropAsSeed ONION = new RawMaterialSameCropAsSeed("onion", 1, 0.1F);
-    public static final SameCropAsSeed BARLEY = new RawMaterialSameCropAsSeed("barley", 1, 1.0F);
     public static final SameCropAsSeed GINGER = new RawMaterialSameCropAsSeed("ginger", 1, 0.1F);
     public static final SameCropAsSeed BROAD_BEANS = new RawMaterialSameCropAsSeed("broad_beans", 1, 0.1F);
     public static final SameCropAsSeed YAM = new RawMaterialSameCropAsSeed("yam", 1, 0.1F);
@@ -52,8 +51,14 @@ public class BlockInit {
     public static final SameCropAsSeed RED_POTATO = new RawMaterialSameCropAsSeed("red_potato", 1, 0.1F);
     // 作物　種と作物が異なるタイプ
     public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
+    public static final CropsWithSeeds NOZAWANA = new RawMaterialSameCropsWithSeeds("nozawana", 1, 0.2F);
+    public static final CropsWithSeeds EGGPLANT = new RawMaterialSameCropsWithSeeds("eggplant", 1, 0.2F);
+    public static final CropsWithSeeds SHISO = new RawMaterialSameCropsWithSeeds("shiso", 1, 0.1F);
+    public static final CropsWithSeeds STRAWBERRY = new RawMaterialSameCropsWithSeeds("strawberry", 1, 0.2F);
+    public static final CropsWithSeeds BARLEY = new RawMaterialSameCropsWithSeeds("barley", 1, 1.0F);
     // 作物　種と作物が異なるタイプの水上作物
     public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameWaterCropsWithSeeds("glutinous_rice", 1, 0.2F);
+    public static final CropsWithSeeds RICE = new RawMaterialSameWaterCropsWithSeeds("rice", 1, 1.0F);
 
     // 海藻
     public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10,

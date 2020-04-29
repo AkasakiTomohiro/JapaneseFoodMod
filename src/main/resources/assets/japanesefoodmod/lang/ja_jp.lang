@@ -63,6 +63,16 @@ item.broad_beans_seeds.name=そら豆
 item.yam_seeds.name=山芋
 item.garlic_seeds.name=にんにく
 item.red_potato_seeds.name=紅芋
+item.nozawana.name=野沢菜
+item.nozawana_seeds.name=野沢菜の種
+item.eggplant.name=茄子
+item.eggplant_seeds.name=茄子の種
+item.shiso.name=しそ
+item.shiso_seeds.name=しその種
+item.strawberry.name=いちご
+item.strawberry_seeds.name=いちごの種
+item.rice.name=うるち米
+item.rice_seeds.name=うるち米の種
 
 # Block
 tile.banana_log.name=バナナの原木
