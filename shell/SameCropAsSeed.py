@@ -12,13 +12,15 @@ def create_block_states(name):
         json.dump(data, f, indent = 2)
     print("Create File: " , fileName)
 
-def create_models_item(name):
+def create_models_item_seed(name):
     itemSeedsFileName = jsonFileBaseDir + "\\models\\item\\" + name + "_seeds.json"
     seedsData = {"parent": "item/generated", "textures": {"layer0": "japanesefoodmod:items/" + name + "_seeds"}}
     with open(itemSeedsFileName, 'w') as f:
         json.dump(seedsData, f, indent = 2)
     print("Create File: " , itemSeedsFileName)
 
+def create_models_item_plant(name):
+    create_models_item_seed(name)
     itemPlantFileName = jsonFileBaseDir + "\\models\\item\\" + name + "_plant.json"
     plantData = {"parent": "block/cube_all", "textures": {"all": "japanesefoodmod:blocks/" + name + "_plant" }}
     with open(itemPlantFileName, 'w') as f:
@@ -36,5 +38,6 @@ def create_models_block(name):
 def create(name):
     print("SameCropAsSeed")
     create_block_states(name)
-    create_models_item(name)
+    create_models_item_seed(name)
+    create_models_item_plant(name)
     create_models_block(name)
