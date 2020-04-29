@@ -1,3 +1,4 @@
+import sys
 import os
 import json
 
@@ -36,8 +37,13 @@ def create_models_block(name):
         print("Create File: " , itemPlantFileName)
 
 def create(name):
-    print("SameCropAsSeed")
     create_block_states(name)
     create_models_item_seed(name)
     create_models_item_plant(name)
     create_models_block(name)
+
+if __name__ == "__main__":
+    print("SameCropAsSeed")
+    args = sys.argv
+    if(len(args) == 2):
+        create(args[1])
