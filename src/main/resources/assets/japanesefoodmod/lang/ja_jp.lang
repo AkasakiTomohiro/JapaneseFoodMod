@@ -53,6 +53,10 @@ item.citron.name=柚子
 item.orange.name=オレンジ
 item.mandarin_orange.name=みかん
 item.chestnut.name=栗
+item.peanuts_seeds.name=落花生
+item.chili_seeds.name=唐辛子
+item.teboumame_seeds.name=手芒豆
+item.onion_seeds.name=玉ねぎ
 
 # Block
 tile.banana_log.name=バナナの原木

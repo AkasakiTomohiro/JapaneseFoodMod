@@ -53,6 +53,10 @@ item.citron.name=Citron
 item.orange.name=Orange
 item.mandarin_orange.name=Mandarin Orange
 item.chestnut.name=Chestnut
+item.peanuts_seeds.name=Peanuts
+item.chili_seeds.name=Chili
+item.teboumame_seeds.name=Teboumame
+item.onion_seeds.name=Onion
 
 # Block
 tile.banana_log.name=Banana Log

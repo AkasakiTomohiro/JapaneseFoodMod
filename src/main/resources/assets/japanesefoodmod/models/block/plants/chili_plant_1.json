@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "japanesefoodmod:blocks/plants/chili_plant_1"
+  }
+}

@@ -40,13 +40,18 @@ public class BlockInit {
     public static final SameCropAsSeed WHITE_GREEN_BEANS = new RawMaterialSameCropAsSeed("white_green_beans", 1, 0.2F);
     public static final SameCropAsSeed WHITE_RED_BEANS = new RawMaterialSameCropAsSeed("white_red_beans", 1, 0.2F);
     public static final SameCropAsSeed RED_BEANS = new RawMaterialSameCropAsSeed("red_beans", 1, 0.2F);
+    public static final SameCropAsSeed PEANUTS = new RawMaterialSameCropAsSeed("peanuts", 1, 0.2F);
+    public static final SameCropAsSeed CHILI = new RawMaterialSameCropAsSeed("chili", 1, 0.1F);
+    public static final SameCropAsSeed TEBOUMAME = new RawMaterialSameCropAsSeed("teboumame", 1, 0.2F);
+    public static final SameCropAsSeed ONION = new RawMaterialSameCropAsSeed("onion", 1, 0.1F);
     // 作物　種と作物が異なるタイプ
     public static final CropsWithSeeds RADISH = new RawMaterialSameCropsWithSeeds("radish", 1, 0.4F);
     // 作物　種と作物が異なるタイプの水上作物
     public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameWaterCropsWithSeeds("glutinous_rice", 1, 0.2F);
 
     // 海藻
-    public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10, new LaminariaceaeGen());
+    public static final CustomSeaweeds SEAWEEDS = new RawMaterialSeaweed("laminariaceae", 1, 0.1F, 10,
+            new LaminariaceaeGen());
     public static final CustomSeaweeds TENGSA = new RawMaterialSeaweed("tengsa", 1, 0.1F, 10, new TengsaGen());
     public static final CustomSeaweeds OGONORI = new RawMaterialSeaweed("ogonori", 1, 0.1F, 10, new OgonoriGen());
 }
