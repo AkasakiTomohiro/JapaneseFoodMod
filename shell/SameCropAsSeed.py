@@ -21,7 +21,6 @@ def create_models_item_seed(name):
     print("Create File: " , itemSeedsFileName)
 
 def create_models_item_plant(name):
-    create_models_item_seed(name)
     itemPlantFileName = jsonFileBaseDir + "\\models\\item\\" + name + "_plant.json"
     plantData = {"parent": "block/cube_all", "textures": {"all": "japanesefoodmod:blocks/" + name + "_plant" }}
     with open(itemPlantFileName, 'w') as f:
