@@ -57,7 +57,6 @@ item.peanuts_seeds.name=Peanuts
 item.chili_seeds.name=Chili
 item.teboumame_seeds.name=Teboumame
 item.onion_seeds.name=Onion
-item.barley_seeds.name=Barley
 item.ginger_seeds.name=Ginger
 item.broad_beans_seeds.name=Broad_beans
 item.yam_seeds.name=Yam
@@ -73,6 +72,8 @@ item.strawberry.name=Strawberry
 item.strawberry_seeds.name=Strawberry Seed
 item.rice.name=Rice
 item.rice_seeds.name=Rice Seed
+item.barley.name=Barley
+item.barley_seeds.name=Barley Seed
 
 # Block
 tile.banana_log.name=Banana Log
