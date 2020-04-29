@@ -42,12 +42,19 @@ def create_models_block(name):
             json.dump(plantData, f, indent = 2)
         print("Create File: " , itemPlantFileName)
 
+def create_lang(name):
+    print("")
+    print("item." + name + ".name=" + name.capitalize())
+    print("item." + name + "_seeds.name=" + name.capitalize() + " Seed")
+    print("")
+
 def create(name):
     create_block_states(name)
     create_models_item(name)
     create_models_item_seed(name)
     create_models_item_plant(name)
     create_models_block(name)
+    create_lang(name)
 
 if __name__ == "__main__":
     print("CropsWithSeeds")
