@@ -1,0 +1,6 @@
+{
+	"parent":"block/cross",
+	"textures": {
+		"cross": "japanesefoodmod:blocks/fruits/chestnut_fruit_block_0"
+	}
+}

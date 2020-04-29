@@ -1,0 +1,6 @@
+{
+	"parent":"block/cross",
+	"textures": {
+		"cross": "japanesefoodmod:blocks/fruits/mandarin_orange_fruit_block_2"
+	}
+}

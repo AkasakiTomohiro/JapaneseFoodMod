@@ -49,6 +49,10 @@ item.glutinous_rice.name=餅米
 item.glutinous_rice_seeds.name=餅米の種
 item.edamame.name=枝豆
 item.condensed_milk.name=練乳
+item.citron.name=柚子
+item.orange.name=オレンジ
+item.mandarin_orange.name=みかん
+item.chestnut.name=栗
 
 # Block
 tile.banana_log.name=バナナの原木
@@ -63,6 +67,18 @@ tile.almond_sapling.name=アーモンドの苗木
 tile.juglans_log.name=クルミの原木
 tile.juglans_leaves.name=クルミの葉
 tile.juglans_sapling.name=クルミの苗木
+tile.citron_log.name=柚子の原木
+tile.citron_leaves.name=柚子の葉
+tile.citron_sapling.name=柚子の苗木
+tile.orange_log.name=オレンジの原木
+tile.orange_leaves.name=オレンジの葉
+tile.orange_sapling.name=オレンジの苗木
+tile.mandarin_orange_log.name=みかんの原木
+tile.mandarin_orange_leaves.name=みかんの葉
+tile.mandarin_orange_sapling.name=みかんの苗木
+tile.chestnut_log.name=栗の原木
+tile.chestnut_leaves.name=栗の葉
+tile.chestnut_sapling.name=栗の苗木
 
 ## Souvenirs
 item.marusei_butter_sand.name=マルセイバターサンド

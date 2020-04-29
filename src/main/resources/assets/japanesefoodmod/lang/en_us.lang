@@ -49,6 +49,10 @@ item.glutinous_rice.name=Glutinous Rice
 item.glutinous_rice_seeds.name=Glutinous Rice Seed
 item.edamame.name=Edamame
 item.condensed_milk.name=Condensed Milk
+item.citron.name=Citron
+item.orange.name=Orange
+item.mandarin_orange.name=Mandarin Orange
+item.chestnut.name=Chestnut
 
 # Block
 tile.banana_log.name=Banana Log
@@ -63,6 +67,18 @@ tile.almond_sapling.name=Almond Sapling
 tile.juglans_log.name=Juglans Log
 tile.juglans_leaves.name=Juglans Leaves
 tile.juglans_sapling.name=Juglans Sapling
+tile.citron_log.name=Citron Log
+tile.citron_leaves.name=Citron Leaves
+tile.citron_sapling.name=Citron Sapling
+tile.orange_log.name=Orange Log
+tile.orange_leaves.name=Orange Leaves
+tile.orange_sapling.name=Orange Sapling
+tile.mandarin_orange_log.name=Mandarin Orange Log
+tile.mandarin_orange_leaves.name=Mandarin Orange Leaves
+tile.mandarin_orange_sapling.name=Mandarin Orange Sapling
+tile.chestnut_log.name=Chestnut Log
+tile.chestnut_leaves.name=Chestnut Leaves
+tile.chestnut_sapling.name=Chestnut Sapling
 
 ## Souvenirs
 item.marusei_butter_sand.name=Marusei Butter Sand

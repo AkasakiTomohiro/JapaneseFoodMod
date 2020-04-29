@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "japanesefoodmod:blocks/trees/chestnut_sapling"
+  }
+}

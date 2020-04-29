@@ -30,6 +30,10 @@ public class BlockInit {
     public static final FruitTree GRAPE = new RawMaterialsFruitTree("grape", 1, 0.3F, new GrapeTreeSupplier());
     public static final FruitTree ALMOND = new RawMaterialsFruitTree("almond", 1, 0.2F, new AlmondTreeSupplier());
     public static final FruitTree JUGLANS = new RawMaterialsFruitTree("juglans", 1, 0.2F, new JuglansTreeSupplier());
+    public static final FruitTree CITRON = new RawMaterialsFruitTree("citron", 1, 0.2F, new JuglansTreeSupplier());
+    public static final FruitTree ORANGE = new RawMaterialsFruitTree("orange", 1, 0.2F, new JuglansTreeSupplier());
+    public static final FruitTree MANDARIN_ORANGE = new RawMaterialsFruitTree("mandarin_orange", 1, 0.2F, new JuglansTreeSupplier());
+    public static final FruitTree CHESTNUT = new RawMaterialsFruitTree("chestnut", 1, 0.2F, new JuglansTreeSupplier());
 
     // 作物　種と作物が同じタイプ
     public static final SameCropAsSeed SOY = new Soy();
