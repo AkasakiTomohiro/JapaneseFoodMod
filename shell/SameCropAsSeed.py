@@ -1,6 +1,10 @@
 import sys
 import os
 import json
+import argparse
+
+parser = argparse.ArgumentParser(description='種と作物が同じ作物用のJSONファイルと言語情報を出力するスクリプト')
+parser.add_argument('files', metavar='S', type=str, nargs='+')
 
 jsonFileBaseDir = os.getcwd() + r"\src\main\resources\assets\japanesefoodmod"
 
@@ -35,20 +39,28 @@ def create_models_block(name):
             json.dump(plantData, f, indent = 2)
         print("Create File: " , itemPlantFileName)
 
+def pascal_conversion(s):
+    return s.capitalize()
+
+def character_conversion(name):
+    return "item." + name + "_seeds.name=" + " ".join(list(map(pascal_conversion, name.split("_")))) + "\n"
+
 def create_lang(name):
-    print("")
-    print("item." + name + "_seeds.name=" + name.capitalize())
-    print("")
+    return character_conversion(name)
 
 def create(name):
     create_block_states(name)
     create_models_item_seed(name)
     create_models_item_plant(name)
     create_models_block(name)
-    create_lang(name)
+    return create_lang(name)
 
 if __name__ == "__main__":
     print("SameCropAsSeed")
-    args = sys.argv
-    if(len(args) == 2):
-        create(args[1])
+    args = parser.parse_args()
+    lang = ""
+    for item in args.files:
+        lang += create(item)
+    print("")
+    print(lang)
+    
