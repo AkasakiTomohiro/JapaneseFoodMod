@@ -1,6 +1,6 @@
 {
-	"parent":"block/cross",
-	"textures": {
-		"cross": "japanesefoodmod:blocks/fruits/banana_fruit_block_0"
-	}
+  "parent": "block/cross",
+  "textures": {
+    "cross": "japanesefoodmod:blocks/fruits/banana_fruit_block_0"
+  }
 }
