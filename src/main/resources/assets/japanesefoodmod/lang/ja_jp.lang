@@ -74,6 +74,7 @@ item.rice.name=うるち米
 item.rice_seeds.name=うるち米の種
 item.barley.name=大麦
 item.barley_seeds.name=大麦の種
+item.chocolate.name=チョコレート
 
 # Block
 tile.banana_log.name=バナナの原木

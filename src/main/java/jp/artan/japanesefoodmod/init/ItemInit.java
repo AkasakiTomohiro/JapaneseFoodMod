@@ -43,6 +43,7 @@ public class ItemInit {
     public static final JapaneseFood AGAR = new RawMaterialFood("agar", 1, 0.1F);
     public static final JapaneseFood ROASTED_SOYBEAN_FLOUR = new RawMaterialFood("roasted_soybean_flour", 1, 0.1F);
     public static final JapaneseFood EDAMAME = new RawMaterialFood("edamame", 1, 0.1F);
+    public static final JapaneseFood CHOCOLATE = new RawMaterialFood("chocolate", 1, 0.4F);
 
     // お土産
     public static final JapaneseFood MARUSEI_BUTTER_SAND = new SouvenirFood("marusei_butter_sand", 2, 0.5F);

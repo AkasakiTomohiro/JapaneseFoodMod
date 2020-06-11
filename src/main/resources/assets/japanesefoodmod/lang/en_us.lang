@@ -74,6 +74,7 @@ item.rice.name=Rice
 item.rice_seeds.name=Rice Seed
 item.barley.name=Barley
 item.barley_seeds.name=Barley Seed
+item.chocolate.name=Chocolate
 
 # Block
 tile.banana_log.name=Banana Log
