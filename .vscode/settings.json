@@ -13,5 +13,8 @@
   "java.dependency.packagePresentation": "flat",
   "java.dependency.syncWithFolderExplorer": true,
   "task.autoDetect": "on",
-  "npm.enableScriptExplorer": false
+  "npm.enableScriptExplorer": false,
+  "cSpell.words": [
+    "japanesefoodmod"
+  ]
 }
