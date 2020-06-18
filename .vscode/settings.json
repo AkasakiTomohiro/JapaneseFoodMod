@@ -15,6 +15,7 @@
   "task.autoDetect": "on",
   "npm.enableScriptExplorer": false,
   "cSpell.words": [
-    "japanesefoodmod"
+    "japanesefoodmod",
+    "modid"
   ]
 }
