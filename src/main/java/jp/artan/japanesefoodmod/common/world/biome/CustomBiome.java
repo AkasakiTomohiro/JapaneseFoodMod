@@ -61,14 +61,8 @@ public class CustomBiome extends Biome {
 
     @Override
     public WorldGenAbstractTree getRandomTreeFeature(Random rand) {
-        switch (rand.nextInt(3)) {
-            case 1:
-                return GRAPE.sapling.supplier.getWorldGenerate(false);
-            case 0:
-                return ALMOND.sapling.supplier.getWorldGenerate(false);
-            default:
-                return BANANA.sapling.supplier.getWorldGenerate(false);
-        }
+        int num = rand.nextInt(FRUIT_TREES.size());
+        return FRUIT_TREES.get(num).sapling.supplier.getWorldGenerate(false);
     }
 
 }

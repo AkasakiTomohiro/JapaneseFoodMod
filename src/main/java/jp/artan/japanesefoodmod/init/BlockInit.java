@@ -14,26 +14,25 @@ import jp.artan.japanesefoodmod.raw_materials.wood.RawMaterialsFruitTree;
 import jp.artan.japanesefoodmod.raw_materials.world.seaweed.LaminariaceaeGen;
 import jp.artan.japanesefoodmod.raw_materials.world.seaweed.OgonoriGen;
 import jp.artan.japanesefoodmod.raw_materials.world.seaweed.TengsaGen;
-import jp.artan.japanesefoodmod.raw_materials.world.tree.AlmondTreeSupplier;
-import jp.artan.japanesefoodmod.raw_materials.world.tree.BananaTreeSupplier;
-import jp.artan.japanesefoodmod.raw_materials.world.tree.GrapeTreeSupplier;
-import jp.artan.japanesefoodmod.raw_materials.world.tree.JuglansTreeSupplier;
+import jp.artan.japanesefoodmod.raw_materials.world.tree.DefaultTreeSupplier;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class BlockInit {
     public static List<IBlockRegisterEvent> BLOCKS = new ArrayList<IBlockRegisterEvent>();
+    public static List<FruitTree> FRUIT_TREES = new ArrayList<FruitTree>();
 
     // 果樹
-    public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.3F, new BananaTreeSupplier());
-    public static final FruitTree GRAPE = new RawMaterialsFruitTree("grape", 1, 0.3F, new GrapeTreeSupplier());
-    public static final FruitTree ALMOND = new RawMaterialsFruitTree("almond", 1, 0.2F, new AlmondTreeSupplier());
-    public static final FruitTree JUGLANS = new RawMaterialsFruitTree("juglans", 1, 0.2F, new JuglansTreeSupplier());
-    public static final FruitTree CITRON = new RawMaterialsFruitTree("citron", 1, 0.2F, new JuglansTreeSupplier());
-    public static final FruitTree ORANGE = new RawMaterialsFruitTree("orange", 1, 0.2F, new JuglansTreeSupplier());
-    public static final FruitTree MANDARIN_ORANGE = new RawMaterialsFruitTree("mandarin_orange", 1, 0.2F, new JuglansTreeSupplier());
-    public static final FruitTree CHESTNUT = new RawMaterialsFruitTree("chestnut", 1, 0.2F, new JuglansTreeSupplier());
+    public static final FruitTree BANANA = new RawMaterialsFruitTree("banana", 1, 0.3F, new DefaultTreeSupplier());
+    public static final FruitTree GRAPE = new RawMaterialsFruitTree("grape", 1, 0.3F, new DefaultTreeSupplier());
+    public static final FruitTree ALMOND = new RawMaterialsFruitTree("almond", 1, 0.2F, new DefaultTreeSupplier());
+    public static final FruitTree JUGLANS = new RawMaterialsFruitTree("juglans", 1, 0.2F, new DefaultTreeSupplier());
+    public static final FruitTree CITRON = new RawMaterialsFruitTree("citron", 1, 0.2F, new DefaultTreeSupplier());
+    public static final FruitTree ORANGE = new RawMaterialsFruitTree("orange", 1, 0.2F, new DefaultTreeSupplier());
+    public static final FruitTree MANDARIN_ORANGE = new RawMaterialsFruitTree("mandarin_orange", 1, 0.2F,
+            new DefaultTreeSupplier());
+    public static final FruitTree CHESTNUT = new RawMaterialsFruitTree("chestnut", 1, 0.2F, new DefaultTreeSupplier());
 
     // 作物　種と作物が同じタイプ
     public static final SameCropAsSeed SOY = new Soy();
@@ -57,7 +56,8 @@ public class BlockInit {
     public static final CropsWithSeeds STRAWBERRY = new RawMaterialSameCropsWithSeeds("strawberry", 1, 0.2F);
     public static final CropsWithSeeds BARLEY = new RawMaterialSameCropsWithSeeds("barley", 1, 1.0F);
     // 作物　種と作物が異なるタイプの水上作物
-    public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameWaterCropsWithSeeds("glutinous_rice", 1, 0.2F);
+    public static final CropsWithSeeds GLUTINOUS_RICE = new RawMaterialSameWaterCropsWithSeeds("glutinous_rice", 1,
+            0.2F);
     public static final CropsWithSeeds RICE = new RawMaterialSameWaterCropsWithSeeds("rice", 1, 1.0F);
 
     // 海藻

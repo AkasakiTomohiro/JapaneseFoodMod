@@ -17,8 +17,8 @@ public class RecipeInit {
 
     public static void registerOreDictionaryEntries(FMLInitializationEvent event) {
         // 鉱石辞書登録
-        BANANA.registerOreDictionaryEntries();
-        GRAPE.registerOreDictionaryEntries();
-        ALMOND.registerOreDictionaryEntries();
+        FRUIT_TREES.forEach(f -> {
+            f.registerOreDictionaryEntries();
+        });
     }
 }

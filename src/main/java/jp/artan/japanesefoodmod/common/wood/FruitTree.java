@@ -4,6 +4,8 @@ import jp.artan.japanesefoodmod.common.food.JapaneseFood;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
+import static jp.artan.japanesefoodmod.init.BlockInit.FRUIT_TREES;
+
 /**
  * 果樹を追加するクラス
  * @apiNote
@@ -58,6 +60,8 @@ public abstract class FruitTree {
         this.leaves = leaves;
         this.sapling = sapling;
         this.fruitBlock = fruitBlock;
+
+        FRUIT_TREES.add(this);
     }
 
     public void registerOreDictionaryEntries() {
